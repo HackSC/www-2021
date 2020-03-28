@@ -8,8 +8,10 @@
     "start": "next start"
   },
   "dependencies": {
+    "javascript-terminal": "^1.0.3",
     "next": "9.2.2",
     "react": "16.13.0",
-    "react-dom": "16.13.0"
+    "react-dom": "16.13.0",
+    "react-typing-animation": "^1.6.2"
   }
 }
