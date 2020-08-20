@@ -1,0 +1,44 @@
+
+.topo {
+    position: absolute;
+    z-index: -1;
+    top: 40px;
+    left: 20vw;
+}
+
+.globe {
+    margin-right: 120px;
+}
+
+.applyNowWrapper {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60rem;
+    margin: 0 auto;
+}
+
+.apply {
+    border: 3px solid #F2D021;
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 225px;
+    background: transparent;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #F2D021;
+    padding: 15px 40px;
+    margin: 10px auto;
+}

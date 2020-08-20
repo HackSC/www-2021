@@ -1,0 +1,85 @@
+.year,
+.title {
+    display: inline;
+
+}
+
+.title {
+    color: #1C1C1C;
+    margin-left: 42px;
+    font-weight: 500;
+}
+
+.year {
+    color: #4A96F0;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-weight: 500;
+    font-size: 43px;
+    margin-bottom: 25px;
+    margin-left: 5px;
+}
+
+.logo {
+    position: absolute;
+    z-index: -1;
+}
+
+.nav {
+    z-index: 10;
+    margin: var(--gap) auto;
+    position: sticky;
+    padding: var(--gap) 0;
+    top: 0;
+    background-color: var(--header-bg);
+    backdrop-filter: saturate(180%) blur(20px);
+    transition: background-color var(--transition);
+    max-width: var(--main-content);
+}
+
+.header {
+    height: 32px;
+    margin: 0 auto;
+    padding: 0 var(--gap);
+    max-width: var(--main-content);
+    font-family: "Open Sans";
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    justify-content: space-evenly;
+    width: 45%;
+    align-items: center;
+}
+
+.link {
+    font-weight: 800;
+    text-decoration: none;
+    color: #1C1C1C;
+}
+
+.apply {
+    background: #F2D021;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 160px;
+    height: 45px;
+    color: white;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.hacksc {
+    background-image: url("/images/hacksc.png");
+    background-repeat: repeat-x;
+    background-position-x: -150px;
+    height: 100px;  
+    margin-top: 70px;
+}

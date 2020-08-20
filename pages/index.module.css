@@ -1,0 +1,70 @@
+.waves {
+    left: 0;
+    z-index: -1;
+    position: absolute;
+}
+
+.detailsHeading {
+    font-size: 100px;
+    text-transform: uppercase;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60rem;
+    margin: 0 auto;
+}
+
+.details {
+    margin: 0 10vw;
+}
+
+.detailsWrapper {
+    display: inline-block;
+    width: 55%;
+}
+
+.faq,
+.detailsWrapper {
+    padding-top: 45px;
+    vertical-align: top;
+}
+
+.faq {
+    width: max-content;
+    display: inline-block;
+    margin-left: 52px;
+}
+
+.faqQuestion {
+    font-weight: 800;
+    margin-bottom: 0px;
+}
+
+.faqResponse {
+    margin-top: 0px;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+
+    .detailsWrapper {
+        display: flex;
+        width: 100%;
+    }
+}
+
+.dark {
+    width: 60rem;
+    margin: 0 10vw;
+    padding-top: 5vh;
+}
