@@ -72,9 +72,6 @@
 .connectivity hr::before {
         content: "";
         display: block;
-        position: absolute;
-        left: 8vw;
-        max-width: calc(100% - 9vw);
         width: calc(100% - 9vw);
         border: 5px solid #4A96F0;
 }

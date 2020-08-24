@@ -1,5 +1,5 @@
 import styles from './verticals.module.css'
-
+import Zoom from 'react-reveal/Zoom';
 interface Vertical {
     name: string,
     byline: string,
@@ -36,6 +36,7 @@ const VerticalInfo: Vertical[] = [
 const Verticals = () => {
     return (
         <div className={styles.verticals}>
+            <Zoom delay={425}>
             {VerticalInfo.map(({ name, byline, info, color }) => {
                 return (<div className={styles.card}>
                     <img src={`/images/verticals/${name}.svg`} />
@@ -45,6 +46,7 @@ const Verticals = () => {
                     </p>
                     </div>)
             })}
+            </Zoom>
         </div>
     )
 }

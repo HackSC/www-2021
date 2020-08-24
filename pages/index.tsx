@@ -3,6 +3,8 @@ import Header from '@/components/front/header'
 import styles from './index.module.css'
 import FirstSection from '@/components/front/first'
 import Verticals from '@/components/front/verticals'
+import Slide from 'react-reveal/Slide'
+import Fade from 'react-reveal/Fade'
 const Home = () => (
   <div> 
     <Head>
@@ -11,6 +13,7 @@ const Home = () => (
     </Head>
     <Header />
     <FirstSection />
+    
     <section className={styles.details} style={{height: '70vh'}}>
         <img className={styles.waves} height="270" src="/images/waves.png"/>
         <h1 className={styles.detailsHeading}> Details </h1>
@@ -31,7 +34,7 @@ const Home = () => (
 
           </div>
         </div>
-        <div style={{position: 'absolute',  right: 0, top: '150vh', zIndex: -2}}><img width="500" src="/images/handglobe.png" /></div>
+        <div style={{overflow: 'hidden', position: 'absolute', right: 0, top: '135vh', zIndex: -2}}><Fade right><img width="500" src="/images/handglobe.png"/></Fade></div>
         <div className={styles.faq}>
               <p className={styles.faqQuestion}>WHEN?</p> 
               <p className={styles.faqResponse}>February 19th - 21st, 2021.</p>
@@ -51,8 +54,8 @@ const Home = () => (
 
   <section style={{height: '80vh', marginTop: '16vh'}}>
     <div className={styles.connectivity}>
-      <h2> Theme: Connectivity </h2>
-      <hr />
+          <h2> Theme: Connectivity </h2>
+          <hr />
       <h3 style={{color: '#757575', textTransform: 'uppercase', textAlign: 'center', fontWeight: 'bold', fontSize: '40px'}}>Verticals</h3>
       <Verticals />
       <img className={styles.nodes} src="/images/nodes.png"/>
