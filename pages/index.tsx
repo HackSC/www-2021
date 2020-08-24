@@ -2,9 +2,9 @@ import Head from 'next/head'
 import Header from '@/components/front/header'
 import styles from './index.module.css'
 import FirstSection from '@/components/front/first'
-
+import Verticals from '@/components/front/verticals'
 const Home = () => (
-  <div>
+  <div> 
     <Head>
       <title>Create Next App</title>
       <link rel="icon" href="/favicon.ico" />
@@ -49,16 +49,20 @@ const Home = () => (
      
     </section>
 
-  <section style={{height: '200px', background: "linear-gradient(180deg, #FFFFFF 0%, rgba(43, 45, 61, 0) 100%), #181923"}}>
-
-  </section>
-  <section style={{height: '100vh', background: "#181923"}}>
-    <div className={styles.dark}>
-      <img src="/images/connect.png" width="450px" />
-
-      <h1> Verticals </h1>
+  <section style={{height: '80vh', marginTop: '16vh'}}>
+    <div className={styles.connectivity}>
+      <h2> Theme: Connectivity </h2>
+      <hr />
+      <h3 style={{color: '#757575', textTransform: 'uppercase', textAlign: 'center', fontWeight: 'bold', fontSize: '40px'}}>Verticals</h3>
+      <Verticals />
+      <img className={styles.nodes} src="/images/nodes.png"/>
     </div>
   </section>
+  <style jsx global>{`
+        body {
+          background: #FFFEFF;
+        }
+      `}</style>
   </div>
 )
 

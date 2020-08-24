@@ -7,6 +7,7 @@
 .detailsHeading {
     font-size: 100px;
     text-transform: uppercase;
+    margin: 0;
 }
 
 .container {
@@ -19,6 +20,7 @@
 
 .details {
     margin: 0 10vw;
+    height: max-content;
 }
 
 .detailsWrapper {
@@ -63,8 +65,35 @@
     }
 }
 
-.dark {
-    width: 60rem;
+.connectivity {
     margin: 0 10vw;
-    padding-top: 5vh;
+}
+
+.connectivity hr::before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 8vw;
+        max-width: calc(100% - 9vw);
+        width: calc(100% - 9vw);
+        border: 5px solid #4A96F0;
+}
+
+.connectivity h2 {
+    font-size: 48px;
+    margin-top: 0;
+    margin-left: 16px;
+    margin-bottom: 8px;
+    color: #4A96F0;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.nodes {
+    right: 0;
+    top: 265vh;
+    z-index: -1;
+    position: absolute;
+    height: 1000px;
 }

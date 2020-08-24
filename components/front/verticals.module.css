@@ -1,0 +1,46 @@
+.verticals {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 8vh;
+}
+
+.verticals .card {
+    width: 320px;
+    height: 400px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.verticals .card img {
+    display: block;
+    margin: 32px auto;
+    height: 100px;
+}
+
+.verticals .card h3 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.verticals .card p {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #757575;    
+}
+
+
+@media only screen and (max-width: 960px) {
+    .verticals {
+        flex-direction: column;
+    }
+}
