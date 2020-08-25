@@ -35,6 +35,12 @@
     max-width: var(--main-content);
 }
 
+@media only screen and (max-width: 960px) {
+    .nav .links {
+        display: none;
+    }
+}
+
 @supports ((-webkit-backdrop-filter: saturate(180%) blur(4px)) or (backdrop-filter: saturate(180%) blur(4px))) {
     .nav {
         z-index: 10;
@@ -63,8 +69,9 @@
 .links {
     display: flex;
     justify-content: space-evenly;
-    width: 45%;
+    flex: .6;
     align-items: center;
+    transition: all 2s;
 }
 
 .link {

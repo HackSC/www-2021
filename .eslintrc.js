@@ -28,6 +28,7 @@ module.exports = {
       'prettier/prettier': ['error', {}, { usePrettierrc: true }],
       'react/prop-types': 'off',
       'react/react-in-jsx-scope': 'off',
+      '@typescript-eslint/ban-ts-comment': 'off',
       '@typescript-eslint/explicit-function-return-type': 'off',
       '@typescript-eslint/explicit-module-boundary-types': 'off',
       '@typescript-eslint/ban-ts-ignore': 'off',

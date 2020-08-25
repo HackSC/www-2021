@@ -16,7 +16,8 @@
 }
 
 .detailsHeading {
-    font-size: 100px;
+    font-size: 8vw;
+    line-height: 8vw;
     text-transform: uppercase;
     margin: 0;
 }
