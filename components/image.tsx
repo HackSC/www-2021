@@ -1,11 +1,11 @@
 type ImageProps = {
-    path: string,
+	path: string;
 };
 
 const Image: React.FunctionComponent<ImageProps> = ({ path }) => {
-    return (
-        <div className="image-container">
-            {/* eslint-disable */}
+	return (
+		<div className="image-container">
+			{/* eslint-disable */}
             <img alt="" src={require(`images/${path}?trace`).trace} />
             {/* eslint-disable */}
             <img alt="" src={require(`images/${path}?webp`)} />

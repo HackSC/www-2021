@@ -13,6 +13,7 @@
     position: absolute;
     top: 90vh;
     transform: rotate(35deg);
+    max-width: 100vw;
 }
 
 .detailsHeading {
