@@ -5,8 +5,10 @@ type ImageProps = {
 const Image: React.FunctionComponent<ImageProps> = ({ path }) => {
     return (
         <div className="image-container">
-            <img src={require(`images/${path}?trace`).trace} />
-            <img src={require(`images/${path}?webp`)} />
+            {/* eslint-disable */}
+            <img alt="" src={require(`images/${path}?trace`).trace} />
+            {/* eslint-disable */}
+            <img alt="" src={require(`images/${path}?webp`)} />
             <style jsx>{`
                 .image-container: {
                     position: relative:

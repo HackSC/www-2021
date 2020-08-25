@@ -1,21 +1,23 @@
+.wrapper {
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+}
+
+.wrapper section {
+    scroll-snap-align: start;
+}
+
 .waves {
     left: 0;
     z-index: -1;
     position: absolute;
+    top: 130vh;
 }
 
 .detailsHeading {
     font-size: 100px;
     text-transform: uppercase;
     margin: 0;
-}
-
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 60rem;
-    margin: 0 auto;
 }
 
 .details {
@@ -94,15 +96,16 @@
     height: 1000px;
 }
 
+.nodes2 {
+    left: 0;
+    top: 190vh;
+    z-index: -1;
+    position: absolute;
+    height: 1000px;
+}
+
 @media only screen and (max-width: 768px) {
-    .container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-        margin: 0 auto;
-        flex-direction: column;
-    }
+
 
     .detailsWrapper {
         display: flex;

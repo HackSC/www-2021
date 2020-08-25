@@ -4,10 +4,10 @@ import styles from './index.module.css'
 import FirstSection from '@/components/front/first'
 import Verticals from '@/components/front/verticals'
 import FAQ from '@/components/front/faq'
-
+import { NextPage } from 'next';
 import Fade from 'react-reveal/Fade'
-const Home = () => (
-  <div> 
+const Home: NextPage = () => (
+  <div className={styles.wrapper}> 
     <Head>
       <title>Create Next App</title>
       <link rel="icon" href="/favicon.ico" />
@@ -15,8 +15,8 @@ const Home = () => (
     <Header />
     <FirstSection />
     
-    <section className={styles.details} style={{minHeight: '70vh'}}>
-        <img className={styles.waves} height="270" src="/images/waves.png"/>
+    <section className={styles.details} style={{minHeight: '75vh'}}>
+        <img alt="" className={styles.waves} height="270" src="/images/waves.png"/>
         <h1 className={styles.detailsHeading}> Details </h1>
         <div className={styles.detailsWrapper}>
           <div style={{flexDirection: 'column'}}>
@@ -27,7 +27,8 @@ const Home = () => (
           <FAQ />
           </div>
         </div>
-        <div className={styles.hand}><Fade right><img width="500" src="/images/handglobe.png"/></Fade></div>
+        <img alt="" className={styles.nodes2} src="/images/nodes-2.png"/>
+        <div className={styles.hand}><Fade right><img  alt="A hand holding a globe. The world is in your hands at HackSC." width="500" src="/images/handglobe.png"/></Fade></div>
         <div className={styles.faq}>
               <p className={styles.faqQuestion}>WHEN?</p> 
               <p className={styles.faqResponse}>February 19th - 21st, 2021.</p>
@@ -45,13 +46,15 @@ const Home = () => (
      
     </section>
 
-  <section style={{height: '80vh', marginTop: '16vh'}}>
+  <section style={{height: '70vh'}}>
     <div className={styles.connectivity}>
           <h2> Theme: Connectivity </h2>
           <hr />
       <h3 style={{color: '#757575', textTransform: 'uppercase', textAlign: 'center', fontWeight: 'bold', fontSize: '40px'}}>Verticals</h3>
       <Verticals />
-      <img className={styles.nodes} src="/images/nodes.png"/>
+
+        <img alt="" className={styles.nodes} src="/images/nodes.png"/>
+
     </div>
   </section>
   <style jsx global>{`

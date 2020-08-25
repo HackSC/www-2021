@@ -10,8 +10,8 @@ const entry = ({question, answer}) => {
         setActive(!isActive)
     }
 
-    return (<div style={{marginTop: 8}} onClick={toggleActive}>
-        <button className={isActive ? `${styles.circle} ${styles.minus}` : `${styles.circle} ${styles.plus}`}></button>
+    return (<div style={{marginTop: 8}} role="button" onClick={toggleActive}>
+        <button  className={isActive ? `${styles.circle} ${styles.minus}` : `${styles.circle} ${styles.plus}`}></button>
         <p className={styles.question}>{question}</p>
         <div className={styles.answer}><Fade duration={50} when={isActive} collapse>{answer}</Fade></div>
     </div>)
