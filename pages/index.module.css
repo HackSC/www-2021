@@ -41,8 +41,13 @@
 }
 
 .faqQuestion {
-    font-weight: 800;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
     margin-bottom: 0px;
+    background: linear-gradient(180deg,rgba(255,255,255,0) 60%, #4A96F0 60%);
+    width: 90px;
+    letter-spacing: 1.5px;
 }
 
 .faqResponse {
@@ -63,6 +68,25 @@
         display: flex;
         width: 100%;
     }
+
+    .faq {
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .hand {
+        display: none;
+    }
+}
+
+.hand {
+    overflow-x: hidden;
+    overflow-y: visible;
+    position: absolute;
+    right: 0;
+    top: 135vh;
+    z-index: -2;
 }
 
 .connectivity {

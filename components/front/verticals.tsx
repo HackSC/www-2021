@@ -38,7 +38,7 @@ const Verticals = () => {
         <div className={styles.verticals}>
             <Zoom delay={425}>
             {VerticalInfo.map(({ name, byline, info, color }) => {
-                return (<div className={styles.card}>
+                return (<div className={styles.card} key={name}>
                     <img src={`/images/verticals/${name}.svg`} />
                     <h3 style={{color}}>{name}</h3>
                     <p>
