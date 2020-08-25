@@ -30,10 +30,23 @@
     position: sticky;
     padding: var(--gap) 0;
     top: 0;
-    background-color: var(--header-bg);
-    backdrop-filter: saturate(180%) blur(20px);
+    background-color: rgba(255, 255, 255, .9);
     transition: background-color var(--transition);
     max-width: var(--main-content);
+}
+
+@supports ((-webkit-backdrop-filter: saturate(180%) blur(4px)) or (backdrop-filter: saturate(180%) blur(4px))) {
+    .nav {
+        z-index: 10;
+        margin: var(--gap) auto;
+        position: sticky;
+        padding: var(--gap) 0;
+        top: 0;
+        background-color: rgba(255, 255, 255, .7);
+        backdrop-filter: saturate(180%) blur(4px);
+        transition: background-color var(--transition);
+        max-width: var(--main-content);
+    }
 }
 
 .header {
@@ -61,7 +74,7 @@
 }
 
 .apply {
-    background: #F2D021;
+    background: #4A96F0;
     border-radius: 8px;
     cursor: pointer;
     width: 160px;
@@ -74,12 +87,4 @@
     font-weight: 800;
     font-size: 14px;
     line-height: 19px;
-}
-
-.hacksc {
-    background-image: url("/images/hacksc.png");
-    background-repeat: repeat-x;
-    background-position-x: -150px;
-    height: 100px;  
-    margin-top: 70px;
 }

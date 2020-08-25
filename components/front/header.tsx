@@ -18,7 +18,6 @@ const header: FunctionComponent = () => (
                     </div>
                 </div>
             </nav>
-            <div className={styles.hacksc} />
         </>
 )
 

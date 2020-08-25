@@ -16,7 +16,7 @@ const Home: NextPage = () => (
     <FirstSection />
     
     <section className={styles.details} style={{minHeight: '75vh'}}>
-        <img alt="" className={styles.waves} height="270" src="/images/waves.png"/>
+        <img alt="" className={styles.waves} height="375" src="/images/waves.png"/>
         <h1 className={styles.detailsHeading}> Details </h1>
         <div className={styles.detailsWrapper}>
           <div style={{flexDirection: 'column'}}>
@@ -46,7 +46,7 @@ const Home: NextPage = () => (
      
     </section>
 
-  <section style={{height: '70vh'}}>
+  <section style={{height: '100vh'}}>
     <div className={styles.connectivity}>
           <h2> Theme: Connectivity </h2>
           <hr />
@@ -57,11 +57,21 @@ const Home: NextPage = () => (
 
     </div>
   </section>
+  <section style={{height: '100vh'}}>
+    <div className={styles.sponsors}>
+          <h2> Our Sponsors</h2>
+          <hr />
+
+        <img alt="" className={styles.nodes} src="/images/nodes.png"/>
+
+    </div>
+  </section>
   <style jsx global>{`
-        body {
-          background: #FFFEFF;
-        }
-      `}</style>
+    section {
+      min-height: min-content;
+    }
+    `}
+  </style>
   </div>
 )
 

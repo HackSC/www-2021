@@ -8,10 +8,11 @@
 }
 
 .waves {
-    left: 0;
+    left: -125px;
     z-index: -1;
     position: absolute;
-    top: 130vh;
+    top: 90vh;
+    transform: rotate(35deg);
 }
 
 .detailsHeading {
@@ -88,9 +89,37 @@
     letter-spacing: 1.5px;
 }
 
+.sponsors {
+    margin: 0 10vw;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.sponsors h2 {
+    font-size: 48px;
+    margin-bottom: 8px;
+    color: #4A96F0;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    align-self: flex-end;
+}
+
+.sponsors hr {
+    align-self: flex-start;
+}
+
+.sponsors hr::before {
+    content: "";
+    display: block;
+    width: 89vw;
+    border: 5px solid #4A96F0;
+}
+
 .nodes {
     right: 0;
-    top: 265vh;
+    top: 280vh;
     z-index: -1;
     position: absolute;
     height: 1000px;
