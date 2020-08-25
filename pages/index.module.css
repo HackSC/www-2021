@@ -54,31 +54,6 @@
     margin-top: 0px;
 }
 
-@media only screen and (max-width: 768px) {
-    .container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-        margin: 0 auto;
-        flex-direction: column;
-    }
-
-    .detailsWrapper {
-        display: flex;
-        width: 100%;
-    }
-
-    .faq {
-        margin-left: 0px;
-    }
-}
-
-@media only screen and (max-width: 1200px) {
-    .hand {
-        display: none;
-    }
-}
 
 .hand {
     overflow-x: hidden;
@@ -96,7 +71,7 @@
 .connectivity hr::before {
         content: "";
         display: block;
-        width: calc(100% - 9vw);
+        width: 89vw;
         border: 5px solid #4A96F0;
 }
 
@@ -117,4 +92,35 @@
     z-index: -1;
     position: absolute;
     height: 1000px;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+
+    .detailsWrapper {
+        display: flex;
+        width: 100%;
+    }
+
+    .faq {
+        margin-left: 0px;
+    }
+    
+
+    .connectivity hr::before {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .hand {
+        display: none;
+    }
 }
