@@ -1,17 +1,18 @@
 import styles from './header.module.css';
 import { FunctionComponent } from 'react';
+import Image from '@/components/image';
 
 const header: FunctionComponent = () => (
 	<>
 		<nav className={styles.nav}>
 			<div className={styles.header}>
 				<div>
-					<img
+					<Image
 						className={styles.logo}
 						height="60"
 						alt="Our logo, a lotus flower with nodes. It's cool."
 						width="60"
-						src="/images/logo.png"
+						path="logo.png"
 					/>
 					<h1 className={styles.title}>HackSC</h1>
 					<h1 className={styles.year}> &rsquo;21</h1>

@@ -6,6 +6,8 @@ import Verticals from '@/components/front/verticals';
 import FAQ from '@/components/front/faq';
 import { NextPage } from 'next';
 import Fade from 'react-reveal/Fade';
+import Image from '@/components/image';
+
 const Home: NextPage = () => {
 	return (
 		<div className={styles.wrapper}>
@@ -17,12 +19,7 @@ const Home: NextPage = () => {
 			<FirstSection />
 
 			<section className={styles.details} style={{ minHeight: '75vh' }}>
-				<img
-					alt=""
-					className={styles.waves}
-					height="375"
-					src="/images/waves.png"
-				/>
+				<Image className={styles.waves} height="375" path="waves.png" />
 				<h1 className={styles.detailsHeading}> Details </h1>
 				<div className={styles.detailsWrapper}>
 					<div style={{ flexDirection: 'column' }}>
@@ -39,13 +36,13 @@ const Home: NextPage = () => {
 						<FAQ />
 					</div>
 				</div>
-				<img alt="" className={styles.nodes2} src="/images/nodes-2.png" />
+				<Image alt="" className={styles.nodes2} path={'nodes-2.png'} />
 				<div className={styles.hand}>
 					<Fade right>
-						<img
-							alt="A hand holding a globe. The world is in your hands at HackSC."
+						<Image
+							alt="The world is in your hands at HackSC."
 							width="500"
-							src="/images/handglobe.png"
+							path="handglobe.png"
 						/>
 					</Fade>
 				</div>
@@ -68,15 +65,13 @@ const Home: NextPage = () => {
 					</h3>
 					<Verticals />
 
-					<img alt="" className={styles.nodes} src="/images/nodes.png" />
+					<Image alt="" className={styles.nodes} path="nodes.png" />
 				</div>
 			</section>
 			<section>
 				<div className={styles.sponsors}>
 					<h2> Our Sponsors</h2>
 					<hr />
-
-					<img alt="" className={styles.nodes} src="/images/nodes.png" />
 				</div>
 			</section>
 			<style jsx global>

@@ -76,7 +76,7 @@
 }
 
 .hacksc {
-    background-image: url("/images/hacksc.png");
+    background-image: url("../../images/hacksc.png");
     background-repeat: repeat-x;
     background-position-x: -150px;
     height: 100px;  

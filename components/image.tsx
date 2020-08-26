@@ -1,26 +1,38 @@
-type ImageProps = {
-	path: string;
-};
+import { useState } from 'react';
 
-const Image: React.FunctionComponent<ImageProps> = ({ path }) => {
+interface ImageProps {
+	height?: number | string;
+	width?: number | string;
+	alt?: string;
+	className?: string;
+	path: string;
+	type?: string;
+}
+
+const Image: React.FunctionComponent<ImageProps> = ({
+	className,
+	path,
+	alt = '',
+	width,
+	height,
+}) => {
+	const isLoaded = useState(false);
+
 	return (
-		<div className="image-container">
-			{/* eslint-disable */}
-            <img alt="" src={require(`images/${path}?trace`).trace} />
-            {/* eslint-disable */}
-            <img alt="" src={require(`images/${path}?webp`)} />
-            <style jsx>{`
-                .image-container: {
-                    position: relative:
-                }
-                img {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                }
-            `}</style>
-        </div>
-    );
+		<picture>
+			{!path.endsWith('.svg') && (
+				<source srcSet={require(`images/${path}?trace`)} type="image/svg+xml" />
+			)}
+			<source srcSet={require(`images/${path}?webp`)} type="image/webp" />
+			<img
+				src={require(`images/${path}`)}
+				alt={alt ? alt : ''}
+				className={className}
+				height={height}
+				width={width}
+			/>
+		</picture>
+	);
 };
 
 export default Image;
