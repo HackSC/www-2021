@@ -16,7 +16,8 @@ const Image: React.FunctionComponent<ImageProps> = ({
 }) => {
 	return (
 		<picture>
-			<source srcSet={require(`images/${path}?webp`)} />
+			<source srcSet={require(`images/${path}?webp`)} type="image/webp" />
+			<source srcSet={require(`images/${path}`)} />
 			<img
 				src={require(`images/${path}`)}
 				alt={alt ? alt : ''}
