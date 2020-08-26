@@ -5,6 +5,7 @@
     font-weight: 600;
     display: inline;
     cursor: pointer;
+    text-decoration: underline;
 }
 
 .answer {
