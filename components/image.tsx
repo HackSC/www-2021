@@ -1,5 +1,3 @@
-import { useState } from 'react';
-
 interface ImageProps {
 	height?: number | string;
 	width?: number | string;
@@ -16,14 +14,10 @@ const Image: React.FunctionComponent<ImageProps> = ({
 	width,
 	height,
 }) => {
-	const isLoaded = useState(false);
-
 	return (
 		<picture>
-			{!path.endsWith('.svg') && (
-				<source srcSet={require(`images/${path}?trace`)} type="image/svg+xml" />
-			)}
-			<source srcSet={require(`images/${path}?webp`)} type="image/webp" />
+			<source srcSet={require(`images/${path}?trace`).trace} />
+			<source srcSet={require(`images/${path}?webp`)} />
 			<img
 				src={require(`images/${path}`)}
 				alt={alt ? alt : ''}

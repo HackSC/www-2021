@@ -32,6 +32,7 @@ module.exports = {
       '@typescript-eslint/explicit-function-return-type': 'off',
       '@typescript-eslint/explicit-module-boundary-types': 'off',
       '@typescript-eslint/ban-ts-ignore': 'off',
+      '@typescript-eslint/no-var-requires': 'off',
       'jsx-a11y/label-has-associated-control': [
         'error',
         {
