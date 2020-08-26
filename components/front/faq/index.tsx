@@ -45,15 +45,17 @@ const Faqs: Entry[] = [
 ];
 const faq = () => {
 	return (
-		<Fade>
-			{Faqs.map(({ question, answer }, i) => (
-				<FaqEntry
-					key={question.substring(0, 10)}
-					question={question}
-					answer={answer}
-				/>
-			))}
-		</Fade>
+		<div style={{ marginTop: 64 }}>
+			<Fade>
+				{Faqs.map(({ question, answer }) => (
+					<FaqEntry
+						key={question.substring(0, 10)}
+						question={question}
+						answer={answer}
+					/>
+				))}
+			</Fade>
+		</div>
 	);
 };
 

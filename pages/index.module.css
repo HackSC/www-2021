@@ -33,32 +33,10 @@
     width: 55%;
 }
 
-.faq,
 .detailsWrapper {
     padding-top: 45px;
     vertical-align: top;
 }
-
-.faq {
-    width: max-content;
-    display: inline-block;
-    margin-left: 52px;
-}
-
-.faqQuestion {
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 25px;
-    margin-bottom: 0px;
-    background: linear-gradient(180deg,rgba(255,255,255,0) 60%, #4A96F0 60%);
-    width: 90px;
-    letter-spacing: 1.5px;
-}
-
-.faqResponse {
-    margin-top: 0px;
-}
-
 
 .hand {
     overflow-x: hidden;
@@ -142,11 +120,6 @@
         display: flex;
         width: 100%;
     }
-
-    .faq {
-        margin-left: 0px;
-    }
-    
 
     .connectivity hr::before {
         width: 100%;

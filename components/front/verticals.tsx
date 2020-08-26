@@ -11,28 +11,28 @@ const VerticalInfo: Vertical[] = [
 	{
 		name: 'person',
 		byline:
-			'Everyone deserves to feel comfortable in their own skin, online or off.',
+			'Enrich relationships and encourage ways for people to connect more effectively.',
 		info: 'asdfjksdfhnasjkfvasdjkfhajkjsdffjka',
 		color: '#FEDA22',
 	},
 	{
 		name: 'team',
 		byline:
-			'Mother Earth has a fever and it’s in our best interest to cure her.',
+			'Advance and redefine connectivity for collaboration and productivity among teams & colleagues.',
 		info: 'asdfjksdfhnasjkfvasdjkfhajkjsdffjka',
 		color: '#86DCEA',
 	},
 	{
 		name: 'customer',
 		byline:
-			'Not everyone has access to financial literacy, legal aid, health information, and other',
+			'Facilitate communication directly among consumers and power communal exchange of products.',
 		info: 'asdfjksdfhnasjkfvasdjkfhajkjsdffjka',
 		color: '#97329A',
 	},
 	{
 		name: 'device',
 		byline:
-			'The conversation around mental health is becoming more accepted, but there is still a ',
+			'Discover and define new ways for devices to connect with each other.',
 		info: 'asdfjksdfhnasjkfvasdjkfhajkjsdffjka',
 		color: '#FF2B9D',
 	},

@@ -18,7 +18,7 @@
     flex-direction: column;
     max-width: max-content;
     min-width: 300px;
-    margin: 0px auto;
+    margin: calc(var(--gap) * 8) auto;
 }
 
 .details {
@@ -39,8 +39,8 @@
     text-transform: uppercase;
     font-style: normal;
     font-weight: 800;
-    font-size: 14px;
-    line-height: 19px;
+    font-size: 22px;
+    line-height: 28px;
     margin-top: 8px;
 }
 
@@ -82,3 +82,4 @@
     height: 100px;  
     margin-top: 70px;
 }
+

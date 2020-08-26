@@ -49,22 +49,9 @@ const Home: NextPage = () => {
 						/>
 					</Fade>
 				</div>
-				<div className={styles.faq}>
-					<p className={styles.faqQuestion}>WHEN?</p>
-					<p className={styles.faqResponse}>February 19th - 21st, 2021.</p>
-
-					<p className={styles.faqQuestion}>WHERE?</p>
-					<p className={styles.faqResponse}>Online!</p>
-
-					<p className={styles.faqQuestion}>PRICE?</p>
-					<p className={styles.faqResponse}>Free!</p>
-
-					<p className={styles.faqQuestion}>HOW?</p>
-					<p className={styles.faqResponse}>Apps open in November.</p>
-				</div>
 			</section>
 
-			<section>
+			<section style={{ height: 'inherit' }}>
 				<div className={styles.connectivity}>
 					<h2> Theme: Connectivity </h2>
 					<hr />
@@ -84,7 +71,7 @@ const Home: NextPage = () => {
 					<img alt="" className={styles.nodes} src="/images/nodes.png" />
 				</div>
 			</section>
-			<section style={{ height: '100vh' }}>
+			<section>
 				<div className={styles.sponsors}>
 					<h2> Our Sponsors</h2>
 					<hr />
@@ -97,6 +84,7 @@ const Home: NextPage = () => {
 					section {
 						min-height: min-content;
 						margin-bottom: var(--gap);
+						height: 100vh;
 					}
 				`}
 			</style>

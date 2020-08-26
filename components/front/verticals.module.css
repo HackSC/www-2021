@@ -20,11 +20,6 @@
     height: 100px;
 }
 
-.verticals .card img:hover {
-    transform: rotateY(150deg);
-    transition: all 1s;
-}
-
 .verticals .card h3 {
     font-weight: bold;
     font-size: 24px;
