@@ -16,7 +16,6 @@ const Image: React.FunctionComponent<ImageProps> = ({
 }) => {
 	return (
 		<picture>
-			<source srcSet={require(`images/${path}?trace`).trace} />
 			<source srcSet={require(`images/${path}?webp`)} />
 			<img
 				src={require(`images/${path}`)}

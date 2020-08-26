@@ -48,7 +48,9 @@ const Home: NextPage = () => {
 				</div>
 			</section>
 
-			<section style={{ height: 'inherit' }}>
+			<section
+				style={{ height: 'inherit', minHeight: '100vh', marginTop: 100 }}
+			>
 				<div className={styles.connectivity}>
 					<h2> Theme: Connectivity </h2>
 					<hr />
