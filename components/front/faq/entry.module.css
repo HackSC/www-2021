@@ -12,6 +12,14 @@
     margin-left: 30px;
 }
 
+.entry {
+    margin-top: 8px;
+}
+
+.entry:focus {
+    outline: none;
+}
+
 .circle {
     width:20px;
     height:20px;

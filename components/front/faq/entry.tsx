@@ -17,7 +17,7 @@ const entry = ({ question, answer }) => {
 	//@ts-ignore
 	return (
 		<div
-			style={{ marginTop: 8 }}
+			className={styles.entry}
 			role="button"
 			tabIndex={0}
 			onKeyDown={toggleActive}
