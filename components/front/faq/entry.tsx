@@ -8,7 +8,6 @@ const entry = ({ question, answer }) => {
 	const toggleActive = (e) => {
 		if (e.key === 'Tab') {
 			return;
-			yar;
 		}
 		e.preventDefault();
 		setActive(!isActive);
