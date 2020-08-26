@@ -93,6 +93,8 @@
     -webkit-text-size-adjust: 100%;
     line-height: 1.5;
     position: absolute;
+    max-width: 100vw;
+    overflow-x: hidden;
   }
 
 
