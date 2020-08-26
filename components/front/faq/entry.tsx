@@ -2,10 +2,14 @@ import { useState } from 'react';
 import styles from './entry.module.css';
 import Fade from 'react-reveal';
 
-const entry = ({ question, answer, tabIndex }) => {
+const entry = ({ question, answer }) => {
 	const [isActive, setActive] = useState(false);
 
 	const toggleActive = (e) => {
+		if (e.key === 'Tab') {
+			return;
+			yar;
+		}
 		e.preventDefault();
 		setActive(!isActive);
 	};
@@ -15,7 +19,7 @@ const entry = ({ question, answer, tabIndex }) => {
 		<div
 			style={{ marginTop: 8 }}
 			role="button"
-			tabIndex={tabIndex}
+			tabIndex={0}
 			onKeyDown={toggleActive}
 			onClick={toggleActive}
 		>

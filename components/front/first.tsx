@@ -22,7 +22,9 @@ const First = () => {
 						</div>
 					</Fade>
 					<Fade delay={1600}>
-						<button className={styles.apply}>Apply Now</button>
+						<button tabIndex={0} className={styles.apply}>
+							Apply Now
+						</button>
 					</Fade>
 				</span>
 			</span>

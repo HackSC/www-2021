@@ -48,7 +48,6 @@ const faq = () => {
 		<Fade>
 			{Faqs.map(({ question, answer }, i) => (
 				<FaqEntry
-					tabIndex={i + 1}
 					key={question.substring(0, 10)}
 					question={question}
 					answer={answer}
