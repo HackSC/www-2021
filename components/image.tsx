@@ -1,24 +1,32 @@
-type ImageProps = {
-    path: string,
-};
+interface ImageProps {
+	height?: number | string;
+	width?: number | string;
+	alt?: string;
+	className?: string;
+	path: string;
+	type?: string;
+}
 
-const Image: React.FunctionComponent<ImageProps> = ({ path }) => {
-    return (
-        <div className="image-container">
-            <img src={require(`images/${path}?trace`).trace} />
-            <img src={require(`images/${path}?webp`)} />
-            <style jsx>{`
-                .image-container: {
-                    position: relative:
-                }
-                img {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                }
-            `}</style>
-        </div>
-    );
+const Image: React.FunctionComponent<ImageProps> = ({
+	className,
+	path,
+	alt = '',
+	width,
+	height,
+}) => {
+	return (
+		<picture>
+			<source srcSet={require(`images/${path}?webp`)} type="image/webp" />
+			<source srcSet={require(`images/${path}`)} />
+			<img
+				src={require(`images/${path}`)}
+				alt={alt ? alt : ''}
+				className={className}
+				height={height}
+				width={width}
+			/>
+		</picture>
+	);
 };
 
 export default Image;

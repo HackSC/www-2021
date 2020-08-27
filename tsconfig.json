@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "esnext",
     "lib": [
       "dom",
       "dom.iterable",
@@ -21,6 +21,7 @@
     "paths": {
       "@/components/*": ["components/*"],
       "@styles/*": ["styles/*"],
+      "@/images/*": ["images/*"],
     }
   },
   "exclude": [
