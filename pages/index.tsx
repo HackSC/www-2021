@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Header from '@/components/front/header'
-import styles from './index.module.css'
+import styles from './index.module.scss'
 import FirstSection from '@/components/front/first'
 
 const Home = () => (
@@ -55,8 +55,31 @@ const Home = () => (
   <section style={{height: '100vh', background: "#181923"}}>
     <div className={styles.dark}>
       <img src="/images/connect.png" width="450px" />
-
-      <h1> Verticals </h1>
+      <div className={styles.verticals}>
+        <h1> Verticals </h1>
+        <div className={styles.verticalsGrid}>
+          <div className={styles.verticalCell}>
+            <img className={styles.verticalCell}></img>
+            <h3 className={styles.verticalTitle}>PERSON</h3>
+            <h4 className={styles.verticalDescription}>Everyone deserves to feel comfortable in their own skin, online or off.</h4>
+          </div>
+          <div className={styles.verticalCell}>
+            <img className={styles.verticalCell}></img>
+            <h3 className={styles.verticalTitle}>PERSON</h3>
+            <h4 className={styles.verticalDescription}>Everyone deserves to feel comfortable in their own skin, online or off.</h4>
+          </div>
+          <div className={styles.verticalCell}>
+            <img className={styles.verticalCell}></img>
+            <h3 className={styles.verticalTitle}>PERSON</h3>
+            <h4 className={styles.verticalDescription}>Everyone deserves to feel comfortable in their own skin, online or off.</h4>
+          </div>
+          <div className={styles.verticalCell}>
+            <img className={styles.verticalCell}></img>
+            <h3 className={styles.verticalTitle}>PERSON</h3>
+            <h4 className={styles.verticalDescription}>Everyone deserves to feel comfortable in their own skin, online or off.</h4>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
   </div>

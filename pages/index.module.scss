@@ -68,3 +68,28 @@
     margin: 0 10vw;
     padding-top: 5vh;
 }
+
+.test {
+    background-color: black;
+}
+
+.verticals {
+    h1 {
+        color: white;
+    }
+    .verticalsGrid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        grid-gap: 1rem;
+        .verticalCell {
+            background-color: white;
+            padding: 20px;
+            .verticalTitle {
+
+            }
+            .verticalDescription {
+
+            }
+        }
+    }
+}
