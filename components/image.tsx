@@ -24,7 +24,6 @@ const Image: React.FunctionComponent<ImageProps> = ({
 				className={className}
 				height={height}
 				width={width}
-				loading="lazy"
 			/>
 		</picture>
 	);

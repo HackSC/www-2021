@@ -47,7 +47,6 @@ const Verticals = () => {
 							<img
 								alt={`An icon representing ${name}`}
 								src={`/images/verticals/${name}.svg`}
-								loading="lazy"
 							/>
 							<h3 style={{ color }}>{name}</h3>
 							<p>{byline}</p>
