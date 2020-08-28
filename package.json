@@ -15,11 +15,8 @@
     "next-optimized-images": "^2.6.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-<<<<<<< HEAD
-    "sass": "^1.26.10"
-=======
+    "sass": "^1.26.10",
     "react-reveal": "^1.2.2"
->>>>>>> origin/master
   },
   "devDependencies": {
     "@types/node": "^14.6.0",
