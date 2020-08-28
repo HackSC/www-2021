@@ -1,0 +1,32 @@
+.nodes {
+    left: 0;
+    top: 170vh;
+    z-index: -1;
+    position: absolute;
+    height: 1000px;
+}
+
+@media only screen and (max-width: 768px) {
+    .connectivity hr::before {
+        width: 100%;
+    }
+}
+
+.connectivity hr::before {
+        content: "";
+        display: block;
+        width: 89vw;
+        margin: 0 auto;
+        border: 5px solid #4A96F0;
+}
+
+.connectivity h2 {
+    font-size: calc(20px + 2vw);
+    line-height: 4vw;
+    display: inline;
+    color: #4A96F0;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-left: 5vw;
+}

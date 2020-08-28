@@ -1,5 +1,6 @@
 import Logo from '../images/logoAndText.png';
 import styled from 'styled-components';
+import { Bold, Body } from './type';
 
 const Footer = () => {
 	return (
@@ -28,13 +29,14 @@ const Footer = () => {
 				</SocialColumn>
 
 				<LinksColumn>
-					<b>HackSC</b>
+					<Bold>HackSC</Bold>
 
 					<Links>
 						<a href="https://hacksc.com">Overview</a>
 						<a
 							href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
 							target="_blank"
+							rel="noreferrer"
 						>
 							MLH Code of Conduct
 						</a>
@@ -42,7 +44,7 @@ const Footer = () => {
 				</LinksColumn>
 
 				<ContactColumn>
-					<b>Contact us</b>
+					<Bold>Contact us</Bold>
 					<ContactBody>
 						Reach out to us at{' '}
 						<a href="mailto:hackers@hacksc.com">hackers@hacksc.com</a> or on
