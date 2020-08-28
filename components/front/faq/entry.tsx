@@ -23,6 +23,7 @@ const entry = ({ question, answer }) => {
 			onClick={toggleActive}
 		>
 			<button
+				aria-label="expand"
 				className={
 					isActive
 						? `${styles.circle} ${styles.minus}`
