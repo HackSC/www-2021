@@ -19,8 +19,7 @@ const Connectivity = () => (
 				Verticals
 			</h3>
 			<Verticals />
-
-			<Image alt="" className={styles.nodes} path="nodes.png" />
+			<Image alt="" className={styles.nodes} path={'nodes-2.png'} />
 		</div>
 	</section>
 );
