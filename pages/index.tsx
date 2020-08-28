@@ -69,12 +69,12 @@ const Home: NextPage = () => {
 					<Image alt="" className={styles.nodes} path="nodes.png" />
 				</div>
 			</section>
-			<section>
+			{/* <section>
 				<div className={styles.sponsors}>
 					<h2> Our Sponsors</h2>
 					<hr />
 				</div>
-			</section>
+			</section> */}
 			<style jsx global>
 				{`
 					section {

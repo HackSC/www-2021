@@ -5,6 +5,7 @@
     margin-top: 8vh;
 }
 
+
 .verticals .card {
     width: 320px;
     height: 400px;
@@ -18,7 +19,14 @@
     display: block;
     margin: 32px auto;
     height: 100px;
+    transition: transform .5s ease-out;
+    perspective: 1000px;
 }
+
+.verticals .card img:hover {
+    transform: scale(1.5);
+}
+
 
 .verticals .card h3 {
     font-weight: bold;

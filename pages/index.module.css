@@ -68,7 +68,7 @@
     text-transform: uppercase;
     letter-spacing: 1.5px;
 }
-
+/* 
 .sponsors {
     margin: 0 10vw;
     display: flex;
@@ -95,11 +95,11 @@
     display: block;
     width: 89vw;
     border: 5px solid #4A96F0;
-}
+} */
 
 .nodes {
     right: 0;
-    top: 280vh;
+    top: 20vh;
     z-index: -1;
     position: absolute;
     height: 1000px;

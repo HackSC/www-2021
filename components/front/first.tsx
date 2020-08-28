@@ -18,7 +18,7 @@ const First = () => {
 					<Fade delay={1000}>
 						<div className={styles.details}>
 							<span className={styles.rainbow}>02.19.21 &mdash; 02.21.21</span>
-							<span className={styles.rainbow}> Online</span>
+							<span className={styles.rainbow}> Free & Online</span>
 						</div>
 					</Fade>
 					<Fade delay={1600}>
