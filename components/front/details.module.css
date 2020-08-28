@@ -1,0 +1,62 @@
+
+.detailsHeading {
+    font-size: 8vw;
+    line-height: 8vw;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.details {
+    margin: 0 10vw;
+    height: max-content;
+}
+
+.detailsWrapper {
+    display: inline-block;
+    width: 55%;
+}
+
+.detailsWrapper {
+    padding-top: 45px;
+    vertical-align: top;
+}
+
+@media only screen and (max-width: 768px) {
+    .detailsWrapper {
+        display: flex;
+        width: 100%;
+    }
+}
+
+.nodes {
+    left: 0;
+    top: 190vh;
+    z-index: -1;
+    position: absolute;
+    height: 1000px;
+}
+
+.waves {
+    left: -125px;
+    z-index: -1;
+    position: absolute;
+    top: 90vh;
+    transform: rotate(35deg);
+    max-width: 100vw;
+}
+
+.hand {
+    overflow-x: hidden;
+    overflow-y: visible;
+    position: absolute;
+    right: 0;
+    top: 135vh;
+    z-index: -2;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .hand {
+        display: none;
+    }
+}
