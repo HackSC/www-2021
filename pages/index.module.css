@@ -1,0 +1,33 @@
+.wrapper {
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+}
+
+.wrapper section {
+    scroll-snap-align: start;
+}
+
+/* 
+// .sponsors {
+//     margin: 0 10vw;
+//     display: flex;
+//     flex-direction: column;
+// }
+// .sponsors h2 {
+//     font-size: 48px;
+//     margin-bottom: 8px;
+//     color: #4A96F0;
+//     font-weight: bold;
+//     text-transform: uppercase;
+//     letter-spacing: 1.5px;
+//     align-self: flex-end;
+// }
+// .sponsors hr {
+//     align-self: flex-start;
+// }
+// .sponsors hr::before {
+//     content: "";
+//     display: block;
+//     width: 89vw;
+//     border: 5px solid #4A96F0;
+// } */
