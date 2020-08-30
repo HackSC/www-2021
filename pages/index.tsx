@@ -8,25 +8,31 @@ import { Connectivity as ConnectivitySection } from '@/components/front/connecti
 
 const Home: NextPage = () => {
 	return (
-		<div className={styles.wrapper}>
+		<>
 			<Head>
-				<title>Create Next App</title>
+				<title>HackSC 2021 - Connect the World</title>
 				<link rel="icon" href="/favicon.ico" />
+				<link
+					href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;800&display=swap"
+					rel="stylesheet"
+				/>
 			</Head>
-			<Header />
-			<FirstSection />
-			<DetailsSection />
-			<ConnectivitySection />
-			<style jsx global>
-				{`
-					section {
-						min-height: min-content;
-						margin-bottom: var(--gap);
-						height: 100vh;
-					}
-				`}
-			</style>
-		</div>
+			<div className={styles.wrapper}>
+				<Header />
+				<FirstSection />
+				<DetailsSection />
+				<ConnectivitySection />
+				<style jsx global>
+					{`
+						section {
+							min-height: min-content;
+							margin-bottom: var(--gap);
+							height: 100vh;
+						}
+					`}
+				</style>
+			</div>
+		</>
 	);
 };
 

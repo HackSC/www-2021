@@ -28,20 +28,12 @@
     }
 }
 
-.nodes {
-    right: 0;
-    top: 20vh;
+.nodelogo {
+    left: -120px;
     z-index: -1;
     position: absolute;
-    height: 1000px;
-}
-
-.waves {
-    left: -125px;
-    z-index: -1;
-    position: absolute;
-    top: 90vh;
-    transform: rotate(35deg);
+    top: 80vh;
+    transform: rotate(10deg);
     max-width: 100vw;
 }
 

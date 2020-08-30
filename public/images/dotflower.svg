@@ -1,0 +1,36 @@
+<svg width="96" height="100" viewBox="0 0 96 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="101" height="100">
+<circle cx="50.0007" cy="72.9167" r="7.29167" fill="#FF8379"/>
+<circle cx="50.5202" cy="94.2709" r="5.72917" fill="#FF8379"/>
+<circle cx="50.0007" cy="27.0834" r="7.29167" fill="#FF8379"/>
+<circle cx="50.5202" cy="5.72917" r="5.72917" fill="#FF8379"/>
+<circle cx="73.4375" cy="5.72925" r="4.6875" fill="#FF8379"/>
+<circle cx="27.6035" cy="5.72925" r="4.6875" fill="#FF8379"/>
+<circle cx="72.9167" cy="49.9999" r="7.29167" fill="#FF8379"/>
+<circle cx="94.2702" cy="50.5209" r="5.72917" fill="#FF8379"/>
+<circle cx="27.0827" cy="49.9999" r="7.29167" fill="#FF8379"/>
+<circle cx="5.72917" cy="50.5209" r="5.72917" fill="#FF8379"/>
+<circle cx="27.084" cy="27.0833" r="6.25" fill="#FF8379"/>
+<circle cx="6.24935" cy="27.0833" r="5.20833" fill="#FF8379"/>
+<circle cx="72.916" cy="27.0833" r="6.25" fill="#FF8379"/>
+<circle cx="94.7923" cy="27.0833" r="5.20833" fill="#FF8379"/>
+<circle cx="72.916" cy="72.9167" r="6.25" fill="#FF8379"/>
+<circle cx="94.7923" cy="72.9166" r="5.20833" fill="#FF8379"/>
+<circle cx="73.4375" cy="94.2708" r="4.6875" fill="#FF8379"/>
+<circle cx="27.084" cy="72.9167" r="6.25" fill="#FF8379"/>
+<circle cx="6.24935" cy="72.9166" r="5.20833" fill="#FF8379"/>
+<circle cx="27.6035" cy="94.2708" r="4.6875" fill="#FF8379"/>
+<circle cx="50.5202" cy="50.5209" r="5.72917" fill="#FEDA22"/>
+</mask>
+<g mask="url(#mask0)">
+<rect x="-17.709" y="-16.6667" width="135.417" height="148.958" fill="url(#paint0_linear)"/>
+</g>
+<circle cx="50.5202" cy="50.5209" r="5.72917" fill="#FEDA22"/>
+<defs>
+<linearGradient id="paint0_linear" x1="79.6868" y1="23.9582" x2="33.3327" y2="83.3332" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF8379"/>
+<stop offset="1" stop-color="#FF414D"/>
+</linearGradient>
+</defs>
+</svg>

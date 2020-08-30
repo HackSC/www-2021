@@ -12,6 +12,11 @@
     }
 }
 
+.connectivity {
+    width: 80vw;
+    margin: 0 auto;
+}
+
 .connectivity hr::before {
         content: "";
         display: block;
