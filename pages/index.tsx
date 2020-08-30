@@ -36,8 +36,7 @@ const Home: NextPage = () => {
 				}}
 			/>
 			<Head>
-				<title>HackSC 2021 - Connect the World</title>
-				<link rel="icon" href="/favicon.ico" />
+				<link rel="icon" href="/images/favicon_64.png" />
 				<link
 					href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;800&display=swap"
 					rel="stylesheet"
