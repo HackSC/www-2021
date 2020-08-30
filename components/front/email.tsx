@@ -48,6 +48,7 @@ const EmailSubscribeForm = () => {
 					name="email"
 					type="email"
 					placeholder="Email"
+					aria-label="Enter your email for updates"
 					ref={emailRef}
 				/>
 				<button className={styles.emailButton} type="submit">
