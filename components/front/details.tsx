@@ -23,7 +23,7 @@ const Details = () => (
 		</div>
 		{/* <Image alt="" className={styles.nodes} path="nodes.png" /> */}
 		<div className={styles.hand}>
-			<Fade right when={true}>
+			<Fade right>
 				<Image
 					alt="The world is in your hands at HackSC."
 					width="500"

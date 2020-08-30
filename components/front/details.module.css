@@ -32,9 +32,10 @@
     left: -120px;
     z-index: -1;
     position: absolute;
-    top: 80vh;
+    top: 90vh;
     transform: rotate(10deg);
     max-width: 100vw;
+    opacity: .4;
 }
 
 .hand {
