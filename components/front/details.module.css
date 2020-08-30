@@ -1,11 +1,4 @@
 
-.detailsHeading {
-    font-size: calc(20px + 4vw);
-    line-height: 6vw;
-    text-transform: uppercase;
-    margin: 0;
-}
-
 .details {
     margin: 0 10vw;
     height: max-content;
