@@ -10,7 +10,7 @@
     height: 100%;
     display: flex;
     justify-content: center;
-    background-image: url('../../images/globe.png');
+    background-image: url('../../images/globe.png?webp');
     background-repeat: no-repeat;
     background-size: calc(200px + 30vw) calc(200px + 30vw);
     background-position: center;
