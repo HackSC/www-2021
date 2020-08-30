@@ -21,7 +21,6 @@ const Details = () => (
 				<FAQ />
 			</div>
 		</div>
-		{/* <Image alt="" className={styles.nodes} path="nodes.png" /> */}
 		<div className={styles.hand}>
 			<Fade right>
 				<Image

@@ -4,6 +4,8 @@
     line-height: 6vw;
     text-transform: uppercase;
     margin: 0;
+    background: linear-gradient(to right top, var(--blue) 50%, transparent 50%);
+    width: min-content;
 }
 
 .details {
@@ -53,3 +55,10 @@
         display: none;
     }
 }
+
+@media only screen and (max-width: 960px) {
+    .nodelogo {
+        display: none;
+    }
+}
+
