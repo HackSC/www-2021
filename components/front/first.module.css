@@ -10,11 +10,17 @@
     height: 100%;
     display: flex;
     justify-content: center;
-    background-image: url('../../images/globe.png?webp');
+    background-image: url('../../images/globe.png');
     background-repeat: no-repeat;
     background-size: calc(200px + 30vw) calc(200px + 30vw);
     background-position: center;
     flex-direction: column;
+}
+
+@supports (background-image: image-set(url('../../images/globe.png?webp') 1x)) {
+    .container {
+        background-image: image-set(url('../../images/globe.png?webp') 1x) 
+    }
 }
 
 .applyNowWrapper {
