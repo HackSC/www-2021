@@ -18,7 +18,7 @@ const Home: NextPage = () => {
 				openGraph={{
 					url: 'https://hacksc.com',
 					title: 'HackSC 2021',
-					description: 'HackSC 2021 - Connec the World',
+					description: 'Connect the World',
 					images: [
 						{
 							url: '/images/og.png',
