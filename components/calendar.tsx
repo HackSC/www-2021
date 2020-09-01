@@ -1,36 +1,20 @@
+import React from 'react';
 import styles from './calendar.module.css';
-import { FunctionComponent } from 'react';
-import { Calendar, momentLocalizer } from 'react-big-calendar';
-import moment from 'moment';
 
-const localizer = momentLocalizer(moment);
-const myEventsList = [
-	{
-		allDay: false,
-		end: new Date('August 29, 2020 11:13:00'),
-		start: new Date('August 29, 2020 11:13:00'),
-		title: 'test',
-	},
-	{
-		allDay: true,
-		end: new Date('September 01, 2020 11:13:00'),
-		start: new Date('September 01, 2020 11:13:00'),
-		title: 'All Day Event',
-	},
-];
-
-const CalendarSection: FunctionComponent = () => (
+const CalendarSection = () => (
 	<>
 		<section className={styles.calendar}>
 			<div className={styles.calendarWrapper}>
 				<div style={{ flexDirection: 'column' }}>
-					<Calendar
-						localizer={localizer}
-						events={myEventsList}
-						startAccessor="start"
-						endAccessor="end"
+					<iframe
+						title="calendar"
+						src="https://calendar.google.com/calendar/embed?src=crcie5ocjmkf6uaju7q746seek%40group.calendar.google.com&ctz=America%2FLos_Angeles"
+						width="800"
+						height="600"
+						frameBorder="0"
+						scrolling="no"
 						style={{ height: 500 }}
-					/>
+					></iframe>
 				</div>
 			</div>
 		</section>
