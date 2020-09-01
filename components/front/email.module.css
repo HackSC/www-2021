@@ -1,0 +1,67 @@
+.emailForm {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 12px;
+    margin-top: var(--gap);
+}
+
+.emailInput {
+    flex-basis: 65%;
+    border-radius: var(--gap);
+    border: 1px solid var(--light-gray);
+    padding: 12px var(--gap-double);
+    font-weight: 600;
+    color: var(--blue);
+    font-size: 16px;
+    outline: none;
+    height: 42px;
+}
+
+.emailButton {
+    margin-left: var(--gap-double);
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background: var(--blue);
+    flex-grow: 1;
+    font-size: 14px;
+    color: var(--bg);
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    height: 42px;
+}
+
+.success {
+    color: #86dcea;
+    font-size: 16px;
+    animation-name: fade;
+    animation-duration: 0.5s;
+}
+
+@keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+.success {
+    margin-top: var(--gap);
+    line-height: 18px;
+    text-shadow: black 0px 0px 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .emailForm {
+        flex-direction: column;
+    }
+
+    .emailButton {
+        width: 50%;
+        margin: var(--gap) auto;
+    }
+}

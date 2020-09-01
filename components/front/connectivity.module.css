@@ -3,7 +3,8 @@
     top: 170vh;
     z-index: -1;
     position: absolute;
-    height: 1000px;
+    height: 600px;
+    width: 250px;
 }
 
 @media only screen and (max-width: 768px) {

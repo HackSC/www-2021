@@ -1,6 +1,6 @@
 import styles from './first.module.css';
 import { Fade } from 'react-reveal';
-import Image from '../image';
+import Email from '@/components/front/email';
 
 const First = () => {
 	return (
@@ -22,9 +22,10 @@ const First = () => {
 								<div className={styles.connect}>Connect the world</div>
 							</Fade>
 							<Fade delay={1000}>
-								<button tabIndex={0} className={styles.apply}>
+								{/* <button tabIndex={0} className={styles.apply}>
 									Apply Now
-								</button>
+								</button> */}
+								<Email />
 							</Fade>
 						</span>
 						<div className={styles.largest}>

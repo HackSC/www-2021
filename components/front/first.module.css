@@ -12,9 +12,15 @@
     justify-content: center;
     background-image: url('../../images/globe.png');
     background-repeat: no-repeat;
-    background-size: 30vw 30vw;
+    background-size: calc(200px + 30vw) calc(200px + 30vw);
     background-position: center;
     flex-direction: column;
+}
+
+@supports (background-image: image-set(url('../../images/globe.png?webp') 1x)) {
+    .container {
+        background-image: image-set(url('../../images/globe.png?webp') 1x) 
+    }
 }
 
 .applyNowWrapper {
@@ -30,9 +36,10 @@
 
 .largest {
     display: flex;
-    align-items: end;
-    margin-right: 5vw;
+    align-items: flex-end;
+    margin-right: 6vw;
     flex-direction: column;
+    margin-top: 64px;
 }
 
 .details {
@@ -43,29 +50,13 @@
 
 .connect {
     margin-top: calc(var(--gap-double) * 4);
+    text-align: center;
 }
 
 .connect::after {
     color: var(--blue);
     content: ".";
     font-family: 'Work Sans', 'sans-serif';
-}
-
-.apply {
-    background: var(--blue);
-    border-radius: 8px;
-    cursor: pointer;
-    width: 350px;
-    height: 50px;
-    margin: var(--gap-double) auto;
-    color: white;
-    text-align: center;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 22px;
-    line-height: 28px;
 }
 
 .rainbow {
@@ -83,12 +74,50 @@
     font-family: Work Sans;
     font-style: normal;
     font-weight: normal;
-    font-size: 40px;
+    font-size: 45px;
     line-height: 47px;
     text-align: right;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
+
+.hackscBackground {
+    position: absolute;
+    width: 100vw;
+    height: 95px;
+    left: 0px;
+    top: 15vh;
+    z-index: 1;
+    background: linear-gradient(270deg, #FEDA22 0%, #FF8379 100%), #FF8379;
+}
+
+.hacksc {
+    position: absolute;
+    width: 100vw;
+    height: 20vh;
+    top: 15vh;
+    height: 14vh;
+    font-family: 'Work Sans', sans-serif;
+    color: var(--bg);
+    font-weight: 800;
+    font-size: 80px;
+    line-height: 94px;
+    letter-spacing: 1px;
+    text-transform: uppercase;    
+    overflow: hidden;
+    white-space: nowrap;  
+    user-select: none;
+    z-index: 2;
+}
+
+.dotflower {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right: 0;
+    top: 55vh;
+}
+
 
 @media only screen and (max-width: 960px) {
     .container {
@@ -108,39 +137,8 @@
     .details {
        flex-direction: column;
     }
-}
 
-.hackscBackground {
-    position: absolute;
-    width: 100vw;
-    height: 95px;
-    left: 0px;
-    top: 25vh;
-    background: linear-gradient(270deg, #FEDA22 0%, #FF8379 100%), #FF8379;
-}
-
-.hacksc {
-    position: absolute;
-    width: 100vw;
-    height: 20vh;
-    top: 25vh;
-    height: 14vh;
-    font-family: 'Work Sans', sans-serif;
-    color: var(--bg);
-    font-weight: 800;
-    font-size: 80px;
-    line-height: 94px;
-    letter-spacing: 1px;
-    text-transform: uppercase;    
-    overflow: hidden;
-    white-space: nowrap;  
-    user-select: none;
-}
-
-.dotflower {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    right: 0;
-    top: 55vh;
+    .dotflower {
+        display: none;
+    }
 }

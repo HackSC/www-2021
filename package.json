@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "NODE_OPTIONS='--inspect' next dev",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "eslint 'components/**/*' 'pages/**/*'  --ext .ts,.tsx",
@@ -13,7 +13,6 @@
     "next": "^9.5.3-canary.23",
     "next-compose-plugins": "^2.2.0",
     "next-optimized-images": "^2.6.2",
-    "next-seo": "^4.7.3",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-reveal": "^1.2.2"
