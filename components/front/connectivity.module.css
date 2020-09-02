@@ -3,13 +3,19 @@
     top: 170vh;
     z-index: -1;
     position: absolute;
-    height: 1000px;
+    height: 600px;
+    width: 250px;
 }
 
 @media only screen and (max-width: 768px) {
     .connectivity hr::before {
         width: 100%;
     }
+}
+
+.connectivity {
+    width: 80vw;
+    margin: 0 auto;
 }
 
 .connectivity hr::before {

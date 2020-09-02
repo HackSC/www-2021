@@ -5,7 +5,7 @@ import styles from './details.module.css';
 
 const Details = () => (
 	<section className={styles.details} style={{ minHeight: '75vh' }}>
-		<Image className={styles.waves} height="375" path="waves.png" />
+		<Image className={styles.nodelogo} height="375" path="nodelogo.png" />
 		<h1 className={styles.detailsHeading}> Details </h1>
 		<div className={styles.detailsWrapper}>
 			<div style={{ flexDirection: 'column' }}>
@@ -21,7 +21,6 @@ const Details = () => (
 				<FAQ />
 			</div>
 		</div>
-		<Image alt="" className={styles.nodes} path="nodes.png" />
 		<div className={styles.hand}>
 			<Fade right>
 				<Image

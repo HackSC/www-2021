@@ -40,7 +40,7 @@ const VerticalInfo: Vertical[] = [
 const Verticals = () => {
 	return (
 		<div className={styles.verticals}>
-			<Fade delay={100}>
+			<Fade>
 				{VerticalInfo.map(({ name, byline, info, color }) => {
 					return (
 						<div className={styles.card} key={name}>
