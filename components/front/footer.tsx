@@ -1,9 +1,9 @@
 import styles from './footer.module.css';
 import Image from '@/components/image';
-import Email from '../../images/email.svg';
-import Twitter from '../../images/twitter.svg';
-import Facebook from '../../images/facebook.svg';
-import Instagram from '../../images/instagram.svg';
+import Email from '../../public/images/footer/email.svg';
+import Twitter from '../../public/images/footer/twitter.svg';
+import Facebook from '../../public/images/footer/facebook.svg';
+import Instagram from '../../public/images/footer/instagram.svg';
 
 const Footer = () => {
 	return (
@@ -17,28 +17,28 @@ const Footer = () => {
 					/>
 					<div className={styles.socialLinks}>
 						<a href="mailto:hackers@hacksc.com">
-							<img src={Email} alt="Email link" />
+							<img src={Email} alt="Email link" loading="lazy" />
 						</a>
 						<a
 							href="https://www.facebook.com/hackscofficial/"
 							target="_blank"
 							rel="noreferrer"
 						>
-							<img src={Facebook} alt="Facebook link" />
+							<img src={Facebook} alt="Facebook link" loading="lazy" />
 						</a>
 						<a
 							href="https://www.instagram.com/hackscofficial/"
 							target="_blank"
 							rel="noreferrer"
 						>
-							<img src={Instagram} alt="Instagram link" />
+							<img src={Instagram} alt="Instagram link" loading="lazy" />
 						</a>
 						<a
 							href="https://twitter.com/hackscofficial"
 							target="_blank"
 							rel="noreferrer"
 						>
-							<img src={Twitter} alt="Twitter link" />
+							<img src={Twitter} alt="Twitter link" loading="lazy" />
 						</a>
 					</div>
 					<div className={styles.copyright}>HackSC 2020 &copy;</div>
