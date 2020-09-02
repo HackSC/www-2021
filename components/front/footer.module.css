@@ -1,9 +1,10 @@
 .bold {
-    font-weight: 600;
+	font-weight: 600;
+	color: white;
 }
 
 .wrapper {
-	background: #f6f6f6;
+	background: #181923;
 	padding-top: 64px;
 	padding-bottom: 64px;
 }
@@ -50,7 +51,8 @@
 }
 
 .contactBody {
-    margin-top: 16px;
+	margin-top: 16px;
+	color: white;
 }
 
 .socialLinks {

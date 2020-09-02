@@ -1,5 +1,5 @@
-import Logo from '../../images/logoAndText.png';
 import styles from './footer.module.css';
+import Image from '@/components/image';
 import Email from '../../images/email.svg';
 import Twitter from '../../images/twitter.svg';
 import Facebook from '../../images/facebook.svg';
@@ -10,31 +10,35 @@ const Footer = () => {
 		<div className={styles.wrapper}>
 			<div className={styles.row}>
 				<div className={`${styles.column} ${styles.socialColumn}`}>
-					<img className={styles.logoGraphic} src={Logo} alt="footer logo" />
+					<Image
+						className={styles.logoGraphic}
+						alt="Our logo in the footer, a lotus flower without nodes. It's cool."
+						path="logoAndText.png"
+					/>
 					<div className={styles.socialLinks}>
 						<a href="mailto:hackers@hacksc.com">
-							<img src={Email} alt="email link" />
+							<img src={Email} alt="Email link" />
 						</a>
 						<a
 							href="https://www.facebook.com/hackscofficial/"
 							target="_blank"
 							rel="noreferrer"
 						>
-							<img src={Facebook} alt="facebook link" />
+							<img src={Facebook} alt="Facebook link" />
 						</a>
 						<a
 							href="https://www.instagram.com/hackscofficial/"
 							target="_blank"
 							rel="noreferrer"
 						>
-							<img src={Instagram} alt="instagram link" />
+							<img src={Instagram} alt="Instagram link" />
 						</a>
 						<a
 							href="https://twitter.com/hackscofficial"
 							target="_blank"
 							rel="noreferrer"
 						>
-							<img src={Twitter} alt="twitter link" />
+							<img src={Twitter} alt="Twitter link" />
 						</a>
 					</div>
 					<div className={styles.copyright}>HackSC 2020 &copy;</div>
