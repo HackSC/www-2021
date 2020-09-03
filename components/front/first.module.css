@@ -31,7 +31,7 @@
     font-size: 68px;
     line-height: 70px;
     text-transform: uppercase;
-    margin: 0 auto;
+    margin: var(--gap-double) auto;
 }
 
 .largest {
@@ -49,6 +49,7 @@
 }
 
 .connect {
+    font: inherit;
     margin-top: calc(var(--gap-double) * 4);
     text-align: center;
 }

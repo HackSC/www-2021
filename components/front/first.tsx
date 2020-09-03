@@ -19,7 +19,7 @@ const First = () => {
 					<span className={styles.container}>
 						<span className={styles.applyNowWrapper}>
 							<Fade delay={400}>
-								<div className={styles.connect}>Connect the world</div>
+								<h1 className={styles.connect}>Connect the world</h1>
 							</Fade>
 							<Fade delay={1000}>
 								{/* <button tabIndex={0} className={styles.apply}>

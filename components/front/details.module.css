@@ -4,7 +4,9 @@
     line-height: 6vw;
     text-transform: uppercase;
     margin: 0;
-    background: linear-gradient(to right top, var(--blue) 50%, transparent 50%);
+    background-image: url('../../images/blueback.png');
+    background-repeat: no-repeat;
+    background-position-y: 80%;
     width: min-content;
 }
 

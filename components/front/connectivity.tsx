@@ -5,7 +5,7 @@ import styles from './connectivity.module.css';
 const Connectivity = () => (
 	<section style={{ height: 'inherit', minHeight: '100vh', marginTop: 100 }}>
 		<div className={styles.connectivity}>
-			<h2> Theme: Connectivity </h2>
+			<h2> 2021 Theme: Connectivity </h2>
 			<hr />
 			<h3
 				style={{
