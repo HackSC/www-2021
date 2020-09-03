@@ -70,7 +70,7 @@
     font-size: 4vw;
     line-height: 4vw;
     letter-spacing: 1px;
-    width: calc(max-content - var(--gap));
+    width: calc(100% - var(--gap));
     font-family: 'Work Sans', 'sans-serif';
     font-style: normal;
     font-weight: normal;
