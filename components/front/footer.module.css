@@ -1,0 +1,82 @@
+.bold {
+	font-weight: 600;
+	color: white;
+}
+
+.wrapper {
+	background: #181923;
+	padding-top: 64px;
+	padding-bottom: 64px;
+}
+
+.wrapper a {
+    color: rgb(255, 131, 121);
+}
+
+.row {
+    max-width: 95%;
+	display: flex;
+	flex-direction: row;
+}
+
+.column {
+    display: flex;
+	flex-direction: column;
+}
+
+.logoGraphic {
+    width: 200px;
+	margin-bottom: 16px;
+}
+
+.socialColumn {
+    width: 35%;
+	padding: 0 32px;
+	box-sizing: border-box;
+    padding: 0 16px;
+}
+
+.linksColumn {
+    width: 25%;
+	padding: 0 32px;
+	box-sizing: border-box;
+    margin-top: 32px;
+}
+
+.contactColumn {
+    width: 40%;
+	padding: 0 32px;
+	box-sizing: border-box;
+    margin-top: 32px;
+}
+
+.contactBody {
+	margin-top: 16px;
+	color: white;
+}
+
+.socialLinks {
+    width: 100%;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	padding: 0 16px
+}
+
+.socialLinks a {
+    display: inline-flex;
+    margin-right: 24px;
+}
+
+.links {
+    display: flex;
+	flex-direction: column;
+	margin-top: 16px;
+}
+
+.copyright {
+    font-size: 18px;
+	color: #b2b2b2;
+	padding-left: 16px;
+	margin-top: 24px;
+}

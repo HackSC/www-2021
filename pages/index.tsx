@@ -1,9 +1,9 @@
 import Head from 'next/head';
 import { NextSeo } from 'next-seo';
-
 import Header from '@/components/header';
 import styles from './index.module.css';
 import FirstSection from '@/components/front/first';
+import Footer from '@/components/front/footer';
 import { NextPage } from 'next';
 import { Details as DetailsSection } from '@/components/front/details';
 import { Connectivity as ConnectivitySection } from '@/components/front/connectivity';
@@ -43,6 +43,7 @@ const Home: NextPage = () => {
 				<FirstSection />
 				<DetailsSection />
 				<ConnectivitySection />
+				<Footer />
 				<style jsx global>
 					{`
 						section {
