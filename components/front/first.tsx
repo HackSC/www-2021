@@ -1,8 +1,23 @@
+import { useEffect } from 'react';
 import styles from './first.module.css';
 import { Fade } from 'react-reveal';
 import Email from '@/components/front/email';
 
 const First = () => {
+	const canUseWebP = () => {
+		if (!process.browser) {
+			return false;
+		}
+		const elem = document.createElement('canvas');
+		if (elem.getContext && elem.getContext('2d')) {
+			// was able or not to get WebP representation
+			return elem.toDataURL('image/webp').indexOf('data:image/webp') == 0;
+		}
+
+		// very old browser like IE 8, canvas not supported
+		return false;
+	};
+	const hasWebP = canUseWebP();
 	return (
 		<>
 			<Fade delay={50}>
@@ -16,7 +31,9 @@ const First = () => {
 			</Fade>
 			<section style={{ height: '100vh' }}>
 				<Fade delay={50}>
-					<span className={styles.container}>
+					<span
+						className={hasWebP ? styles.container : styles.containerFallback}
+					>
 						<span className={styles.applyNowWrapper}>
 							<Fade delay={400}>
 								<h1 className={styles.connect}>Connect the world</h1>

@@ -23,12 +23,14 @@
 
 .connectivity h2 {
     font-size: calc(20px + 4vw);
-    line-height: 8vw;
+    line-height: 6vw;
     text-transform: uppercase;
     margin: 0;
+    padding-left: var(--gap);
     background-image: url('../../images/blueback.png');
     background-repeat: no-repeat;
     background-position-y: 80%;
+    background-size: auto 150%;
     word-wrap: break-word;
 }
 

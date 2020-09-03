@@ -8,6 +8,7 @@
     background-repeat: no-repeat;
     background-position-y: 80%;
     width: min-content;
+    padding-left: var(--gap);
 }
 
 .details {
