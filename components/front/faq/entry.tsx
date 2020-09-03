@@ -13,7 +13,6 @@ const entry = ({ question, answer }) => {
 		setActive(!isActive);
 	};
 
-	//@ts-ignore
 	return (
 		<div
 			className={styles.entry}
