@@ -12,7 +12,7 @@
     height: 400px;
     background: #FFFFFF;
     box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
+    border-radius: var(--radius);
     margin: .5rem;
 }
 

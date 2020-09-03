@@ -37,10 +37,6 @@ const Home: NextPage = () => {
 			/>
 			<Head>
 				<link rel="icon" href="/images/favicon_64.png" />
-				<link
-					href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;800&display=swap"
-					rel="stylesheet"
-				/>
 			</Head>
 			<div className={styles.wrapper}>
 				<Header />

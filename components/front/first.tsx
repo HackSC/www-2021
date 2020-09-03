@@ -29,19 +29,17 @@ const First = () => {
 							</Fade>
 						</span>
 						<div className={styles.largest}>
-							<div>
-								<Fade delay={1400}>
-									<span className={`${styles.rainbow} ${styles.headingText}`}>
-										USC&apos;s Largest <br />
-										Hackathon
-									</span>
-								</Fade>
-								<Fade delay={1800}>
-									<div className={styles.details}>
-										<span>02.19.21 &mdash; 02.21.21 || ONLINE || FREE</span>
-									</div>
-								</Fade>
-							</div>
+							<Fade delay={1400}>
+								<span className={`${styles.rainbow} ${styles.headingText}`}>
+									USC&apos;s Largest <br />
+									Hackathon
+								</span>
+							</Fade>
+							<Fade delay={1800}>
+								<div className={styles.details}>
+									<span>02.19.21 &mdash; 02.21.21 || ONLINE || FREE</span>
+								</div>
+							</Fade>
 						</div>
 					</span>
 				</Fade>

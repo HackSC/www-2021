@@ -70,8 +70,8 @@
     font-size: 4vw;
     line-height: 4vw;
     letter-spacing: 1px;
-    width: max-content;
-    font-family: Work Sans;
+    width: calc(max-content - var(--gap));
+    font-family: 'Work Sans', 'sans-serif';
     font-style: normal;
     font-weight: normal;
     font-size: 45px;
@@ -97,7 +97,7 @@
     height: 20vh;
     top: 15vh;
     height: 14vh;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Work Sans', 'sans-serif';
     color: var(--bg);
     font-weight: 800;
     font-size: 80px;
@@ -132,13 +132,19 @@
     .headingText {
         font-size: 48px;
         line-height: 56px;
+        text-align: center;
     }
 
     .details {
        flex-direction: column;
+       margin: 0 auto;
     }
 
     .dotflower {
         display: none;
+    }
+
+    .largest {
+        margin: var(--gap-double) auto;
     }
 }

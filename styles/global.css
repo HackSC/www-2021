@@ -28,7 +28,6 @@
     --header-bg: rgba(255, 255, 255, 0.8);
     --gray-alpha: rgba(19, 20, 21, 0.5);
     --selection: rgba(0, 0, 0, 0.99);
-  
   }
 
 /* open-sans-regular - latin */
@@ -50,6 +49,9 @@
        url('/fonts/open-sans-v17-latin-800.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
        url('/fonts/open-sans-v17-latin-800.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+
+/* Work Sans 500, 800 */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500;800&display=swap');
 
 .dark {
     --bg: rgb(43, 46, 65);
