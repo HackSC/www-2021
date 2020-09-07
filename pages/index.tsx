@@ -1,9 +1,9 @@
 import Head from 'next/head';
 import { NextSeo } from 'next-seo';
-
 import Header from '@/components/header';
 import styles from './index.module.css';
 import FirstSection from '@/components/front/first';
+import Footer from '@/components/front/footer';
 import { NextPage } from 'next';
 import { Details as DetailsSection } from '@/components/front/details';
 import { Connectivity as ConnectivitySection } from '@/components/front/connectivity';
@@ -37,16 +37,13 @@ const Home: NextPage = () => {
 			/>
 			<Head>
 				<link rel="icon" href="/images/favicon_64.png" />
-				<link
-					href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;800&display=swap"
-					rel="stylesheet"
-				/>
 			</Head>
 			<div className={styles.wrapper}>
 				<Header />
 				<FirstSection />
 				<DetailsSection />
 				<ConnectivitySection />
+				<Footer />
 				<style jsx global>
 					{`
 						section {

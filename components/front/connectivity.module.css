@@ -7,11 +7,6 @@
     width: 250px;
 }
 
-@media only screen and (max-width: 768px) {
-    .connectivity hr::before {
-        width: 100%;
-    }
-}
 
 .connectivity {
     width: 80vw;
@@ -23,16 +18,28 @@
         display: block;
         width: 89vw;
         margin: 0 auto;
-        border: 5px solid #4A96F0;
+        outline: 5px solid var(--blue);
 }
 
 .connectivity h2 {
-    font-size: calc(20px + 2vw);
-    line-height: 4vw;
-    display: inline;
-    color: #4A96F0;
-    font-weight: bold;
+    font-size: calc(20px + 2vwy);
+    line-height: 6vw;
     text-transform: uppercase;
-    letter-spacing: 1.5px;
-    margin-left: 5vw;
+    margin: 0;
+    padding-left: var(--gap);
+    background-image: url('../../images/blueback.png');
+    background-repeat: no-repeat;
+    background-position-y: 80%;
+    word-wrap: break-word;
 }
+
+@media only screen and (max-width: 768px) {
+    .connectivity hr::before {
+        width: 100%;
+    }
+
+    .connectivity h2 {
+        padding: var(--gap) var(--gap-half);
+    }
+}
+

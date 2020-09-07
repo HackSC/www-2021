@@ -10,17 +10,22 @@
     height: 100%;
     display: flex;
     justify-content: center;
-    background-image: url('../../images/globe.png');
+    background-image: url('../../images/globe.png?webp');
     background-repeat: no-repeat;
     background-size: calc(200px + 30vw) calc(200px + 30vw);
     background-position: center;
     flex-direction: column;
 }
 
-@supports (background-image: image-set(url('../../images/globe.png?webp') 1x)) {
-    .container {
-        background-image: image-set(url('../../images/globe.png?webp') 1x) 
-    }
+.containerFallback {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: url('../../images/globe.png');
+    background-repeat: no-repeat;
+    background-size: calc(200px + 30vw) calc(200px + 30vw);
+    background-position: center;
+    flex-direction: column;
 }
 
 .applyNowWrapper {
@@ -31,7 +36,7 @@
     font-size: 68px;
     line-height: 70px;
     text-transform: uppercase;
-    margin: 0 auto;
+    margin: var(--gap-double) auto;
 }
 
 .largest {
@@ -49,6 +54,7 @@
 }
 
 .connect {
+    font: inherit;
     margin-top: calc(var(--gap-double) * 4);
     text-align: center;
 }
@@ -70,8 +76,8 @@
     font-size: 4vw;
     line-height: 4vw;
     letter-spacing: 1px;
-    width: max-content;
-    font-family: Work Sans;
+    width: calc(100% - var(--gap));
+    font-family: 'Work Sans', 'sans-serif';
     font-style: normal;
     font-weight: normal;
     font-size: 45px;
@@ -97,7 +103,7 @@
     height: 20vh;
     top: 15vh;
     height: 14vh;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Work Sans', 'sans-serif';
     color: var(--bg);
     font-weight: 800;
     font-size: 80px;
@@ -132,13 +138,19 @@
     .headingText {
         font-size: 48px;
         line-height: 56px;
+        text-align: center;
     }
 
     .details {
        flex-direction: column;
+       margin: 0 auto;
     }
 
     .dotflower {
         display: none;
+    }
+
+    .largest {
+        margin: var(--gap-double) auto;
     }
 }

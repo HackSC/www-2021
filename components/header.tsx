@@ -14,7 +14,7 @@ const header: FunctionComponent = () => (
 						width="60"
 						path="logo.png"
 					/>
-					<h1 className={styles.year}> &rsquo;21</h1>
+					<div className={styles.year}> &rsquo;21</div>
 				</div>
 				<div className={styles.links}>
 					<a href="" className={styles.link}>

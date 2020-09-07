@@ -60,7 +60,7 @@
 
 .apply {
     background: var(--blue);
-    border-radius: 8px;
+    border-radius: var(--radius);
     cursor: pointer;
     width: 160px;
     height: 45px;
