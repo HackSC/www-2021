@@ -60,6 +60,10 @@
         flex-direction: column;
     }
 
+    .emailInput {
+        flex: .5;
+    }
+
     .emailButton {
         width: 50%;
         margin: var(--gap) auto;

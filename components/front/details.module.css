@@ -1,14 +1,12 @@
 
 .detailsHeading {
-    font-size: calc(20px + 4vw);
-    line-height: 6vw;
+    font-size: 60px;
     text-transform: uppercase;
-    margin: 0;
+    font-weight: bold;
     background-image: url('../../images/blueback.png');
     background-repeat: no-repeat;
-    background-position-y: 80%;
-    width: min-content;
     padding-left: var(--gap);
+    line-height: 90px;
 }
 
 .details {

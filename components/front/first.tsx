@@ -29,7 +29,7 @@ const First = () => {
 			<Fade delay={50}>
 				<img alt="" src="/images/dotflower.svg" className={styles.dotflower} />
 			</Fade>
-			<section style={{ height: '100vh' }}>
+			<section style={{ height: '100vh', width: '100vw' }}>
 				<Fade delay={50}>
 					<span
 						className={hasWebP ? styles.container : styles.containerFallback}

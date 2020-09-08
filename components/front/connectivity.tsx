@@ -5,9 +5,11 @@ import styles from './connectivity.module.css';
 const Connectivity = () => (
 	<section style={{ height: 'inherit', minHeight: '100vh', marginTop: 100 }}>
 		<div className={styles.connectivity}>
-			<h2> 2021 Theme: Connectivity </h2>
-			<hr />
-			<h3
+			<div className={styles.heading}>
+				<h2> 2021 Theme </h2>
+				<h3>Connectivity</h3>
+			</div>
+			<h4
 				style={{
 					color: '#757575',
 					textTransform: 'uppercase',
@@ -17,7 +19,7 @@ const Connectivity = () => (
 				}}
 			>
 				Verticals
-			</h3>
+			</h4>
 			<Verticals />
 			<Image alt="" className={styles.nodes} path={'nodes-2.png'} />
 		</div>
