@@ -10,6 +10,9 @@
     "lint:fix": "npm run lint -- --fix"
   },
   "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.56",
     "next": "^9.5.3-canary.23",
     "next-compose-plugins": "^2.2.0",
     "next-optimized-images": "^2.6.2",
