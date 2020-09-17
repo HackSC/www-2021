@@ -1,52 +1,47 @@
 .nodes {
-    left: 0;
-    top: 170vh;
-    z-index: -1;
-    position: absolute;
-    height: 600px;
-    width: 250px;
+	left: 0;
+	top: 170vh;
+	z-index: -1;
+	position: absolute;
+	height: 600px;
+	width: 250px;
 }
 
 .connectivity {
-    margin: 0 10vw;
+	margin: 0 10vw;
 }
 
 .connectivity .heading {
-    width: max-content;
+	width: max-content;
 }
 
 .connectivity .heading h2 {
-    font-size: 50px;
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 90px;
-    margin: 0;
-    padding-left: var(--gap);
-    background-image: url('../../images/blueback.png');
-    background-repeat: no-repeat;
-    word-wrap: break-word;
-    letter-spacing: 1.5px;
+	font-size: 60px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 0;
+	word-wrap: break-word;
+	letter-spacing: 1.5px;
 }
 
-.connectivity .heading h3 {
-    font-size: calc(20px + 1.5vw);
-    text-transform: uppercase;
-    margin: 0;
-    letter-spacing: 2px;
-    float: right;
-
-    background: linear-gradient(90deg, #37B8ED, #67B8ED, #4A96F0, #97329A);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+.connectivity h4 {
+	font-size: calc(35px + 1vw);
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	line-height: 50px;
+	margin-top: var(--gap);
+	text-align: center;
+	background: linear-gradient(90deg, #37b8ed, #67b8ed, #4a96f0, #97329a);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 @media only screen and (max-width: 768px) {
-    .connectivity .heading h2 {
-        padding: var(--gap) var(--gap-half);
-    }
+	.connectivity .heading h2 {
+		padding: var(--gap) var(--gap-half);
+	}
 
-    .connectivity .heading h3 {
-        float: none;
-    }
+	.connectivity .heading h3 {
+		float: none;
+	}
 }
-

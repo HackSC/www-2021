@@ -20,18 +20,18 @@ const header: FunctionComponent = () => (
 					<a href="" className={styles.link}>
 						Home
 					</a>
-					<a href="" className={styles.link}>
+					{/* <a href="" className={styles.link}>
 						Blog
-					</a>
+					</a> */}
 					<a href="" className={styles.link}>
 						Sponsor Us
 					</a>
-					<a href="" className={styles.link}>
+					{/* <a href="" className={styles.link}>
 						Our Team
-					</a>
-					<a href="" className={styles.link}>
+					</a> */}
+					{/* <a href="" className={styles.link}>
 						<button className={styles.apply}>Apply Now</button>
-					</a>
+					</a> */}
 				</div>
 			</div>
 		</nav>

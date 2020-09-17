@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import styles from './first.module.css';
 import { Fade } from 'react-reveal';
 import Email from '@/components/front/email';
@@ -54,7 +53,7 @@ const First = () => {
 							</Fade>
 							<Fade delay={1800}>
 								<div className={styles.details}>
-									<span>02.19.21 &mdash; 02.21.21 || ONLINE || FREE</span>
+									<span>02.19.21 &mdash; 02.21.21 || ONLINE</span>
 								</div>
 							</Fade>
 						</div>

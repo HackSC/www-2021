@@ -7,19 +7,8 @@ const Connectivity = () => (
 		<div className={styles.connectivity}>
 			<div className={styles.heading}>
 				<h2> 2021 Theme </h2>
-				<h3>Connectivity</h3>
 			</div>
-			<h4
-				style={{
-					color: '#757575',
-					textTransform: 'uppercase',
-					textAlign: 'center',
-					fontWeight: 'bold',
-					fontSize: '40px',
-				}}
-			>
-				Verticals
-			</h4>
+			<h4>Connectivity</h4>
 			<Verticals />
 			<Image alt="" className={styles.nodes} path={'nodes-2.png'} />
 		</div>

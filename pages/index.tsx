@@ -13,8 +13,9 @@ const Home: NextPage = () => {
 		<>
 			<NextSeo
 				title="HackSC 2021 - Connect the World"
-				description="Free and online from Feburary 19-21. Apps open in November."
+				description="Free and online from Feburary 19-21. Apps open to college students in November."
 				canonical="https://hacksc.com"
+				key
 				openGraph={{
 					url: 'https://hacksc.com',
 					title: 'HackSC 2021',
@@ -35,6 +36,13 @@ const Home: NextPage = () => {
 					site: '@hacksc',
 					cardType: 'summary_large_image',
 				}}
+				additionalMetaTags={[
+					{
+						property: 'keywords',
+						content:
+							'hackathon, hacksc, college, USC, university of southern california, educate, code, hack',
+					},
+				]}
 			/>
 			<Head>
 				<link rel="icon" href="/images/favicon_64.png" />
