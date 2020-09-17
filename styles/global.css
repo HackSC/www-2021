@@ -30,8 +30,21 @@
 	--selection: rgba(0, 0, 0, 0.99);
 }
 
-/* Work Sans 500, 800 */
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500;800&display=swap');
+@font-face {
+	font-family: 'Work Sans';
+	font-style: normal;
+	font-weight: 500;
+	src: local('Work Sans Medium'), local('WorkSans-Medium'),
+		url('/fonts/WorkSans-Medium.ttf') format('woff2');
+}
+
+@font-face {
+	font-family: 'Work Sans';
+	font-style: normal;
+	font-weight: 800;
+	src: local('Work Sans Bold'), local('WorkSans-Bold'),
+		url('/fonts/WorkSans-Bold.ttf') format('woff2');
+}
 
 .dark {
 	--bg: rgb(43, 46, 65);
