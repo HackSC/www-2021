@@ -19,6 +19,9 @@ const First = () => {
 	const hasWebP = canUseWebP();
 	return (
 		<>
+			{/* Preloads the fonts */}
+			<span style={{ fontFamily: 'var(--font-sans)', fontWeight: 500 }}></span>
+			<span style={{ fontFamily: 'var(--font-sans)', fontWeight: 800 }}></span>
 			<Fade delay={50}>
 				<div className={styles.hackscBackground} />
 				<span className={styles.hacksc}>
