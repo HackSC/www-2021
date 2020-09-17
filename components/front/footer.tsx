@@ -41,7 +41,7 @@ const Footer = () => {
 							<img src={Twitter} alt="Twitter link" loading="lazy" />
 						</a>
 					</div>
-					<div className={styles.copyright}>HackSC 2020 &copy;</div>
+					<div className={styles.copyright}>HackSC &copy;</div>
 				</div>
 
 				<div className={`${styles.column} ${styles.linksColumn}`}>

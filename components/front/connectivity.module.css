@@ -38,7 +38,7 @@
 
 @media only screen and (max-width: 768px) {
 	.connectivity .heading h2 {
-		padding: var(--gap) var(--gap-half);
+		font-size: 40px;
 	}
 
 	.connectivity .heading h3 {
