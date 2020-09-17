@@ -15,7 +15,6 @@ const Home: NextPage = () => {
 				title="HackSC 2021 - Connect the World"
 				description="Free and online from Feburary 19-21. Apps open to college students in November."
 				canonical="https://hacksc.com"
-				key
 				openGraph={{
 					url: 'https://hacksc.com',
 					title: 'HackSC 2021',
