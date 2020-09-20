@@ -17,13 +17,13 @@ const header: FunctionComponent = () => (
 					<div className={styles.year}> &rsquo;21</div>
 				</div>
 				<div className={styles.links}>
-					<a href="" className={styles.link}>
+					<a href="/" className={styles.link}>
 						Home
 					</a>
 					{/* <a href="" className={styles.link}>
 						Blog
 					</a> */}
-					<a href="" className={styles.link}>
+					<a href="/sponsor" className={styles.link}>
 						Sponsor Us
 					</a>
 					{/* <a href="" className={styles.link}>
