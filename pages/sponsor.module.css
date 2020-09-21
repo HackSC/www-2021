@@ -1,0 +1,87 @@
+
+.page {
+    width: 100vw;
+}
+
+.wrapper {
+    display: flex;
+	width: 93.75%;
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 75px;
+	padding-bottom: 75px;
+	flex-direction: column;
+}
+
+.header {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+}
+
+.styledBody {
+	font-size: 22px;
+	line-height: 32px;
+	margin-top: 16px;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.email {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+.statsSection {
+    padding: 64px 0;
+}
+
+.subheader {
+    font-size: 32px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 32px; 
+}
+
+.stats {
+    display: flex;
+	color: var(--blue);
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.stat {
+    flex-basis: 23%;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	height: 120px;
+	align-items: center;
+	justify-content: center;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.2);
+    border-radius: var(--radius);
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+.number {
+    font-weight: 700;
+	font-size: 32px;
+	margin-bottom: 8px;
+}
+
+@media only screen and (max-width: 850px) {
+    .stat {
+        flex-basis: 48%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .stat {
+        flex-basis: 100%;
+    }
+}
