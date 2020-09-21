@@ -37,7 +37,7 @@ const First = () => {
 					className={styles.dotflower}
 				/>
 			</Fade>
-			<section style={{ height: '100vh', width: '100vw' }}>
+			<section style={{ minHeight: '100vh', width: '100vw' }}>
 				<Fade delay={50}>
 					<span
 						className={hasWebP ? styles.container : styles.containerFallback}

@@ -6,7 +6,7 @@ const Connectivity = () => (
 	<section style={{ height: 'inherit', minHeight: '100vh', marginTop: 100 }}>
 		<div className={styles.connectivity}>
 			<div className={styles.heading}>
-				<h2> 2021 Theme </h2>
+				<h2> 2021 Verticals </h2>
 			</div>
 			<h4>Connectivity</h4>
 			<Verticals />

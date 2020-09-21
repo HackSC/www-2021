@@ -101,7 +101,6 @@ body {
 }
 
 body {
-	min-height: 100vh;
 	font-family: var(--font-sans);
 	display: flex;
 	flex-direction: column;
@@ -223,16 +222,4 @@ kbd {
 	height: 70px;
 	margin-top: -70px;
 	visibility: hidden;
-}
-
-summary {
-	cursor: pointer;
-	outline: none;
-}
-
-details {
-	border-radius: var(--radius);
-	background: var(--lightest-gray);
-	padding: 1rem;
-	border-radius: var(--radius);
 }

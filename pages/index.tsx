@@ -55,9 +55,15 @@ const Home: NextPage = () => {
 				<style jsx global>
 					{`
 						section {
-							min-height: min-content;
 							margin-bottom: var(--gap);
 							height: 100vh;
+						}
+
+						@media only screen and (max-width: 960px) {
+							section {
+								height: auto;
+								min-height: 100vh;
+							}
 						}
 					`}
 				</style>

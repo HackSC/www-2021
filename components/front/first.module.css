@@ -118,13 +118,10 @@
 }
 
 @media only screen and (max-width: 960px) {
-	.container {
-		width: 100vw;
-		justify-content: center;
-	}
-
-	.applyNowWrapper {
-		left: -50%;
+	.hacksc,
+	.hackscBackground {
+		top: 0;
+		font-size: 90px;
 	}
 
 	.headingText {
@@ -134,17 +131,11 @@
 		margin-top: 0;
 	}
 
-	.details {
-		flex-direction: column;
-		margin: 0 auto;
-	}
-
 	.dotflower {
 		display: none;
 	}
 
 	.largest {
 		align-items: center;
-		margin: 0;
 	}
 }
