@@ -23,11 +23,7 @@ const Details = () => (
 		</div>
 		<div className={styles.hand}>
 			<Fade right>
-				<Image
-					alt="The world is in your hands at HackSC."
-					width="500"
-					path="handglobe.png"
-				/>
+				<Image width="500" path="handglobe.png" />
 			</Fade>
 		</div>
 	</section>

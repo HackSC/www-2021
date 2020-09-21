@@ -10,11 +10,7 @@ const Footer = () => {
 		<div className={styles.wrapper}>
 			<div className={styles.row}>
 				<div className={`${styles.column} ${styles.socialColumn}`}>
-					<Image
-						className={styles.logoGraphic}
-						alt="Our logo in the footer, a lotus flower without nodes. It's cool."
-						path="logoAndText.png"
-					/>
+					<Image className={styles.logoGraphic} alt="" path="logoAndText.png" />
 					<div className={styles.socialLinks}>
 						<a href="mailto:team@hacksc.com">
 							<img src={Email} alt="Email link" loading="lazy" />

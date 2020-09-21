@@ -44,10 +44,7 @@ const Verticals = () => {
 				{VerticalInfo.map(({ name, byline, info, color }) => {
 					return (
 						<div className={styles.card} key={name}>
-							<img
-								alt={`An icon representing ${name}`}
-								src={`/images/verticals/${name}.svg`}
-							/>
+							<img alt="" src={`/images/verticals/${name}.svg`} />
 							<h3 style={{ color }}>{name}</h3>
 							<p>{byline}</p>
 						</div>
