@@ -16,7 +16,7 @@ const Footer = () => {
 						path="logoAndText.png"
 					/>
 					<div className={styles.socialLinks}>
-						<a href="mailto:hackers@hacksc.com">
+						<a href="mailto:team@hacksc.com">
 							<img src={Email} alt="Email link" loading="lazy" />
 						</a>
 						<a
@@ -62,9 +62,9 @@ const Footer = () => {
 					<div className={styles.bold}>Contact us</div>
 					<div className={styles.contactBody}>
 						Reach out to us at{' '}
-						<a href="mailto:hackers@hacksc.com">hackers@hacksc.com</a> or on
-						social media if you have any questions or want more information.
-						Want to talk about sponsorship? Let us know at{' '}
+						<a href="mailto:team@hacksc.com">team@hacksc.com</a> or on social
+						media if you have any questions or want more information. Want to
+						talk about sponsorship? Let us know at{' '}
 						<a href="mailto:sponsorship@hacksc.com">sponsorship@hacksc.com</a>!
 					</div>
 				</div>
