@@ -18,9 +18,10 @@ const Details = () => (
 					tools, and relationships that can last for life. We hope to have you
 					join us!
 				</p>
-				<FAQ />
 			</div>
 		</div>
+		<FAQ />
+
 		<div className={styles.hand}>
 			<Fade right>
 				<Image width="500" path="handglobe.png" />

@@ -49,7 +49,7 @@ const Faqs: Entry[] = [
 	{
 		question: 'What are verticals?',
 		answer:
-			'In order to focus your projects on one specific area of Connectivity, we created 4 different verticals for you to develop in. There will be a winner of a prize in each vertical.',
+			'In order to focus your projects on one specific area of Connectivity, we created 4 different categories (verticals) for you to develop under. There will be a winner of a prize in each vertical.',
 	},
 	{
 		question: '404: Question Not Found',
@@ -59,7 +59,14 @@ const Faqs: Entry[] = [
 ];
 const faq = () => {
 	return (
-		<div style={{ marginTop: 64 }}>
+		<div
+			style={{
+				marginTop: 64,
+				display: 'flex',
+				flexDirection: 'row',
+				flexWrap: 'wrap',
+			}}
+		>
 			<Fade>
 				{Faqs.map(({ question, answer }) => (
 					<FaqEntry

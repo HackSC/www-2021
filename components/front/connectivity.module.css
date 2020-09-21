@@ -34,10 +34,12 @@
 	background: linear-gradient(90deg, #37b8ed, #67b8ed, #4a96f0, #97329a);
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
+	overflow: visible;
 }
 
 @media only screen and (max-width: 768px) {
-	.connectivity .heading h2 {
+	.connectivity .heading h2,
+	.connectivity .heading h4 {
 		font-size: 35px;
 	}
 
