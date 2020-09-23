@@ -1,34 +1,41 @@
 import React, { useState, useRef } from 'react';
 import styles from './email.module.css';
 
-// Encode -- used to turn JSON object into encoded URI
-function encode(data: { [key: string]: string }) {
-	return Object.keys(data)
-		.map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-		.join('&');
+function emailIsValid(email: string) {
+	return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
 
-const EmailSubscribeForm = () => {
-	const [subscribed, setSubscribed] = useState(false);
+const EmailSubscribeForm = ({ subscribed, setSubscribed }) => {
+	const [error, setError] = useState('');
+
 	const emailRef = useRef(null);
 
 	const submitEmail = async (e) => {
 		e.preventDefault();
-
-		if (subscribed || emailRef.current.value.trim() === '') {
+		setError('');
+		const email = emailRef.current.value;
+		if (subscribed || email.trim() === '') {
+			setError('Please enter a valid email.');
+			setSubscribed(false);
 			return;
 		}
 
-		const serializedBody = encode({
-			'form-name': 'email-subscribe',
-			email: emailRef.current.value,
+		if (!emailIsValid(email)) {
+			setSubscribed(false);
+			setError('Please enter a valid email.');
+			return;
+		}
+
+		const res = await fetch(`/api/email?email=${email}`, {
+			method: 'POST',
 		});
 
-		await fetch(e.target.action, {
-			method: 'POST',
-			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-			body: serializedBody,
-		});
+		const json = res.json();
+		if (json['error']) {
+			setSubscribed(false);
+			setError('An unexpected error has occured. Please try again.');
+			return;
+		}
 
 		setSubscribed(true);
 	};
@@ -39,8 +46,6 @@ const EmailSubscribeForm = () => {
 				className={styles.emailForm}
 				name="email-subscribe"
 				method="POST"
-				data-netlify="true"
-				data-netlify-honeypot="bot-field"
 				onSubmit={submitEmail}
 			>
 				<input
@@ -54,7 +59,6 @@ const EmailSubscribeForm = () => {
 				<button className={styles.emailButton} type="submit">
 					Stay Up to Date
 				</button>
-				<input type="hidden" name="form-name" value="email-subscribe" />
 			</form>
 
 			{subscribed && (
@@ -62,6 +66,8 @@ const EmailSubscribeForm = () => {
 					Your e-mail has been successfully submitted!
 				</p>
 			)}
+
+			{error && <p className={styles.error}>Error: {error}</p>}
 		</>
 	);
 };
