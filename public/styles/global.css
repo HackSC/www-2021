@@ -36,6 +36,7 @@
 	font-weight: 500;
 	src: local('Work Sans Medium'), local('WorkSans-Medium'),
 		url('/fonts/WorkSans-Medium.ttf') format('woff2');
+	font-display: swap;
 }
 
 @font-face {
@@ -44,6 +45,7 @@
 	font-weight: 800;
 	src: local('Work Sans Bold'), local('WorkSans-Bold'),
 		url('/fonts/WorkSans-Bold.ttf') format('woff2');
+	font-display: swap;
 }
 
 .dark {
