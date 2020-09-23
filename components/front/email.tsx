@@ -30,7 +30,7 @@ const EmailSubscribeForm = ({ subscribed, setSubscribed }) => {
 			method: 'POST',
 		});
 
-		const json = res.json();
+		const json = await res.json();
 		if (json['error']) {
 			setSubscribed(false);
 			setError('An unexpected error has occured. Please try again.');

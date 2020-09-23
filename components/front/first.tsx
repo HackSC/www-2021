@@ -20,7 +20,6 @@ const First = () => {
 		return false;
 	};
 	const hasWebP = canUseWebP();
-	console.log(hasWebP);
 	return (
 		<>
 			{/* Preloads the fonts */}
