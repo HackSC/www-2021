@@ -38,6 +38,7 @@
     font-size: 16px;
     animation-name: fade;
     animation-duration: 0.5s;
+    text-align: center;
 }
 
 .error {
@@ -45,6 +46,7 @@
     font-size: 16px;
     animation-name: fade;
     animation-duration: 0.5s;
+    text-align: center;
 }
 
 @keyframes fade {
