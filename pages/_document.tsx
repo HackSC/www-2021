@@ -11,7 +11,12 @@ export default class MyDocument extends Document {
 		return (
 			<Html lang="en">
 				<Head>
-					<link rel="stylesheet" type="text/css" href="styles/global.css" />
+					<link
+						rel="preload"
+						as="style"
+						type="text/css"
+						href="styles/global.css"
+					/>
 				</Head>
 				<body>
 					<Main />
