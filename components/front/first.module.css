@@ -14,6 +14,12 @@
 	background-size: calc(200px + 30vw) calc(200px + 30vw);
 	background-position: center;
 	flex-direction: column;
+	animation: fadeInGlobe 5s;
+}
+
+@keyframes fadeInGlobe {
+	from { opacity: 0.2; }
+	to { opacity: 1; }
 }
 
 .containerFallback {
@@ -25,6 +31,7 @@
 	background-size: calc(200px + 30vw) calc(200px + 30vw);
 	background-position: center;
 	flex-direction: column;
+	animation: fadeInGlobe 5s;
 }
 
 .applyNowWrapper {
