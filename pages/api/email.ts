@@ -1,11 +1,19 @@
 const db = require('../../lib/db');
 const escape = require('sql-template-strings');
+const validator = require('email-validator');
 
 const query = async (req, res) => {
 	const {
 		query: { email, ip },
 	} = req;
 	let my_ip = ip;
+
+	// * Check if email is injected SQL
+	if (!validator.validate(email)) {
+		return res
+			.status(400)
+			.json({ success: null, error: 'Please input a valid email.' });
+	}
 
 	if (!my_ip) my_ip = '0.0.0.0';
 
