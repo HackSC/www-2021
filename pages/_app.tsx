@@ -1,6 +1,7 @@
 import React from 'react';
 import App from 'next/app';
 import config from 'react-reveal/globals';
+import 'styles/global.css';
 
 config({ ssrFadeout: true });
 
