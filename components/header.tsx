@@ -10,7 +10,7 @@ const header: FunctionComponent = () => (
 					<Image
 						className={styles.logo}
 						height="60"
-						alt="Our logo, a lotus flower with nodes. It's cool."
+						alt=""
 						width="60"
 						path="logo.png"
 					/>

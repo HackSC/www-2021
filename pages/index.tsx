@@ -22,7 +22,7 @@ const Home: NextPage = () => {
 						'Connect the world at HackSC. Free and online from Feburary 19-21.',
 					images: [
 						{
-							url: '/images/og.png',
+							url: 'https://hacksc.com/images/og.png',
 							width: 800,
 							height: 600,
 							alt: 'We hope to see you at HackSC 2021!',
