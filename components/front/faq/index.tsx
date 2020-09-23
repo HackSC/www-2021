@@ -70,7 +70,7 @@ const faq = () => {
 			<Fade>
 				{Faqs.map(({ question, answer }) => (
 					<FaqEntry
-						key={question.substring(0, 10)}
+						key={question.substring(0, 15)}
 						question={question}
 						answer={answer}
 					/>
