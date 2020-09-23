@@ -33,7 +33,10 @@ const EmailSubscribeForm = ({ subscribed, setSubscribed }) => {
 		const json = await res.json();
 		if (json['error']) {
 			setSubscribed(false);
-			setError('An unexpected error has occured. Please try again.');
+			if (json['error'] === 'Email already exists in the database.') {
+				setError('This email has already been submit.');
+			}
+			setError('An unexpected error has occured.');
 			return;
 		}
 
