@@ -11,6 +11,7 @@ export default class MyDocument extends Document {
 		return (
 			<Html lang="en">
 				{/* https://stackoverflow.com/a/57888310 - Firefox rendering fix */}
+				<Head></Head>
 				<script>0</script>
 				<body>
 					<Main />
