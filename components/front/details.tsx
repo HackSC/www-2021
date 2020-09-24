@@ -11,12 +11,12 @@ const Details = () => (
 			<div style={{ flexDirection: 'column' }}>
 				<p>
 					<strong>Want to connect the world?</strong> This year we are focused
-					on ideas/solutions that will help connect our world during this time.
-					Get ready for a weekend full of innovation, connection, and education.
-					In an interdisciplinary endeavor, join together with 1000+ visionaries
-					to engage in workshops, listen to speakers, and develop programs,
-					tools, and relationships that can last for life. We hope to have you
-					join us!
+					on ideas and solutions that will help bridge our world during this
+					time. Get ready for a weekend full of innovation, connection, and
+					education. In an interdisciplinary endeavor, join together with 1000+
+					visionaries to engage in workshops, listen to speakers, and develop
+					programs, tools, and relationships that can last for life. We hope to
+					have you join us!
 				</p>
 			</div>
 		</div>
