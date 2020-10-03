@@ -68,6 +68,7 @@
 	margin-right: 24px;
 }
 
+
 .links {
 	display: flex;
 	flex-direction: column;
@@ -80,6 +81,23 @@
 	padding-left: 16px;
 	margin-top: 24px;
 }
+
+  
+.vercel img {
+	height: 16px;
+	text-align: center;
+	vertical-align: middle;
+  }
+  
+.vercel a {
+	font-size: 18px;
+	color: #b2b2b2;
+	padding-left: 16px;
+	margin-top: 24px;
+	
+	text-decoration: none;
+}
+
 
 @media only screen and (max-width: 768px) {
 	.row {

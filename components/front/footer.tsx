@@ -4,6 +4,7 @@ import Email from '../../public/images/footer/email.svg';
 import Twitter from '../../public/images/footer/twitter.svg';
 import Facebook from '../../public/images/footer/facebook.svg';
 import Instagram from '../../public/images/footer/instagram.svg';
+import Vercel from '../../public/images/footer/vercel.svg';
 
 const Footer = () => {
 	return (
@@ -38,6 +39,15 @@ const Footer = () => {
 						</a>
 					</div>
 					<div className={styles.copyright}>HackSC &copy;</div>
+					<div className={styles.vercel}>
+						<a
+							href="https://vercel.com?utm_source=www-2021&utm_campaign=oss"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							Powered by <img src={Vercel} alt="Vercel Logo" loading="lazy" />
+						</a>
+					</div>
 				</div>
 
 				<div className={`${styles.column} ${styles.linksColumn}`}>
