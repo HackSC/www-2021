@@ -26,9 +26,9 @@ const header: FunctionComponent = () => (
 					<a href="/sponsor" className={styles.link}>
 						Sponsor Us
 					</a>
-					{/* <a href="" className={styles.link}>
-						Our Team
-					</a> */}
+					<a href="/hacksconnect" className={styles.link}>
+						HackSConnect
+					</a>
 					{/* <a href="" className={styles.link}>
 						<button className={styles.apply}>Apply Now</button>
 					</a> */}
