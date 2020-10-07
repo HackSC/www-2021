@@ -73,11 +73,14 @@ const HackSConnect: NextPage = () => {
 					</Fade>
 					<Fade delay={400}>
 						<p className="desc">
-							Welcome to USC Hack for Diversity and Inclusion &mdash; a beginner
-							hackathon dedicated to supporting the{' '}
-							<abbr title="Black, Indigenous and People of Color">BIPOC</abbr>{' '}
-							community by combating bias and creating equitable solutions for
-							real-world challenges.
+							Welcome to USC Hack for Diversity and Inclusion &mdash;{' '}
+							<strong>
+								a beginner hackathon dedicated to supporting the{' '}
+								<abbr title="Black, Indigenous and People of Color">BIPOC</abbr>{' '}
+								community
+							</strong>{' '}
+							by combating bias and creating equitable solutions for real-world
+							challenges.
 						</p>
 						<p className="desc">
 							{/* Hosted in collaboration with <abbr title="Girls in Tech">GIT</abbr>, <abbr title="National Society of Black Engineers">NSBE</abbr>, <abbr title="Society of Hispanic Professional Engineers">SHPE</abbr>, and HackSC,
