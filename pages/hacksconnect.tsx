@@ -68,7 +68,7 @@ const HackSConnect: NextPage = () => {
 							co-founders!
 						</p>
 						<p className="desc">
-							Attendee&apos;s will be divided into the following three groups:{' '}
+							Attendees will be divided into the following three groups:{' '}
 						</p>
 					</Fade>
 					<Cards />
