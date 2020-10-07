@@ -142,8 +142,8 @@ const First = () => {
 						`}</style>
 					</div>
 				)}
+				<div className={styles.hackscBackground} />
 				<Fade delay={50}>
-					<div className={styles.hackscBackground} />
 					<span className={styles.hacksc}>
 						HackSC HackSC HackSC HackSC HackSC HackSC HackSC
 					</span>

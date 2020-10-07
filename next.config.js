@@ -13,5 +13,5 @@ module.exports = withPlugins([
       skipTraceIfBase64: true
     }
   }],
-],  { experimental: {unstable_webpack5cache: true, unstable_runtimeJS: true} });
+]);
 
