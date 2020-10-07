@@ -103,7 +103,7 @@ const HackSConnect: NextPage = () => {
 							</div>
 							<div className="column">
 								<Image path={'shpe.png'} width={200} />
-								<Image path={'logo.png'} width={200} />
+								<Image path={'logoAndTextDark.png'} width={200} />
 							</div>
 						</div>
 					</Fade>
@@ -211,7 +211,7 @@ const HackSConnect: NextPage = () => {
 						.column img {
 							margin: var(--gap-double);
 							vertical-align: middle;
-							width: 70%;
+							width: 65%;
 							height: auto;
 						}
 
