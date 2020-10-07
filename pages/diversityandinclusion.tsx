@@ -50,7 +50,7 @@ const HackSConnect: NextPage = () => {
 					<Fade delay={100}>
 						<div className="details">
 							<h1> A 24 Hour Hackathon for Diversity and Inclusion </h1>
-							<p className="hosts">
+							{/* <p className="hosts">
 								Hosted by{' '}
 								<a href="https://usc.girlsintech.org/">Girls in Tech</a>,{' '}
 								<a href="https://uscnsbe.com/">
@@ -61,7 +61,7 @@ const HackSConnect: NextPage = () => {
 									Society of Hispanic Professional Engineers
 								</a>
 								, and HackSC!
-							</p>
+							</p> */}
 							<Image
 								alt=""
 								className="logo"
