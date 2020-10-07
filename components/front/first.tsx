@@ -157,7 +157,7 @@ const First = () => {
 						className={styles.dotflower}
 					/>
 				</Fade>
-				<Fade delay={50} ssrFadeout={true}>
+				<Fade delay={50}>
 					<span
 						className={hasWebP ? styles.container : styles.containerFallback}
 					>
