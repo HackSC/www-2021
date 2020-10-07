@@ -97,7 +97,7 @@ const HackSConnect: NextPage = () => {
 							<button>Apply Now</button>
 						</a>
 					</Fade>
-					<Fade delay={1100}>
+					<Fade delay={800}>
 						<h2>Presented By</h2>
 						<div className="row">
 							<div className="column">
