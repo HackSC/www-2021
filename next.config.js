@@ -8,7 +8,7 @@ const imageminOptipng = require('imagemin-optipng');
 module.exports = withPlugins([
   [optimizedImages, {
     /* config for next-optimized-images */
-    optimizeImagesInDev: true,
+    optimizeImagesInDev: false,
     imageTrace: {
       skipTraceIfBase64: true
     }
