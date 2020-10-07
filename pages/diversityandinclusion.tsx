@@ -10,14 +10,14 @@ const HackSConnect: NextPage = () => {
 	return (
 		<div style={{ width: '100vw' }}>
 			<NextSeo
-				title="HackSConnect - a virtually hosted platform for collaboration between companies, teams, and ideas."
-				description="Expanding your network virtually can be hard but HackSConnect will be a garden of students buzzing, connecting and exchanging rad ideas."
-				canonical="https://hacksc.com/hacksconnect"
+				title="USC Hack for Diversity and Inclusion"
+				description="A beginner hackathon dedicated to supporting the BIPOC community by combating bias and creating equitable solutions for real-world challenges."
+				canonical="https://hacksc.com/diversityandinclusion"
 				openGraph={{
-					url: 'https://hacksc.com/hacksconnect',
-					title: 'HackSC 2021',
+					url: 'https://hacksc.com/diversityandinclusion',
+					title: 'USC Hack for Diversity and Inclusion',
 					description:
-						'HackSConnect will be a garden of students buzzing, connecting and exchanging rad ideas: October 8, 2020.',
+						'A beginner hackathon dedicated to supporting the BIPOC community by combating bias and creating equitable solutions for real-world challenges.',
 					// images: [
 					// 	{
 					// 		url: 'https://hacksc.com/images/og.png',
@@ -26,7 +26,7 @@ const HackSConnect: NextPage = () => {
 					// 		alt: 'We hope to see you at HackSC 2021!',
 					// 	},
 					// ],
-					site_name: 'HackSC Connect',
+					site_name: 'HackSC - USC Hack for Diversity and Inclusion',
 				}}
 				twitter={{
 					handle: '@hacksc',
@@ -37,7 +37,7 @@ const HackSConnect: NextPage = () => {
 					{
 						property: 'keywords',
 						content:
-							'hackathon, hacksc, college, USC, university of southern california, educate, code, hack',
+							'diversity, inclusion, Girls in Tech, National Society of Black Engineers, Society of Hispanic Professional Engineers, hackathon, hacksc, college, USC, university of southern california, educate, code, hack',
 					},
 				]}
 			/>
