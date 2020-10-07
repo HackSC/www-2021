@@ -148,7 +148,7 @@ const First = () => {
 						HackSC HackSC HackSC HackSC HackSC HackSC HackSC
 					</span>
 				</Fade>
-				<Fade delay={50}>
+				<Fade delay={50} ssrReveal>
 					<img
 						alt=""
 						height="100px"
@@ -157,7 +157,7 @@ const First = () => {
 						className={styles.dotflower}
 					/>
 				</Fade>
-				<Fade delay={50}>
+				<Fade delay={50} ssrFadeout={true}>
 					<span
 						className={hasWebP ? styles.container : styles.containerFallback}
 					>
