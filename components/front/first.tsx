@@ -143,12 +143,12 @@ const First = () => {
 					</div>
 				)}
 				<div className={styles.hackscBackground} />
-				<Fade delay={50}>
+				<Fade delay={50} ssrFadeout>
 					<span className={styles.hacksc}>
 						HackSC HackSC HackSC HackSC HackSC HackSC HackSC
 					</span>
 				</Fade>
-				<Fade delay={50} ssrReveal>
+				<Fade delay={50} ssrFadeout>
 					<img
 						alt=""
 						height="100px"

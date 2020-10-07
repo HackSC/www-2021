@@ -1,6 +1,7 @@
 import styles from './header.module.css';
 import { FunctionComponent } from 'react';
 import Image from '@/components/image';
+import Link from 'next/link';
 
 const header: FunctionComponent = () => (
 	<>
@@ -17,18 +18,20 @@ const header: FunctionComponent = () => (
 					<div className={styles.year}> &rsquo;21</div>
 				</div>
 				<div className={styles.links}>
-					<a href="/" className={styles.link}>
-						Home
-					</a>
+					<Link href="/">
+						<a href="/" className={styles.link}>
+							Home
+						</a>
+					</Link>
 					{/* <a href="" className={styles.link}>
 						Blog
 					</a> */}
-					<a href="/sponsor" className={styles.link}>
-						Sponsor Us
-					</a>
-					<a href="/hacksconnect" className={styles.link}>
-						HackSConnect
-					</a>
+					<Link href="/sponsor">
+						<a className={styles.link}>Sponsor Us</a>
+					</Link>
+					<Link href="/hacksconnect">
+						<a className={styles.link}>HackSConnect</a>
+					</Link>
 					{/* <a href="" className={styles.link}>
 						<button className={styles.apply}>Apply Now</button>
 					</a> */}

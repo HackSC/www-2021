@@ -92,12 +92,40 @@ const HackSConnect: NextPage = () => {
 							difficult topics in a respectful and safe setting.
 						</p>
 					</Fade>
-					<Fade delay={800}>
+					<Fade delay={700}>
 						<a href="https://hacksc.typeform.com/to/hN6g49Ej" className="apply">
-							<button>Apply Now</button>
+							<button>Sign Up</button>
 						</a>
 					</Fade>
-					<Fade delay={800}>
+					<Fade delay={700}>
+						<div>
+							<h2>Prizes</h2>
+							There is <strong>$3,000 in prize money</strong> for winners to
+							donate to the following organizations:
+							<div className="column">
+								<ul>
+									<li>Compton Collective</li>
+									<li>
+										<a href="https://www.blackgirlscode.com/">
+											Black Girls Code{' '}
+										</a>{' '}
+									</li>
+									<li>
+										<a href="http://www.troycamp.org/">Troy Camp</a>
+									</li>
+									<li>
+										<a href="https://www.blackouttheballot.com/">
+											Black Out the Ballot
+										</a>
+									</li>
+									<li>
+										<a href="https://nsbejrsocal.org/">NSBE Jr. So Cal</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</Fade>
+					<Fade delay={700}>
 						<h2>Presented By</h2>
 						<div className="row">
 							<div className="column">
@@ -114,16 +142,12 @@ const HackSConnect: NextPage = () => {
 				<style jsx global>
 					{`
 						.first {
-							margin: var(--gap-double) auto;
-						}
-
-						.desc,
-						.details {
-							margin: var(--gap-double);
+							margin: 0 auto;
+							font-size: 20px;
 						}
 
 						.desc {
-							font-size: 20px;
+							font-size: inherit;
 						}
 
 						.details h1 {
@@ -137,8 +161,9 @@ const HackSConnect: NextPage = () => {
 							margin-bottom: var(--gap-half);
 						}
 
-						.details .hosts a {
+						.first a {
 							text-decoration: none !important;
+							color: black;
 							background: linear-gradient(
 								180deg,
 								rgba(255, 255, 255, 0) 70%,
@@ -147,7 +172,7 @@ const HackSConnect: NextPage = () => {
 							cursor: pointer;
 						}
 
-						.details .hosts a:hover {
+						.first a:hover {
 							background-color: black;
 							color: white;
 							transition: all 0.5s ease;
@@ -161,7 +186,7 @@ const HackSConnect: NextPage = () => {
 
 						section {
 							width: 70%;
-							max-width: 800px;
+							max-width: 750px;
 							margin: 0 auto;
 						}
 
@@ -171,12 +196,17 @@ const HackSConnect: NextPage = () => {
 							}
 						}
 
-						.apply {
+						.first .apply {
 							display: block;
 							text-align: center;
+							background: none;
 						}
 
-						.apply button {
+						.first .apply:hover {
+							background-color: transparent;
+						}
+
+						.first .apply button {
 							align-self: center;
 							background: var(--blue);
 							border-radius: var(--radius);
@@ -193,7 +223,7 @@ const HackSConnect: NextPage = () => {
 							box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.2);
 						}
 
-						.apply button:hover {
+						.first .apply button:hover {
 							box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.4);
 							transition: all 0.2s ease;
 						}

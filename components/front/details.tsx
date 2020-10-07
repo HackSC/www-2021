@@ -23,7 +23,7 @@ const Details = () => (
 		<FAQ />
 
 		<div className={styles.hand}>
-			<Fade right>
+			<Fade right ssrFadeout>
 				<Image width="500" path="handglobe.png" />
 			</Fade>
 		</div>
