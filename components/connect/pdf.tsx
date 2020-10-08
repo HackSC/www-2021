@@ -1,7 +1,23 @@
 import { useState } from 'react';
-import { pdfjs, Document, Page } from 'react-pdf';
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+// import { pdfjs, Document, Page } from 'react-pdf';
+
 import styles from './pdf.module.css';
+
+import dynamic from 'next/dynamic';
+
+import('react-pdf').then((reactPdf) => {
+	const { pdfjs } = reactPdf;
+	pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+});
+
+const Document = dynamic(
+	() => import('react-pdf').then((module) => module.Document),
+	{ ssr: false }
+);
+
+const Page = dynamic(() => import('react-pdf').then((module) => module.Page), {
+	ssr: false,
+});
 
 export default function PDF() {
 	const [numPages, setNumPages] = useState(null);
@@ -51,16 +67,17 @@ export default function PDF() {
 			</div>
 		</div>
 	);
-
 	return (
 		<div
 			style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}
 		>
 			<Navigation />
 			<Document
+				/* @ts-ignore */
 				file={`/connect/HackSConnect.pdf`}
 				onLoadSuccess={onDocumentLoadSuccess}
 			>
+				{/* @ts-ignore */}
 				<Page pageNumber={pageNumber} />
 			</Document>
 			<Navigation />

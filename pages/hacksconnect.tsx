@@ -1,11 +1,13 @@
 import Head from 'next/head';
+import dynamic from 'next/dynamic';
 import { NextSeo } from 'next-seo';
 import Header from '@/components/header';
 import Footer from '@/components/front/footer';
 import { NextPage } from 'next';
 import Cards from '@/components/connect/cards';
-import Fade from 'react-reveal/Fade';
-import PDF from '@/components/connect/pdf';
+import { Fade } from 'react-reveal/Fade';
+
+const PDF = dynamic(() => import('@/components/connect/pdf'), { ssr: false });
 
 const HackSConnect: NextPage = () => {
 	return (
@@ -46,17 +48,17 @@ const HackSConnect: NextPage = () => {
 				<link rel="icon" href="/images/favicon_64.png" />
 			</Head>
 			<div style={{ marginBottom: 'calc(var(--gap-double) * 2)' }}>
-				<Header />
+				<Fade>
+					<Header />
+				</Fade>
 				<section className="first">
-					<Fade delay={100}>
+					<Fade ssrFadeout>
 						<h1> HackSConnect </h1>
 						<p>
 							Connect with other creators to <span>grow your ideas</span> and{' '}
 							<span> flourish.</span>{' '}
 						</p>
 						<p>10.08.20 | 6 - 9 PM PST</p>
-					</Fade>
-					<Fade delay={400}>
 						<p className="desc">
 							HackSConnect is a virtually hosted idea exchange platform for
 							collaboration between companies, teams, and ideas. Open to all
@@ -71,16 +73,12 @@ const HackSConnect: NextPage = () => {
 						<p className="desc">
 							Attendees will be divided into the following three groups:{' '}
 						</p>
-					</Fade>
-					<Cards />
-					<Fade delay={1000}>
+						<Cards />
 						<p className="desc">
 							Our Seeds and Sprouts registration is closed, but Bee attendees
 							are still encouraged to sign-up{' '}
 							<a href="https://hacksc.typeform.com/to/hfbb6YDj">here!</a>
 						</p>
-					</Fade>
-					<Fade delay={1200}>
 						<h2>Event Schedule (PST)</h2>
 						<ul
 							style={{
@@ -99,9 +97,9 @@ const HackSConnect: NextPage = () => {
 								meet our seeds and sprouts!
 							</li>
 						</ul>
+						<h2>Important Information</h2>
+						<PDF />
 					</Fade>
-					<h2>Important Information</h2>
-					<PDF />
 				</section>
 				<style jsx global>
 					{`
@@ -140,7 +138,9 @@ const HackSConnect: NextPage = () => {
 					`}
 				</style>
 			</div>
-			<Footer />
+			<Fade>
+				<Footer />
+			</Fade>
 		</>
 	);
 };

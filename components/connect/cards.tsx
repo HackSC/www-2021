@@ -1,5 +1,4 @@
 import styles from './cards.module.css';
-import Fade from 'react-reveal/Fade';
 interface Card {
 	name: string;
 	info: string;
@@ -33,17 +32,15 @@ const CardInfo: Card[] = [
 const Verticals = () => {
 	return (
 		<div className={styles.cards}>
-			<Fade delay={700}>
-				{CardInfo.map(({ name, info, color, emoji }) => {
-					return (
-						<div className={styles.card} key={name}>
-							<h2>{emoji}</h2>
-							<h3 style={{ color }}>{name}</h3>
-							<p>{info}</p>
-						</div>
-					);
-				})}
-			</Fade>
+			{CardInfo.map(({ name, info, color, emoji }) => {
+				return (
+					<div className={styles.card} key={name}>
+						<h2>{emoji}</h2>
+						<h3 style={{ color }}>{name}</h3>
+						<p>{info}</p>
+					</div>
+				);
+			})}
 		</div>
 	);
 };
