@@ -1,0 +1,15 @@
+.button {
+    background: var(--blue);
+	border-radius: var(--radius);
+	cursor: pointer;
+	width: 160px;
+	height: 45px;
+	color: white;
+	text-align: center;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-style: normal;
+	font-weight: 800;
+    font-size: 14px;
+    margin-bottom: var(--gap-double);
+}
