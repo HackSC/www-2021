@@ -85,10 +85,7 @@ const HackSConnect: NextPage = () => {
 							{/* Hosted in collaboration with <abbr title="Girls in Tech">GIT</abbr>, <abbr title="National Society of Black Engineers">NSBE</abbr>, <abbr title="Society of Hispanic Professional Engineers">SHPE</abbr>, and HackSC,
 							 */}
 							USC Hack for Diversity and Inclusion will have many exciting
-							workshops and resources for beginner hackers. We hope to bring
-							together hackers who have a passion for and commitment to
-							diversity, equity, and inclusion to discuss and hack into
-							difficult topics in a respectful and safe setting.
+							workshops and resources for beginner hackers.
 						</p>
 						<a
 							target="_blank"
