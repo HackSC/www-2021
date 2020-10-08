@@ -90,7 +90,12 @@ const HackSConnect: NextPage = () => {
 							diversity, equity, and inclusion to discuss and hack into
 							difficult topics in a respectful and safe setting.
 						</p>
-						<a href="https://hacksc.typeform.com/to/hN6g49Ej" className="apply">
+						<a
+							target="_blank"
+							rel="noreferrer"
+							href="https://hacksc.typeform.com/to/hN6g49Ej"
+							className="apply"
+						>
 							<button>Sign Up</button>
 						</a>
 						<div>
@@ -101,20 +106,40 @@ const HackSConnect: NextPage = () => {
 								<ul>
 									<li>Compton Collective</li>
 									<li>
-										<a href="https://www.blackgirlscode.com/">
+										<a
+											target="_blank"
+											rel="noreferrer"
+											href="https://www.blackgirlscode.com/"
+										>
 											Black Girls Code{' '}
 										</a>{' '}
 									</li>
 									<li>
-										<a href="http://www.troycamp.org/">Troy Camp</a>
+										<a
+											target="_blank"
+											rel="noreferrer"
+											href="http://www.troycamp.org/"
+										>
+											Troy Camp
+										</a>
 									</li>
 									<li>
-										<a href="https://www.blackouttheballot.com/">
+										<a
+											target="_blank"
+											rel="noreferrer"
+											href="https://www.blackouttheballot.com/"
+										>
 											Black Out the Ballot
 										</a>
 									</li>
 									<li>
-										<a href="https://nsbejrsocal.org/">NSBE Jr. So Cal</a>
+										<a
+											target="_blank"
+											rel="noreferrer"
+											href="https://nsbejrsocal.org/"
+										>
+											NSBE Jr. So Cal
+										</a>
 									</li>
 								</ul>
 							</div>
@@ -122,14 +147,39 @@ const HackSConnect: NextPage = () => {
 						<h2>Schedule</h2>
 						<Schedule />
 						<h2>Presented By</h2>
+
 						<div className="row">
 							<div className="column">
-								<Image path={'git.png'} width={200} />
-								<Image path={'nsbe.png'} width={200} />
+								<a
+									target="_blank"
+									rel="noreferrer"
+									href="https://usc.girlsintech.org/"
+								>
+									<Image path={'git.png'} width={200} />
+								</a>
+								<a target="_blank" rel="noreferrer" href="https://uscnsbe.com/">
+									<Image path={'nsbe.png'} width={200} />
+								</a>
 							</div>
 							<div className="column">
-								<Image path={'shpe.png'} width={200} />
-								<Image path={'logoAndTextDark.png'} width={200} />
+								<a target="_blank" rel="noreferrer" href="https://shpeusc.com/">
+									<Image path={'shpe.png'} width={200} />
+								</a>
+								<a target="_blank" rel="noreferrer" href="https://hacksc.com">
+									<Image path={'logoAndTextDark.png'} width={200} />
+								</a>
+							</div>
+							<div className="singleColumn">
+								<a
+									target="_blank"
+									rel="noreferrer"
+									href="https://boeing.com"
+									style={{ fontWeight: 800, fontSize: '3rem' }}
+								>
+									<span>
+										<i>Boeing</i>
+									</span>
+								</a>
 							</div>
 						</div>
 					</Fade>
@@ -223,6 +273,33 @@ const HackSConnect: NextPage = () => {
 							transition: all 0.2s ease;
 						}
 
+						.first a {
+							text-decoration: none !important;
+							color: black;
+							background: linear-gradient(
+								180deg,
+								rgba(255, 255, 255, 0) 70%,
+								rgba(0, 0, 0, 0.2) 70%
+							);
+							cursor: pointer;
+						}
+
+						.first a:hover {
+							background-color: black;
+							color: white;
+							transition: all 0.5s ease;
+						}
+
+						.row a {
+							background: none;
+						}
+
+						.row a:hover {
+							transition: none;
+							background: none;
+							color: black;
+						}
+
 						.row {
 							display: flex;
 							flex-wrap: wrap;
@@ -237,6 +314,21 @@ const HackSConnect: NextPage = () => {
 						}
 
 						.column img {
+							margin: var(--gap-double);
+							vertical-align: middle;
+							width: 65%;
+							height: auto;
+						}
+
+						.singleColumn {
+							display: flex;
+							flex: 100%;
+							max-width: 100%;
+							padding: var(--gap);
+							justify-content: center;
+						}
+
+						.singleColumn span {
 							margin: var(--gap-double);
 							vertical-align: middle;
 							width: 65%;
