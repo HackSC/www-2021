@@ -17,6 +17,7 @@
     "next-seo": "^4.7.3",
     "react": "16.13.1",
     "react-dom": "16.13.1",
+    "react-pdf": "^5.0.0",
     "react-reveal": "^1.2.2",
     "serverless-mysql": "^1.5.4",
     "sql-template-strings": "^2.2.2",
