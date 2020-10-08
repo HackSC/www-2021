@@ -5,6 +5,7 @@ import Footer from '@/components/front/footer';
 import { NextPage } from 'next';
 import Cards from '@/components/connect/cards';
 import Fade from 'react-reveal/Fade';
+import { Document } from 'react-pdf';
 
 const HackSConnect: NextPage = () => {
 	return (
@@ -99,6 +100,9 @@ const HackSConnect: NextPage = () => {
 							</li>
 						</ul>
 					</Fade>
+					<Document
+						file={`${process.env.VERCEL_URL}/connect/HackSConnect.pdf`}
+					/>
 				</section>
 				<style jsx global>
 					{`
