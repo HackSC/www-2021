@@ -5,6 +5,7 @@ import Footer from '@/components/front/footer';
 import { NextPage } from 'next';
 import Fade from 'react-reveal/Fade';
 import Image from '@/components/image';
+import Schedule from '@/components/diversity/schedule';
 
 const HackSConnect: NextPage = () => {
 	return (
@@ -44,10 +45,10 @@ const HackSConnect: NextPage = () => {
 			<Head>
 				<link rel="icon" href="/images/favicon_64.png" />
 			</Head>
-			<div style={{ marginBottom: 'calc(var(--gap-double) * 2)' }}>
+			<div>
 				<Header />
 				<section className="first">
-					<Fade delay={100}>
+					<Fade>
 						<div className="details">
 							<h1> A 24 Hour Hackathon for Diversity and Inclusion </h1>
 							{/* <p className="hosts">
@@ -70,8 +71,6 @@ const HackSConnect: NextPage = () => {
 								height={250}
 							/>
 						</div>
-					</Fade>
-					<Fade delay={400}>
 						<p className="desc">
 							Welcome to USC Hack for Diversity and Inclusion &mdash;{' '}
 							<strong>
@@ -91,13 +90,9 @@ const HackSConnect: NextPage = () => {
 							diversity, equity, and inclusion to discuss and hack into
 							difficult topics in a respectful and safe setting.
 						</p>
-					</Fade>
-					<Fade delay={700}>
 						<a href="https://hacksc.typeform.com/to/hN6g49Ej" className="apply">
 							<button>Sign Up</button>
 						</a>
-					</Fade>
-					<Fade delay={700}>
 						<div>
 							<h2>Prizes</h2>
 							There is <strong>$3,000 in prize money</strong> for winners to
@@ -124,8 +119,8 @@ const HackSConnect: NextPage = () => {
 								</ul>
 							</div>
 						</div>
-					</Fade>
-					<Fade delay={700}>
+						<h2>Schedule</h2>
+						<Schedule />
 						<h2>Presented By</h2>
 						<div className="row">
 							<div className="column">
@@ -142,7 +137,7 @@ const HackSConnect: NextPage = () => {
 				<style jsx global>
 					{`
 						.first {
-							margin: 0 auto;
+							margin: var(--gap) auto;
 							font-size: 20px;
 						}
 
@@ -211,7 +206,7 @@ const HackSConnect: NextPage = () => {
 							background: var(--blue);
 							border-radius: var(--radius);
 							cursor: pointer;
-							width: 200px;
+							width: 150px;
 							height: 75px;
 							color: white;
 							text-align: center;
@@ -219,7 +214,7 @@ const HackSConnect: NextPage = () => {
 							text-transform: uppercase;
 							font-style: normal;
 							font-weight: 800;
-							font-size: 18px;
+							font-size: 22px;
 							box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.2);
 						}
 
@@ -253,6 +248,10 @@ const HackSConnect: NextPage = () => {
 							.column {
 								flex: 100%;
 								max-width: 100%;
+							}
+
+							.first {
+								margin: var(--gap);
 							}
 						}
 					`}
