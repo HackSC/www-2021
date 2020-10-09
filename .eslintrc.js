@@ -9,7 +9,6 @@ module.exports = {
       node: true,
     },
     plugins: [
-        'css-modules',
         '@typescript-eslint'
     ],
     extends: [
@@ -20,7 +19,6 @@ module.exports = {
       'plugin:jsx-a11y/recommended',
       'prettier/@typescript-eslint',
       'plugin:prettier/recommended',
-      'plugin:css-modules/recommended'
     ],
     rules: {
         // Next JS has a Link component that wraps around <a></a>, inserting the href during compilation. Disable for now.

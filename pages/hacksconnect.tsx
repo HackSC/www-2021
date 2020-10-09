@@ -93,6 +93,10 @@ const HackSConnect: NextPage = () => {
 						</li>
 					</ul>
 					<h2>Important Information</h2>
+					<p style={{ fontSize: 18 }}>
+						You can download the following PDF{' '}
+						<a href="https://hacksc.com/connect/HackSConnect.pdf">here</a>.
+					</p>
 					<PDF />
 				</section>
 				<style jsx global>
