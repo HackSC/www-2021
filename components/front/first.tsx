@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import styles from './first.module.css';
-import { Fade } from 'react-reveal';
 import Email from '@/components/front/email';
+import appearStyles from '../appear.module.css';
+import cn from 'classnames';
 
 const First = () => {
 	const [subscribed, setSubscribed] = useState(false);
@@ -142,13 +143,20 @@ const First = () => {
 						`}</style>
 					</div>
 				)}
-				<div className={styles.hackscBackground} />
-				<Fade delay={50} ssrFadeout>
+				<span
+					className={cn(
+						appearStyles.appear,
+						appearStyles['appear-first'],
+						styles.hackscBackground
+					)}
+				>
 					<span className={styles.hacksc}>
 						HackSC HackSC HackSC HackSC HackSC HackSC HackSC
 					</span>
-				</Fade>
-				<Fade delay={50} ssrFadeout>
+				</span>
+				<span
+					className={cn(appearStyles.appear, appearStyles['appear-second'])}
+				>
 					<img
 						alt=""
 						height="100px"
@@ -156,37 +164,52 @@ const First = () => {
 						src="/images/dotflower.svg"
 						className={styles.dotflower}
 					/>
-				</Fade>
-				<Fade delay={50}>
+				</span>
+				<span
+					className={cn(appearStyles.appear, appearStyles['appear-second'], {
+						[styles.container]: hasWebP,
+						[styles.containerFallback]: !hasWebP,
+					})}
+				>
 					<span
-						className={hasWebP ? styles.container : styles.containerFallback}
+						className={cn(
+							appearStyles.appear,
+							appearStyles['appear-third'],
+							styles.applyNowWrapper
+						)}
 					>
-						<span className={styles.applyNowWrapper}>
-							<Fade delay={400}>
-								<h1 className={styles.connect}>Connect the world</h1>
-							</Fade>
-							<Fade delay={1000}>
-								{/* <button tabIndex={0} className={styles.apply}>
+						<h1
+							className={cn(
+								appearStyles.appear,
+								appearStyles['appear-fourth'],
+								styles.connect
+							)}
+						>
+							Connect the world
+						</h1>
+						{/* <button tabIndex={0} className={styles.apply}>
 									Apply Now
 								</button> */}
-								<Email subscribed={subscribed} setSubscribed={setSubscribed} />
-							</Fade>
+						<span
+							className={cn(appearStyles.appear, appearStyles['appear-fifth'])}
+						>
+							<Email subscribed={subscribed} setSubscribed={setSubscribed} />
 						</span>
-						<div className={styles.largest}>
-							<Fade delay={1400}>
-								<span className={`${styles.rainbow} ${styles.headingText}`}>
-									USC&apos;s Largest <br />
-									Hackathon
-								</span>
-							</Fade>
-							<Fade delay={1800}>
-								<div className={styles.details}>
-									<span>02.19.21 &mdash; 02.21.21 || ONLINE</span>
-								</div>
-							</Fade>
-						</div>
 					</span>
-				</Fade>
+					<div className={styles.largest}>
+						<span
+							className={`${appearStyles.appear} ${appearStyles['appear-sixth']} ${styles.rainbow} ${styles.headingText} `}
+						>
+							USC&apos;s Largest <br />
+							Hackathon
+						</span>
+						<div
+							className={`${appearStyles.appear} ${appearStyles['appear-seventh']} ${styles.details} `}
+						>
+							<span>02.19.21 &mdash; 02.21.21 || ONLINE</span>
+						</div>
+					</div>
+				</span>
 			</section>
 		</>
 	);
