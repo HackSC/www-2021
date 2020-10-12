@@ -3,24 +3,13 @@ import styles from './first.module.css';
 import Email from '@/components/front/email';
 import appearStyles from '../appear.module.css';
 import cn from 'classnames';
+import Image from '@/components/image';
+import Blob from '@/images/blob.svg';
+import Group from '@/images/group.svg';
 
 const First = () => {
 	const [subscribed, setSubscribed] = useState(false);
 
-	const canUseWebP = () => {
-		if (!process.browser) {
-			return false;
-		}
-		const elem = document.createElement('canvas');
-		if (elem.getContext && elem.getContext('2d')) {
-			// was able or not to get WebP representation
-			return elem.toDataURL('image/webp').indexOf('data:image/webp') == 0;
-		}
-
-		// very old browser like IE 8, canvas not supported
-		return false;
-	};
-	const hasWebP = canUseWebP();
 	return (
 		<>
 			{/* Preloads the fonts */}
@@ -166,49 +155,56 @@ const First = () => {
 					/>
 				</span>
 				<span
-					className={cn(appearStyles.appear, appearStyles['appear-second'], {
-						[styles.container]: hasWebP,
-						[styles.containerFallback]: !hasWebP,
-					})}
+					className={cn(
+						appearStyles.appear,
+						appearStyles['appear-second'],
+						styles.container
+					)}
 				>
-					<span
+					<div
 						className={cn(
 							appearStyles.appear,
 							appearStyles['appear-third'],
+							styles.globeContainer
+						)}
+					>
+						<img src={Blob} className={styles.blob} alt="" />
+						<Image className={styles.globe} alt="" path="globe.png" />
+					</div>
+					<span
+						className={cn(
+							appearStyles.appear,
+							appearStyles['appear-second'],
 							styles.applyNowWrapper
 						)}
 					>
 						<h1
 							className={cn(
 								appearStyles.appear,
-								appearStyles['appear-fourth'],
+								appearStyles['appear-second'],
 								styles.connect
 							)}
 						>
 							Connect the world
 						</h1>
-						{/* <button tabIndex={0} className={styles.apply}>
-									Apply Now
-								</button> */}
+						<span
+							className={`${appearStyles.appear} ${appearStyles['appear-third']} ${styles.rainbow} ${styles.largest} `}
+						>
+							at USC&apos;s Largest Hackathon
+						</span>
+						<div
+							className={`${appearStyles.appear} ${appearStyles['appear-fourth']} ${styles.details}`}
+						>
+							<span style={{ justifySelf: 'flex-start' }}>
+								02.19.21 &mdash; 02.21.21 || online
+							</span>
+						</div>
 						<span
 							className={cn(appearStyles.appear, appearStyles['appear-fifth'])}
 						>
 							<Email subscribed={subscribed} setSubscribed={setSubscribed} />
 						</span>
 					</span>
-					<div className={styles.largest}>
-						<span
-							className={`${appearStyles.appear} ${appearStyles['appear-sixth']} ${styles.rainbow} ${styles.headingText} `}
-						>
-							USC&apos;s Largest <br />
-							Hackathon
-						</span>
-						<div
-							className={`${appearStyles.appear} ${appearStyles['appear-seventh']} ${styles.details} `}
-						>
-							<span>02.19.21 &mdash; 02.21.21 || ONLINE</span>
-						</div>
-					</div>
 				</span>
 			</section>
 		</>
