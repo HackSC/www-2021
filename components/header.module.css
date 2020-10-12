@@ -1,12 +1,7 @@
 .year {
-	display: inline;
-}
-
-.year {
 	color: var(--blue);
 	font-weight: 500;
-	font-size: 43px;
-	margin-bottom: 25px;
+	font-size: 23px;
 	margin-left: 64px;
 }
 
@@ -14,6 +9,7 @@
 	position: absolute;
 	z-index: -1;
 	transform: matrix(-1, 0, 0, 1, 0, 0);
+	top: 1vh;
 }
 
 .nav {
