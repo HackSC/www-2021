@@ -32,7 +32,7 @@ const Schedule = () => (
 					</a>
 				</td>
 			</tr>
-			<tr style={{ borderBottom: '2px solid var(--blue)' }}>
+			<tr>
 				<td>10/24</td>
 				<td>12:00 PM</td>
 				<td>1:00 PM</td>
@@ -42,6 +42,27 @@ const Schedule = () => (
 						Click here
 					</a>
 				</td>
+			</tr>
+			<tr>
+				<td>10/24</td>
+				<td>1:00 PM</td>
+				<td>2:00 PM</td>
+				<td>Girls in Tech panel</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>10/24</td>
+				<td>2:00 PM</td>
+				<td>2:30 PM</td>
+				<td>Introduction to Figma</td>
+				<td></td>
+			</tr>
+			<tr style={{ borderBottom: '2px solid var(--blue)' }}>
+				<td>10/24</td>
+				<td>3:00 PM</td>
+				<td>3:45 PM</td>
+				<td>Working with Git Workshop</td>
+				<td></td>
 			</tr>
 			<tr>
 				<td>10/25</td>
