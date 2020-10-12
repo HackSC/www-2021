@@ -45,8 +45,8 @@ const Schedule = () => (
 			</tr>
 			<tr>
 				<td>10/24</td>
-				<td>1:00 PM</td>
 				<td>2:00 PM</td>
+				<td>3:00 PM</td>
 				<td>Girls in Tech panel</td>
 				<td></td>
 			</tr>

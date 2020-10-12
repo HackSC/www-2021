@@ -65,7 +65,7 @@ const HackSConnect: NextPage = () => {
 							alt=""
 							className="logo"
 							path="di.png"
-							width={200}
+							width={275}
 							height={'auto'}
 						/>
 					</div>
