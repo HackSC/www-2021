@@ -95,8 +95,7 @@
 .hacksc {
 	position: absolute;
 	width: 100vw;
-	height: 20vh;
-	height: 14vh;
+	height: 100%;
 	color: var(--bg);
 	font-weight: 800;
 	font-size: 80px;
