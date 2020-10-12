@@ -29,8 +29,12 @@ const header: FunctionComponent = () => (
 					<Link href="/sponsor">
 						<a className={styles.link}>Sponsor Us</a>
 					</Link>
-					<Link href="/hacksconnect">
-						<a className={styles.link}>HackSConnect</a>
+					<Link href="/diversityandinclusion">
+						<a className={styles.link}>
+							<button className={styles.dandi}>
+								USC Hack for Diversity &amp; Inclusion
+							</button>
+						</a>
 					</Link>
 					{/* <a href="" className={styles.link}>
 						<button className={styles.apply}>Apply Now</button>

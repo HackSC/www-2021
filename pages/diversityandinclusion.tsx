@@ -3,7 +3,6 @@ import { NextSeo } from 'next-seo';
 import Header from '@/components/header';
 import Footer from '@/components/front/footer';
 import { NextPage } from 'next';
-import Fade from 'react-reveal/Fade';
 import Image from '@/components/image';
 import Schedule from '@/components/diversity/schedule';
 
@@ -19,14 +18,14 @@ const HackSConnect: NextPage = () => {
 					title: 'USC Hack for Diversity and Inclusion',
 					description:
 						'A beginner hackathon dedicated to supporting the BIPOC community by combating bias and creating equitable solutions for real-world challenges.',
-					// images: [
-					// 	{
-					// 		url: 'https://hacksc.com/images/og.png',
-					// 		width: 800,
-					// 		height: 600,
-					// 		alt: 'We hope to see you at HackSC 2021!',
-					// 	},
-					// ],
+					images: [
+						{
+							url: 'https://hacksc.com/images/di_og.png',
+							width: 800,
+							height: 600,
+							alt: 'We hope to see you at the hackathon!',
+						},
+					],
 					site_name: 'HackSC - USC Hack for Diversity and Inclusion',
 				}}
 				twitter={{
@@ -48,138 +47,145 @@ const HackSConnect: NextPage = () => {
 			<div>
 				<Header />
 				<section className="first">
-					<Fade>
-						<div className="details">
-							<h1> A 24 Hour Hackathon for Diversity and Inclusion </h1>
-							{/* <p className="hosts">
-								Hosted by{' '}
-								<a href="https://usc.girlsintech.org/">Girls in Tech</a>,{' '}
-								<a href="https://uscnsbe.com/">
-									National Society of Black Engineers
-								</a>
-								,{' '}
-								<a href="https://shpeusc.com/">
-									Society of Hispanic Professional Engineers
-								</a>
-								, and HackSC!
-							</p> */}
-							<Image
-								alt=""
-								className="logo"
-								path="di.png"
-								width={150}
-								height={250}
-							/>
+					<div className="details">
+						<h1> A 24 Hour Hackathon for Diversity and Inclusion </h1>
+						{/* <p className="hosts">
+							Hosted by{' '}
+							<a href="https://usc.girlsintech.org/">Girls in Tech</a>,{' '}
+							<a href="https://uscnsbe.com/">
+								National Society of Black Engineers
+							</a>
+							,{' '}
+							<a href="https://shpeusc.com/">
+								Society of Hispanic Professional Engineers
+							</a>
+							, and HackSC!
+						</p> */}
+						<Image
+							alt=""
+							className="logo"
+							path="di.png"
+							width={275}
+							height={'auto'}
+						/>
+					</div>
+					<p className="desc">
+						Welcome to USC Hack for Diversity and Inclusion &mdash;{' '}
+						<strong>
+							a beginner hackathon dedicated to supporting the{' '}
+							<abbr title="Black, Indigenous and People of Color">BIPOC</abbr>{' '}
+							community
+						</strong>{' '}
+						by combating bias and creating equitable solutions for real-world
+						challenges.
+					</p>
+					<p className="desc">
+						{/* Hosted in collaboration with <abbr title="Girls in Tech">GIT</abbr>, <abbr title="National Society of Black Engineers">NSBE</abbr>, <abbr title="Society of Hispanic Professional Engineers">SHPE</abbr>, and HackSC,
+						 */}
+						USC Hack for Diversity and Inclusion will have many exciting
+						workshops and resources for beginner hackers.
+					</p>
+					<a
+						target="_blank"
+						rel="noreferrer"
+						href="https://hacksc.typeform.com/to/hN6g49Ej"
+						className="apply"
+					>
+						<button>Sign Up</button>
+					</a>
+					<div>
+						<h2>Prizes</h2>
+						There is <strong>$3,000 in prize money</strong> for winners to
+						donate to the following organizations:
+						<div className="column">
+							<ul>
+								<li>Compton Collective</li>
+								<li>
+									<a
+										target="_blank"
+										rel="noreferrer"
+										href="https://www.blackgirlscode.com/"
+									>
+										Black Girls Code{' '}
+									</a>{' '}
+								</li>
+								<li>
+									<a
+										target="_blank"
+										rel="noreferrer"
+										href="http://www.troycamp.org/"
+									>
+										Troy Camp
+									</a>
+								</li>
+								<li>
+									<a
+										target="_blank"
+										rel="noreferrer"
+										href="https://www.blackouttheballot.com/"
+									>
+										Black Out the Ballot
+									</a>
+								</li>
+								<li>
+									<a
+										target="_blank"
+										rel="noreferrer"
+										href="https://nsbejrsocal.org/"
+									>
+										NSBE Jr. So Cal
+									</a>
+								</li>
+								<li>
+									<a
+										target="_blank"
+										rel="noreferrer"
+										href="https://hispanicfederation.org/"
+									>
+										Hispanic Federation
+									</a>
+								</li>
+							</ul>
 						</div>
-						<p className="desc">
-							Welcome to USC Hack for Diversity and Inclusion &mdash;{' '}
-							<strong>
-								a beginner hackathon dedicated to supporting the{' '}
-								<abbr title="Black, Indigenous and People of Color">BIPOC</abbr>{' '}
-								community
-							</strong>{' '}
-							by combating bias and creating equitable solutions for real-world
-							challenges.
-						</p>
-						<p className="desc">
-							{/* Hosted in collaboration with <abbr title="Girls in Tech">GIT</abbr>, <abbr title="National Society of Black Engineers">NSBE</abbr>, <abbr title="Society of Hispanic Professional Engineers">SHPE</abbr>, and HackSC,
-							 */}
-							USC Hack for Diversity and Inclusion will have many exciting
-							workshops and resources for beginner hackers.
-						</p>
-						<a
-							target="_blank"
-							rel="noreferrer"
-							href="https://hacksc.typeform.com/to/hN6g49Ej"
-							className="apply"
-						>
-							<button>Sign Up</button>
-						</a>
-						<div>
-							<h2>Prizes</h2>
-							There is <strong>$3,000 in prize money</strong> for winners to
-							donate to the following organizations:
-							<div className="column">
-								<ul>
-									<li>Compton Collective</li>
-									<li>
-										<a
-											target="_blank"
-											rel="noreferrer"
-											href="https://www.blackgirlscode.com/"
-										>
-											Black Girls Code{' '}
-										</a>{' '}
-									</li>
-									<li>
-										<a
-											target="_blank"
-											rel="noreferrer"
-											href="http://www.troycamp.org/"
-										>
-											Troy Camp
-										</a>
-									</li>
-									<li>
-										<a
-											target="_blank"
-											rel="noreferrer"
-											href="https://www.blackouttheballot.com/"
-										>
-											Black Out the Ballot
-										</a>
-									</li>
-									<li>
-										<a
-											target="_blank"
-											rel="noreferrer"
-											href="https://nsbejrsocal.org/"
-										>
-											NSBE Jr. So Cal
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<h2>Schedule</h2>
-						<Schedule />
-						<h2>Presented By</h2>
+					</div>
+					<h2>Schedule</h2>
+					<Schedule />
+					<h2>Presented By</h2>
 
-						<div className="row">
-							<div className="column">
-								<a
-									target="_blank"
-									rel="noreferrer"
-									href="https://usc.girlsintech.org/"
-								>
-									<Image path={'git.png'} width={200} />
-								</a>
-								<a target="_blank" rel="noreferrer" href="https://uscnsbe.com/">
-									<Image path={'nsbe.png'} width={200} />
-								</a>
-							</div>
-							<div className="column">
-								<a target="_blank" rel="noreferrer" href="https://shpeusc.com/">
-									<Image path={'shpe.png'} width={200} />
-								</a>
-								<a target="_blank" rel="noreferrer" href="https://hacksc.com">
-									<Image path={'logoAndTextDark.png'} width={200} />
-								</a>
-							</div>
-							<div className="singleColumn">
-								<a
-									target="_blank"
-									rel="noreferrer"
-									href="https://boeing.com"
-									style={{ fontWeight: 800, fontSize: '3rem' }}
-								>
-									<span>
-										<i>Boeing</i>
-									</span>
-								</a>
-							</div>
+					<div className="row">
+						<div className="column">
+							<a
+								target="_blank"
+								rel="noreferrer"
+								href="https://usc.girlsintech.org/"
+							>
+								<Image path={'git.png'} width={200} />
+							</a>
+							<a target="_blank" rel="noreferrer" href="https://uscnsbe.com/">
+								<Image path={'nsbe.png'} width={200} />
+							</a>
 						</div>
-					</Fade>
+						<div className="column">
+							<a target="_blank" rel="noreferrer" href="https://shpeusc.com/">
+								<Image path={'shpe.png'} width={200} />
+							</a>
+							<a target="_blank" rel="noreferrer" href="https://hacksc.com">
+								<Image path={'logoAndTextDark.png'} width={200} />
+							</a>
+						</div>
+						<div className="singleColumn">
+							<a
+								target="_blank"
+								rel="noreferrer"
+								href="https://boeing.com"
+								style={{ fontWeight: 800, fontSize: '3rem' }}
+							>
+								<span>
+									<i>Boeing</i>
+								</span>
+							</a>
+						</div>
+					</div>
 				</section>
 				<style jsx global>
 					{`
