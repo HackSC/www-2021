@@ -42,7 +42,8 @@
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-prettier": "^1.1.2",
     "typescript": "^4.0.2",
-    "webp-loader": "^0.6.0"
+    "webp-loader": "^0.6.0",
+    "webpack": "5.0.0-beta.29"
   },
   "resolutions": {
     "webpack": "^5.0.0-beta.28"
