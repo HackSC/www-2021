@@ -5,6 +5,7 @@ interface ImageProps {
 	className?: string;
 	path: string;
 	type?: string;
+	style?: any;
 }
 
 const Image: React.FunctionComponent<ImageProps> = ({
@@ -13,6 +14,7 @@ const Image: React.FunctionComponent<ImageProps> = ({
 	alt = '',
 	width,
 	height,
+	style,
 }) => {
 	return (
 		<picture>
@@ -26,6 +28,7 @@ const Image: React.FunctionComponent<ImageProps> = ({
 				className={className}
 				height={height}
 				width={width}
+				style={style}
 			/>
 		</picture>
 	);

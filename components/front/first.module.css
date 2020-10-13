@@ -10,24 +10,20 @@
 	display: flex;
 }
 
-.globeContainer {
-	width: 25vw;
-	position: relative;
-	margin-top: 15vh;
-}
-
 .globe {
 	position:absolute;
 	width: 25vw;
-	top: -40px;
+	top: 25vh;
+	left: -20px;
 }
 
 .blob {
-	position:absolute;
-	left: 100px;
+	position: absolute;
+	left: 80px;
 	width: 20vw;
 	height: auto;
 	transform: scaleX(1.5) scaleY(1.45);
+	top: 27vh;
 }
 
 .applyNowWrapper {
@@ -99,8 +95,45 @@
 	right: 0;
 	top: 55vh;
 }
-
+/* tablets */
 @media only screen and (max-width: 960px) {
+	.globe {
+		height: 28vh;
+		width: auto;
+		left: 27.5vw;
+		top: 14vh;
+	}
+
+	.blob {
+		left: 40vw;
+		height: 25vh;
+		width: auto;
+		top: 17vh;
+	}
+
+	.applyNowWrapper {
+		max-width: max-content;
+		font-weight: 800;
+		font-size: 68px;
+		margin: auto auto;
+	}
+
+	.dotflower {
+		position: absolute;
+		right: 0;
+		top: 70vh;
+	}
+}
+
+/* phone */
+@media only screen and (max-width: 768px) {
+	.applyNowWrapper {
+		max-width: max-content;
+		font-weight: 800;
+		font-size: 68px;
+		margin: 15vh auto;
+	}
+
 	.hacksc,
 	.hackscBackground {
 		top: 0;
@@ -114,12 +147,29 @@
 		margin-top: 20px;
 	}
 
-	.containerFallback,
 	.container {
 		margin-top: var(--gap-double);
 	}
 
 	.dotflower {
 		display: none;
+	}
+
+	.globe {
+		width: 45vw;
+		left: 27.5vw;
+		top: 20vh;
+	}
+
+	.blob {
+		left: 40vw;
+		width: 35vw;
+		top: 22vh;
+	}
+
+	.details,
+	.largest {
+		text-align: center;
+		margin-top: var(--gap);
 	}
 }

@@ -161,16 +161,24 @@ const First = () => {
 						styles.container
 					)}
 				>
-					<div
+					<img
+						src={Blob}
 						className={cn(
+							styles.blob,
 							appearStyles.appear,
-							appearStyles['appear-third'],
-							styles.globeContainer
+							appearStyles['appear-third']
 						)}
-					>
-						<img src={Blob} className={styles.blob} alt="" />
-						<Image className={styles.globe} alt="" path="globe.png" />
-					</div>
+						alt=""
+					/>
+					<Image
+						className={cn(
+							styles.globe,
+							appearStyles.appear,
+							appearStyles['appear-third']
+						)}
+						alt=""
+						path="globe.png"
+					/>
 					<span
 						className={cn(
 							appearStyles.appear,
