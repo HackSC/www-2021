@@ -49,24 +49,13 @@ const HackSConnect: NextPage = () => {
 				<section className="first">
 					<div className="details">
 						<h1> A 24 Hour Hackathon for Diversity and Inclusion </h1>
-						{/* <p className="hosts">
-							Hosted by{' '}
-							<a href="https://usc.girlsintech.org/">Girls in Tech</a>,{' '}
-							<a href="https://uscnsbe.com/">
-								National Society of Black Engineers
-							</a>
-							,{' '}
-							<a href="https://shpeusc.com/">
-								Society of Hispanic Professional Engineers
-							</a>
-							, and HackSC!
-						</p> */}
 						<Image
 							alt=""
 							className="logo"
 							path="di.png"
 							width={275}
 							height={'auto'}
+							style={{ margin: 'var(--gap-double) auto' }}
 						/>
 					</div>
 					<p className="desc">
@@ -80,10 +69,16 @@ const HackSConnect: NextPage = () => {
 						challenges.
 					</p>
 					<p className="desc">
-						{/* Hosted in collaboration with <abbr title="Girls in Tech">GIT</abbr>, <abbr title="National Society of Black Engineers">NSBE</abbr>, <abbr title="Society of Hispanic Professional Engineers">SHPE</abbr>, and HackSC,
-						 */}
-						USC Hack for Diversity and Inclusion will have many exciting
-						workshops and resources for beginner hackers.
+						Hosted by <a href="https://usc.girlsintech.org/">Girls in Tech</a>,{' '}
+						<a href="https://uscnsbe.com/">
+							National Society of Black Engineers
+						</a>
+						,{' '}
+						<a href="https://shpeusc.com/">
+							Society of Hispanic Professional Engineers
+						</a>
+						, and HackSC, USC Hack for Diversity and Inclusion will have many
+						exciting workshops and resources for beginner hackers.
 					</p>
 					<a
 						target="_blank"
@@ -95,7 +90,7 @@ const HackSConnect: NextPage = () => {
 					</a>
 					<div>
 						<h2>Prizes</h2>
-						There is <strong>$3,000 in prize money</strong> for winners to
+						The winners will receive <strong>$3,000 in prize money</strong> to
 						donate to the following organizations:
 						<div className="column">
 							<ul>
@@ -214,8 +209,8 @@ const HackSConnect: NextPage = () => {
 							color: black;
 							background: linear-gradient(
 								180deg,
-								rgba(255, 255, 255, 0) 70%,
-								rgba(0, 0, 0, 0.2) 70%
+								rgba(255, 255, 255, 0) 80%,
+								rgba(0, 0, 0, 0.2) 80%
 							);
 							cursor: pointer;
 						}
@@ -281,8 +276,8 @@ const HackSConnect: NextPage = () => {
 							color: black;
 							background: linear-gradient(
 								180deg,
-								rgba(255, 255, 255, 0) 70%,
-								rgba(0, 0, 0, 0.2) 70%
+								rgba(255, 255, 255, 0) 80%,
+								rgba(0, 0, 0, 0.2) 80%
 							);
 							cursor: pointer;
 						}
