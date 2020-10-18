@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { GetStaticProps } from 'next';
 import { NextSeo } from 'next-seo';
 import Header from '@/components/header';
 import Footer from '@/components/front/footer';
@@ -6,7 +7,12 @@ import { NextPage } from 'next';
 import Image from '@/components/image';
 import Schedule from '@/components/diversity/schedule';
 
-const HackSConnect: NextPage = () => {
+import { Event, getScheduleAsJson } from '@/lib/getScheduleAsJson';
+interface Props {
+	schedule: Event[];
+}
+
+const HackSConnect: NextPage<Props> = ({ schedule }) => {
 	return (
 		<div style={{ width: '100vw' }}>
 			<NextSeo
@@ -55,7 +61,6 @@ const HackSConnect: NextPage = () => {
 							path="di.png"
 							width={275}
 							height={'auto'}
-							style={{ margin: 'var(--gap-double) auto' }}
 						/>
 					</div>
 					<p className="desc">
@@ -144,7 +149,7 @@ const HackSConnect: NextPage = () => {
 						</div>
 					</div>
 					<h2>Schedule</h2>
-					<Schedule />
+					<Schedule schedule={schedule} />
 					<h2>Presented By</h2>
 
 					<div className="row">
@@ -350,6 +355,13 @@ const HackSConnect: NextPage = () => {
 			<Footer />
 		</div>
 	);
+};
+
+export const getStaticProps: GetStaticProps = async (context) => {
+	const schedule = await getScheduleAsJson();
+	return {
+		props: { schedule }, // will be passed to the page component as props
+	};
 };
 
 export default HackSConnect;
