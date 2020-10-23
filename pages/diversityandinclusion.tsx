@@ -83,15 +83,17 @@ const HackSConnect: NextPage<Props> = ({ schedule }) => {
 							Society of Hispanic Professional Engineers
 						</a>
 						, and HackSC, USC Hack for Diversity and Inclusion will have many
-						exciting workshops and resources for beginner hackers.
+						exciting workshops and resources for beginner hackers. Download the
+						packet below for more information on speakers, workshops, and the
+						schedule.
 					</p>
 					<a
 						target="_blank"
 						rel="noreferrer"
-						href="https://hacksc.typeform.com/to/hN6g49Ej"
+						href="/di/HackSC_DI_PDF.pdf"
 						className="apply"
 					>
-						<button>Sign Up</button>
+						<button>Download Attendee Packet</button>
 					</a>
 					<div>
 						<h2>Prizes</h2>
@@ -259,15 +261,14 @@ const HackSConnect: NextPage<Props> = ({ schedule }) => {
 							background: var(--blue);
 							border-radius: var(--radius);
 							cursor: pointer;
-							width: 150px;
+							width: 200px;
 							height: 75px;
 							color: white;
 							text-align: center;
 							letter-spacing: 1px;
-							text-transform: uppercase;
 							font-style: normal;
 							font-weight: 800;
-							font-size: 22px;
+							font-size: 16px;
 							box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.2);
 						}
 
