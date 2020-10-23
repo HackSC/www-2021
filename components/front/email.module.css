@@ -67,7 +67,18 @@
     text-shadow: black 0px 0px 10px;
 }
 
-@media screen and (max-width: 768px) {
+.disclaimer {
+    margin: var(--gap) 0;
+    font-weight: 500;
+    font-size: 14;
+}
+
+@media screen and (max-width: 960px) {
+	.disclaimer {
+		width: 75%;
+		margin: 0 auto;
+	}
+
     .emailForm {
         flex-direction: column;
     }

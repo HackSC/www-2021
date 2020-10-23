@@ -63,14 +63,7 @@ const EmailSubscribeForm = ({ subscribed, setSubscribed }) => {
 					Stay Up to Date
 				</button>
 			</form>
-			<p
-				style={{
-					margin: '0 var(--gap)',
-					fontWeight: 500,
-					color: 'var(--gray)',
-					fontSize: 14,
-				}}
-			>
+			<p className={styles.disclaimer}>
 				Subscribe to be notified of HackSC 2021 events, including when our
 				application opens.
 			</p>

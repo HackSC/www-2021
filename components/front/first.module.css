@@ -5,43 +5,40 @@
     left: 20vw;
 } */
 
+.containerWrapper {
+	position: relative;
+	z-index: 3;
+	height: 80vh;
+}
+
 .container {
-	height: 100%;
 	display: flex;
 }
 
 .globe {
-	position:absolute;
-	width: 25vw;
-	top: 25vh;
-	left: -20px;
-}
-
-.blob {
-	position: absolute;
-	left: 80px;
-	width: 20vw;
-	height: auto;
-	transform: scaleX(1.5) scaleY(1.45);
-	top: 27vh;
+	width: 550px;
+	margin-top: 8vh;
+	overflow: hidden;
+	margin-left: -60px;
+	z-index: 3;
 }
 
 .applyNowWrapper {
 	max-width: max-content;
 	font-weight: 800;
 	font-size: 68px;
-	margin: 30vh auto;
+	margin: 25vh 5vw;
 }
 
 .details {
-	font-size: 18px;
+	font-size: calc(14px);
 	font-weight: 500;
 	text-align: right;
 }
 
 .connect {
-	font: inherit;
-	text-align: center;
+	font-size: calc(20px + 3vw);
+	text-align: right;
 	text-transform: uppercase;
 	margin: 0;
 }
@@ -55,7 +52,7 @@
 .largest {
 	font: var(--sans-serif);
 	font-weight: 500;
-	font-size: 36px;
+	font-size: calc(14px + 1vw);
 	letter-spacing: 1px;
 	text-align: right;
 	float: right;
@@ -71,6 +68,7 @@
 	z-index: 1;
 	background: #FF695C;
 	top: 72px;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .hacksc {
@@ -90,86 +88,56 @@
 	z-index: 2;
 }
 
-.dotflower {
-	position: absolute;
-	right: 0;
-	top: 55vh;
+.groupImageContainer {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-self: flex-end;
 }
+
+.groupImage {
+}
+
+
+.social {
+	display: flex;
+	margin: auto;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 150px;
+}
+
 /* tablets */
 @media only screen and (max-width: 960px) {
-	.globe {
-		height: 28vh;
-		width: auto;
-		left: 27.5vw;
-		top: 14vh;
-	}
-
-	.blob {
-		left: 40vw;
-		height: 25vh;
-		width: auto;
-		top: 17vh;
+	.hackscBackground {
+		top: 0;
 	}
 
 	.applyNowWrapper {
-		max-width: max-content;
-		font-weight: 800;
-		font-size: 68px;
-		margin: auto auto;
-	}
-
-	.dotflower {
-		position: absolute;
-		right: 0;
-		top: 70vh;
-	}
-}
-
-/* phone */
-@media only screen and (max-width: 768px) {
-	.applyNowWrapper {
-		max-width: max-content;
-		font-weight: 800;
-		font-size: 68px;
 		margin: 15vh auto;
 	}
 
-	.hacksc,
-	.hackscBackground {
-		top: 0;
-		font-size: 90px;
-	}
-
-	.headingText {
-		font-size: 48px;
-		line-height: 56px;
+	.connect,
+	.largest,
+	.details {
 		text-align: center;
-		margin-top: 20px;
 	}
 
 	.container {
-		margin-top: var(--gap-double);
-	}
-
-	.dotflower {
-		display: none;
+		flex-direction: column;
 	}
 
 	.globe {
-		width: 45vw;
-		left: 27.5vw;
-		top: 20vh;
+		position: absolute;
+		opacity: .4;
+		width: 50vw;
+		transform: translateX(35vw) translateY(50vh);
 	}
 
-	.blob {
-		left: 40vw;
-		width: 35vw;
-		top: 22vh;
-	}
-
-	.details,
-	.largest {
-		text-align: center;
-		margin-top: var(--gap);
+	.social {
+		flex-direction: row;
+		width: 50%;
+		align-items: flex-end;
 	}
 }

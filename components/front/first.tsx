@@ -4,8 +4,10 @@ import Email from '@/components/front/email';
 import appearStyles from '../appear.module.css';
 import cn from 'classnames';
 import Image from '@/components/image';
-import Blob from '@/images/blob.svg';
 import Group from '@/images/group.svg';
+import Twitter from '../../public/images/footer/twitter.svg';
+import Facebook from '../../public/images/footer/facebook.svg';
+import Instagram from '../../public/images/footer/instagram.svg';
 
 const First = () => {
 	const [subscribed, setSubscribed] = useState(false);
@@ -132,7 +134,7 @@ const First = () => {
 						`}</style>
 					</div>
 				)}
-				<span
+				<div
 					className={cn(
 						appearStyles.appear,
 						appearStyles['appear-first'],
@@ -142,8 +144,8 @@ const First = () => {
 					<span className={styles.hacksc}>
 						HackSC HackSC HackSC HackSC HackSC HackSC HackSC
 					</span>
-				</span>
-				<span
+				</div>
+				{/* <span
 					className={cn(appearStyles.appear, appearStyles['appear-second'])}
 				>
 					<img
@@ -153,15 +155,15 @@ const First = () => {
 						src="/images/dotflower.svg"
 						className={styles.dotflower}
 					/>
-				</span>
-				<span
+				</span> */}
+				<div
 					className={cn(
 						appearStyles.appear,
 						appearStyles['appear-second'],
-						styles.container
+						styles.containerWrapper
 					)}
 				>
-					<img
+					{/* <img
 						src={Blob}
 						className={cn(
 							styles.blob,
@@ -169,51 +171,88 @@ const First = () => {
 							appearStyles['appear-third']
 						)}
 						alt=""
-					/>
-					<Image
-						className={cn(
-							styles.globe,
-							appearStyles.appear,
-							appearStyles['appear-third']
-						)}
-						alt=""
-						path="globe.png"
-					/>
-					<span
-						className={cn(
-							appearStyles.appear,
-							appearStyles['appear-second'],
-							styles.applyNowWrapper
-						)}
-					>
-						<h1
+					/> */}
+					<div className={styles.container}>
+						<div className={styles.globe}>
+							<Image
+								className={cn(
+									appearStyles.appear,
+									appearStyles['appear-third']
+								)}
+								alt=""
+								width="100%"
+								path="globeAndBlob.png"
+							/>
+						</div>
+						<div
 							className={cn(
 								appearStyles.appear,
 								appearStyles['appear-second'],
-								styles.connect
+								styles.applyNowWrapper
 							)}
 						>
-							Connect the world
-						</h1>
-						<span
-							className={`${appearStyles.appear} ${appearStyles['appear-third']} ${styles.rainbow} ${styles.largest} `}
-						>
-							at USC&apos;s Largest Hackathon
-						</span>
-						<div
-							className={`${appearStyles.appear} ${appearStyles['appear-fourth']} ${styles.details}`}
-						>
-							<span style={{ justifySelf: 'flex-start' }}>
+							<h1
+								className={cn(
+									appearStyles.appear,
+									appearStyles['appear-second'],
+									styles.connect
+								)}
+							>
+								Connect the world
+							</h1>
+							<div
+								className={`${appearStyles.appear} ${appearStyles['appear-third']} ${styles.rainbow} ${styles.largest} `}
+							>
+								at USC&apos;s Largest Hackathon
+							</div>
+							<div
+								className={`${appearStyles.appear} ${appearStyles['appear-fourth']} ${styles.details}`}
+							>
 								02.19.21 &mdash; 02.21.21 || online
-							</span>
+							</div>
+							<div
+								className={cn(
+									appearStyles.appear,
+									appearStyles['appear-fifth']
+								)}
+							>
+								<Email subscribed={subscribed} setSubscribed={setSubscribed} />
+							</div>
+							<div className={styles.groupImageContainer}>
+								<Image className={styles.groupImage} alt="" path="group.svg" />
+							</div>
 						</div>
-						<span
-							className={cn(appearStyles.appear, appearStyles['appear-fifth'])}
+						<div
+							className={cn(
+								appearStyles.appear,
+								appearStyles['appear-fifth'],
+								styles.social
+							)}
 						>
-							<Email subscribed={subscribed} setSubscribed={setSubscribed} />
-						</span>
-					</span>
-				</span>
+							<a
+								href="https://www.facebook.com/hackscofficial/"
+								target="_blank"
+								rel="noreferrer"
+							>
+								<img src={Facebook} alt="Facebook link" loading="lazy" />
+							</a>
+							<a
+								href="https://www.instagram.com/hackscofficial/"
+								target="_blank"
+								rel="noreferrer"
+							>
+								<img src={Instagram} alt="Instagram link" loading="lazy" />
+							</a>
+							<a
+								href="https://twitter.com/hackscofficial"
+								target="_blank"
+								rel="noreferrer"
+							>
+								<img src={Twitter} alt="Twitter link" loading="lazy" />
+							</a>
+						</div>
+					</div>
+				</div>
 			</section>
 		</>
 	);
