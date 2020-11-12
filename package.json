@@ -10,6 +10,7 @@
     "lint:fix": "npm run lint -- --fix"
   },
   "dependencies": {
+    "csvtojson": "^2.0.10",
     "email-validator": "^2.0.4",
     "next": "^9.5.3-canary.23",
     "next-compose-plugins": "^2.2.0",
@@ -20,8 +21,7 @@
     "react-pdf": "^5.0.0",
     "react-reveal": "^1.2.2",
     "serverless-mysql": "^1.5.4",
-    "sql-template-strings": "^2.2.2",
-    "webpack": "5.0.0-beta.29"
+    "sql-template-strings": "^2.2.2"
   },
   "devDependencies": {
     "@types/node": "^14.6.0",
@@ -43,7 +43,8 @@
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-prettier": "^1.1.2",
     "typescript": "^4.0.2",
-    "webp-loader": "^0.6.0"
+    "webp-loader": "^0.6.0",
+    "webpack": "5.0.0-beta.29"
   },
   "resolutions": {
     "webpack": "^5.0.0-beta.28"

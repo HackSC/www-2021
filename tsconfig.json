@@ -22,6 +22,7 @@
       "@/components/*": ["components/*"],
       "@styles/*": ["styles/*"],
       "@/images/*": ["images/*"],
+      "@/lib/*": ["lib/*"]
     }
   },
   "exclude": [

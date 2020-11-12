@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { GetStaticProps } from 'next';
 import { NextSeo } from 'next-seo';
 import Header from '@/components/header';
 import Footer from '@/components/front/footer';
@@ -6,7 +7,12 @@ import { NextPage } from 'next';
 import Image from '@/components/image';
 import Schedule from '@/components/diversity/schedule';
 
-const HackSConnect: NextPage = () => {
+import { Event, getScheduleAsJson } from '@/lib/getScheduleAsJson';
+interface Props {
+	schedule: Event[];
+}
+
+const HackSConnect: NextPage<Props> = ({ schedule }) => {
 	return (
 		<div style={{ width: '100vw' }}>
 			<NextSeo
@@ -49,18 +55,6 @@ const HackSConnect: NextPage = () => {
 				<section className="first">
 					<div className="details">
 						<h1> A 24 Hour Hackathon for Diversity and Inclusion </h1>
-						{/* <p className="hosts">
-							Hosted by{' '}
-							<a href="https://usc.girlsintech.org/">Girls in Tech</a>,{' '}
-							<a href="https://uscnsbe.com/">
-								National Society of Black Engineers
-							</a>
-							,{' '}
-							<a href="https://shpeusc.com/">
-								Society of Hispanic Professional Engineers
-							</a>
-							, and HackSC!
-						</p> */}
 						<Image
 							alt=""
 							className="logo"
@@ -80,22 +74,30 @@ const HackSConnect: NextPage = () => {
 						challenges.
 					</p>
 					<p className="desc">
-						{/* Hosted in collaboration with <abbr title="Girls in Tech">GIT</abbr>, <abbr title="National Society of Black Engineers">NSBE</abbr>, <abbr title="Society of Hispanic Professional Engineers">SHPE</abbr>, and HackSC,
-						 */}
-						USC Hack for Diversity and Inclusion will have many exciting
-						workshops and resources for beginner hackers.
+						Hosted by <a href="https://usc.girlsintech.org/">Girls in Tech</a>,{' '}
+						<a href="https://uscnsbe.com/">
+							National Society of Black Engineers
+						</a>
+						,{' '}
+						<a href="https://shpeusc.com/">
+							Society of Hispanic Professional Engineers
+						</a>
+						, and HackSC, USC Hack for Diversity and Inclusion will have many
+						exciting workshops and resources for beginner hackers. Download the
+						packet below for more information on speakers, workshops, and the
+						schedule.
 					</p>
 					<a
 						target="_blank"
 						rel="noreferrer"
-						href="https://hacksc.typeform.com/to/hN6g49Ej"
+						href="/di/HackSC_DI_PDF.pdf"
 						className="apply"
 					>
-						<button>Sign Up</button>
+						<button>Download Attendee Packet</button>
 					</a>
 					<div>
 						<h2>Prizes</h2>
-						There is <strong>$3,000 in prize money</strong> for winners to
+						The winners will receive <strong>$3,000 in prize money</strong> to
 						donate to the following organizations:
 						<div className="column">
 							<ul>
@@ -149,7 +151,7 @@ const HackSConnect: NextPage = () => {
 						</div>
 					</div>
 					<h2>Schedule</h2>
-					<Schedule />
+					<Schedule schedule={schedule} />
 					<h2>Presented By</h2>
 
 					<div className="row">
@@ -214,8 +216,8 @@ const HackSConnect: NextPage = () => {
 							color: black;
 							background: linear-gradient(
 								180deg,
-								rgba(255, 255, 255, 0) 70%,
-								rgba(0, 0, 0, 0.2) 70%
+								rgba(255, 255, 255, 0) 80%,
+								rgba(0, 0, 0, 0.2) 80%
 							);
 							cursor: pointer;
 						}
@@ -259,15 +261,14 @@ const HackSConnect: NextPage = () => {
 							background: var(--blue);
 							border-radius: var(--radius);
 							cursor: pointer;
-							width: 150px;
+							width: 200px;
 							height: 75px;
 							color: white;
 							text-align: center;
 							letter-spacing: 1px;
-							text-transform: uppercase;
 							font-style: normal;
 							font-weight: 800;
-							font-size: 22px;
+							font-size: 16px;
 							box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.2);
 						}
 
@@ -281,8 +282,8 @@ const HackSConnect: NextPage = () => {
 							color: black;
 							background: linear-gradient(
 								180deg,
-								rgba(255, 255, 255, 0) 70%,
-								rgba(0, 0, 0, 0.2) 70%
+								rgba(255, 255, 255, 0) 80%,
+								rgba(0, 0, 0, 0.2) 80%
 							);
 							cursor: pointer;
 						}
@@ -355,6 +356,13 @@ const HackSConnect: NextPage = () => {
 			<Footer />
 		</div>
 	);
+};
+
+export const getStaticProps: GetStaticProps = async (context) => {
+	const schedule = await getScheduleAsJson();
+	return {
+		props: { schedule }, // will be passed to the page component as props
+	};
 };
 
 export default HackSConnect;

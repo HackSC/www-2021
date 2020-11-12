@@ -13,13 +13,13 @@ const Home: NextPage = () => {
 		<>
 			<NextSeo
 				title="HackSC 2021 - Connect the World"
-				description="Free and online from Feburary 19-21. Apps open to college students in November."
+				description="Free and online from February 19-21. Apps open to college students in November."
 				canonical="https://hacksc.com"
 				openGraph={{
 					url: 'https://hacksc.com',
 					title: 'HackSC 2021',
 					description:
-						'Connect the world at HackSC. Free and online from Feburary 19-21.',
+						'Connect the world at HackSC. Free and online from February 19-21.',
 					images: [
 						{
 							url: 'https://hacksc.com/images/og.png',
