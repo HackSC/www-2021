@@ -218,7 +218,13 @@ const First = () => {
 							>
 								<Email subscribed={subscribed} setSubscribed={setSubscribed} />
 							</div>
-							<div className={styles.groupImageContainer}>
+							<div
+								className={cn(
+									styles.groupImageContainer,
+									appearStyles.appear,
+									appearStyles['appear-seventh']
+								)}
+							>
 								<Image className={styles.groupImage} alt="" path="group.svg" />
 							</div>
 						</div>
