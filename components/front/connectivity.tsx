@@ -3,7 +3,7 @@ import Verticals from '@/components/front/verticals';
 import styles from './connectivity.module.css';
 
 const Connectivity = () => (
-	<section style={{ height: 'inherit', minHeight: '100vh', marginTop: 100 }}>
+	<section style={{ height: 'inherit', minHeight: '80vh', marginTop: 100 }}>
 		<div className={styles.connectivity}>
 			<div className={styles.heading}>
 				<h2> 2021 Verticals </h2>

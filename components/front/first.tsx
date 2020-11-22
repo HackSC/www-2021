@@ -3,24 +3,15 @@ import styles from './first.module.css';
 import Email from '@/components/front/email';
 import appearStyles from '../appear.module.css';
 import cn from 'classnames';
+import Image from '@/components/image';
+import Group from '@/images/group.svg';
+import Twitter from '../../public/images/footer/twitter.svg';
+import Facebook from '../../public/images/footer/facebook.svg';
+import Instagram from '../../public/images/footer/instagram.svg';
 
 const First = () => {
 	const [subscribed, setSubscribed] = useState(false);
 
-	const canUseWebP = () => {
-		if (!process.browser) {
-			return false;
-		}
-		const elem = document.createElement('canvas');
-		if (elem.getContext && elem.getContext('2d')) {
-			// was able or not to get WebP representation
-			return elem.toDataURL('image/webp').indexOf('data:image/webp') == 0;
-		}
-
-		// very old browser like IE 8, canvas not supported
-		return false;
-	};
-	const hasWebP = canUseWebP();
 	return (
 		<>
 			{/* Preloads the fonts */}
@@ -143,7 +134,7 @@ const First = () => {
 						`}</style>
 					</div>
 				)}
-				<span
+				<div
 					className={cn(
 						appearStyles.appear,
 						appearStyles['appear-first'],
@@ -153,8 +144,8 @@ const First = () => {
 					<span className={styles.hacksc}>
 						HackSC HackSC HackSC HackSC HackSC HackSC HackSC
 					</span>
-				</span>
-				<span
+				</div>
+				{/* <span
 					className={cn(appearStyles.appear, appearStyles['appear-second'])}
 				>
 					<img
@@ -164,52 +155,110 @@ const First = () => {
 						src="/images/dotflower.svg"
 						className={styles.dotflower}
 					/>
-				</span>
-				<span
-					className={cn(appearStyles.appear, appearStyles['appear-second'], {
-						[styles.container]: hasWebP,
-						[styles.containerFallback]: !hasWebP,
-					})}
+				</span> */}
+				<div
+					className={cn(
+						appearStyles.appear,
+						appearStyles['appear-second'],
+						styles.containerWrapper
+					)}
 				>
-					<span
+					{/* <img
+						src={Blob}
 						className={cn(
+							styles.blob,
 							appearStyles.appear,
-							appearStyles['appear-third'],
-							styles.applyNowWrapper
+							appearStyles['appear-third']
 						)}
-					>
-						<h1
+						alt=""
+					/> */}
+					<div className={styles.container}>
+						<div className={styles.globe}>
+							<Image
+								className={cn(
+									appearStyles.appear,
+									appearStyles['appear-third']
+								)}
+								alt=""
+								width="100%"
+								path="globeAndBlob.png"
+							/>
+						</div>
+						<div
 							className={cn(
 								appearStyles.appear,
-								appearStyles['appear-fourth'],
-								styles.connect
+								appearStyles['appear-second'],
+								styles.applyNowWrapper
 							)}
 						>
-							Connect the world
-						</h1>
-						{/* <button tabIndex={0} className={styles.apply}>
-									Apply Now
-								</button> */}
-						<span
-							className={cn(appearStyles.appear, appearStyles['appear-fifth'])}
-						>
-							<Email subscribed={subscribed} setSubscribed={setSubscribed} />
-						</span>
-					</span>
-					<div className={styles.largest}>
-						<span
-							className={`${appearStyles.appear} ${appearStyles['appear-sixth']} ${styles.rainbow} ${styles.headingText} `}
-						>
-							USC&apos;s Largest <br />
-							Hackathon
-						</span>
+							<h1
+								className={cn(
+									appearStyles.appear,
+									appearStyles['appear-second'],
+									styles.connect
+								)}
+							>
+								Connect the world
+							</h1>
+							<div
+								className={`${appearStyles.appear} ${appearStyles['appear-third']} ${styles.rainbow} ${styles.largest} `}
+							>
+								at USC&apos;s Largest Hackathon
+							</div>
+							<div
+								className={`${appearStyles.appear} ${appearStyles['appear-fourth']} ${styles.details}`}
+							>
+								02.19.21 &mdash; 02.21.21 || online
+							</div>
+							<div
+								className={cn(
+									appearStyles.appear,
+									appearStyles['appear-fifth']
+								)}
+							>
+								<Email subscribed={subscribed} setSubscribed={setSubscribed} />
+							</div>
+							<div
+								className={cn(
+									styles.groupImageContainer,
+									appearStyles.appear,
+									appearStyles['appear-seventh']
+								)}
+							>
+								<Image className={styles.groupImage} alt="" path="group.svg" />
+							</div>
+						</div>
 						<div
-							className={`${appearStyles.appear} ${appearStyles['appear-seventh']} ${styles.details} `}
+							className={cn(
+								appearStyles.appear,
+								appearStyles['appear-fifth'],
+								styles.social
+							)}
 						>
-							<span>02.19.21 &mdash; 02.21.21 || ONLINE</span>
+							<a
+								href="https://www.facebook.com/hackscofficial/"
+								target="_blank"
+								rel="noreferrer"
+							>
+								<img src={Facebook} alt="Facebook link" loading="lazy" />
+							</a>
+							<a
+								href="https://www.instagram.com/hackscofficial/"
+								target="_blank"
+								rel="noreferrer"
+							>
+								<img src={Instagram} alt="Instagram link" loading="lazy" />
+							</a>
+							<a
+								href="https://twitter.com/hackscofficial"
+								target="_blank"
+								rel="noreferrer"
+							>
+								<img src={Twitter} alt="Twitter link" loading="lazy" />
+							</a>
 						</div>
 					</div>
-				</span>
+				</div>
 			</section>
 		</>
 	);

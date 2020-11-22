@@ -63,6 +63,10 @@ const EmailSubscribeForm = ({ subscribed, setSubscribed }) => {
 					Stay Up to Date
 				</button>
 			</form>
+			<p className={styles.disclaimer}>
+				Subscribe to be notified of HackSC 2021 events, including when our
+				application opens.
+			</p>
 
 			{subscribed && (
 				<p className={styles.success}>
