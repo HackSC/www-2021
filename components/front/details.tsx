@@ -4,7 +4,7 @@ import FAQ from '@/components/front/faq';
 import styles from './details.module.css';
 
 const Details = () => (
-	<section className={styles.details}>
+	<section className={styles.details} id="details">
 		<Image className={styles.nodelogo} height="375" path="nodelogo.png" />
 		<h2 className={styles.detailsHeading}> Details </h2>
 		<div className={styles.detailsWrapper}>
