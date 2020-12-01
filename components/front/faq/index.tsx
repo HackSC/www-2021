@@ -44,7 +44,7 @@ const Faqs: Entry[] = [
 	{
 		question: 'When do applications open?',
 		answer:
-			'Applications will be open from December 1st through the 14th! Check here or sign up above for updates. ',
+			'Applications are open from December 1st through the 14th! Check here or our social media for updates. ',
 	},
 	{
 		question: 'What are verticals?',
