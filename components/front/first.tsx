@@ -215,8 +215,15 @@ const First = () => {
 									appearStyles.appear,
 									appearStyles['appear-fifth']
 								)}
+								style={{ textAlign: 'center' }}
 							>
-								<Email subscribed={subscribed} setSubscribed={setSubscribed} />
+								<a
+									style={{ margin: 'auto' }}
+									href="https://dashboard.hacksc.com"
+								>
+									<button className={styles.apply}>Apply Now</button>
+								</a>
+								{/* <Email subscribed={subscribed} setSubscribed={setSubscribed} /> */}
 							</div>
 							<div
 								className={cn(

@@ -121,6 +121,20 @@
 	}
 }
 
+.apply {
+    cursor: pointer;
+    border: none;
+    border-radius: var(--radius);
+    background: var(--blue);
+    color: var(--bg);
+	font-weight: 600;
+	font-size: 26px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 200px;
+	height: 66px;
+}
+
 /* tablets */
 @media only screen and (max-width: 960px) {
 	.hackscBackground {
