@@ -2,11 +2,13 @@ import styles from './header.module.css';
 import { FunctionComponent } from 'react';
 import Image from '@/components/image';
 import Link from 'next/link';
+import MLH from './front/MLH';
 
 const header: FunctionComponent = () => (
 	<>
 		<nav className={styles.nav}>
 			<div className={styles.header}>
+				<MLH />
 				<Link href="/">
 					<a style={{ textDecoration: 'none' }}>
 						<Image
@@ -21,7 +23,7 @@ const header: FunctionComponent = () => (
 				</Link>
 				<div className={styles.links}>
 					<Link href="/">
-						<a href="/" className={styles.link}>
+						<a href="/" className={`${styles.link} ${styles.home}`}>
 							Home
 						</a>
 					</Link>
