@@ -11,13 +11,13 @@ const Footer = () => {
 		<div className={styles.wrapper}>
 			<a
 				id={styles['mlh-trust-badge']}
-				href="https://mlh.io/seasons/na-2020/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2020-season&utm_content=black"
+				href="https://mlh.io/seasons/2021/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2021-season&utm_content=black"
 				target="_blank"
 				rel="noreferrer"
 			>
 				<img
-					src="https://s3.amazonaws.com/logged-assets/trust-badge/2020/mlh-trust-badge-2020-black.svg"
-					alt="Major League Hacking 2020 Hackathon Season"
+					src="https://s3.amazonaws.com/logged-assets/trust-badge/2021/mlh-trust-badge-2021-black.svg"
+					alt="Major League Hacking 2021 Hackathon Season"
 				/>
 			</a>
 			<div className={styles.row}>
