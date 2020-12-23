@@ -141,9 +141,16 @@ const First = () => {
 						styles.hackscBackground
 					)}
 				>
-					<span className={styles.hacksc}>
-						HackSC HackSC HackSC HackSC HackSC HackSC HackSC
-					</span>
+					<span className={styles.hacksc}>Hack</span>
+					<span className={styles.sc}>SC </span>
+					<span className={styles.hacksc}>Hack</span>
+					<span className={styles.sc}>SC </span>
+					<span className={styles.hacksc}>Hack</span>
+					<span className={styles.sc}>SC </span>
+					<span className={styles.hacksc}>Hack</span>
+					<span className={styles.sc}>SC </span>
+					<span className={styles.hacksc}>Hack</span>
+					<span className={styles.sc}>SC </span>
 				</div>
 				{/* <span
 					className={cn(appearStyles.appear, appearStyles['appear-second'])}
