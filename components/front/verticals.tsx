@@ -39,18 +39,23 @@ const VerticalInfo: Vertical[] = [
 ];
 const Verticals = () => {
 	return (
-		<div className={styles.verticals}>
-			<Fade>
-				{VerticalInfo.map(({ name, byline, info, color }) => {
-					return (
-						<div className={styles.card} key={name}>
-							<img alt="" src={`/images/verticals/${name}.svg`} />
-							<h3 style={{ color }}>{name}</h3>
-							<p>{byline}</p>
-						</div>
-					);
-				})}
-			</Fade>
+		<div className={styles.row}>
+			<div className={styles.verticals}>
+				<Fade>
+					{VerticalInfo.map(({ name, byline, info, color }) => {
+						return (
+							<div className={styles.column} key={name}>
+								<div className={styles.card}>
+									&nbsp;
+									<img alt="" src={`/images/verticals/${name}.svg`} />
+									<h3 style={{ color }}>{name}</h3>
+									<p>{byline}</p>
+								</div>
+							</div>
+						);
+					})}
+				</Fade>
+			</div>
 		</div>
 	);
 };
