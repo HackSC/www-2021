@@ -11,8 +11,8 @@ const Connectivity = () => (
 					In order to address this tumultuous time of COVID-19 and social
 					distancing, HackSC 2021 is all about <strong>Connectivity</strong>. At
 					HackSC, hackers can create technology solutions to bring the world
-					closer together under four verticals: device, team, customer, and
-					person
+					closer together under four verticals: person, team, customer, and
+					device.
 				</p>
 			</div>
 		</div>
