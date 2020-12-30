@@ -7,8 +7,26 @@
 	width: 250px;
 }
 
+.connectivityHeading {
+	font-size: 60px;
+	text-transform: uppercase;
+	font-weight: bold;
+	line-height: 20px;
+	margin-top: 100px;
+}
+.connectivityWrapper {
+	display: inline-block;
+	width: 55%;
+}
+
+.connectivityWrapper {
+	padding-top: 45px;
+	vertical-align: top;
+}
+
 .connectivity {
-	margin: 0 7vw;
+	margin: 0 10vw;
+	height: max-content;
 }
 
 .connectivity .heading {
