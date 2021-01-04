@@ -80,3 +80,9 @@
 		margin-top: 100px;
 	}
 }
+
+@media only screen and (max-width: 960px) {
+	.nodes {
+		display: none;
+	}
+}
