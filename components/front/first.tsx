@@ -217,13 +217,7 @@ const First = () => {
 								)}
 								style={{ textAlign: 'center' }}
 							>
-								<a
-									style={{ margin: 'auto' }}
-									href="https://dashboard.hacksc.com"
-								>
-									<button className={styles.apply}>Apply Now</button>
-								</a>
-								{/* <Email subscribed={subscribed} setSubscribed={setSubscribed} /> */}
+								<Email subscribed={subscribed} setSubscribed={setSubscribed} />
 							</div>
 							<div
 								className={cn(
