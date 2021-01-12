@@ -141,8 +141,33 @@ const First = () => {
 						styles.hackscBackground
 					)}
 				>
-					<span className={styles.hacksc}>
-						HackSC HackSC HackSC HackSC HackSC HackSC HackSC
+					<span className={styles.hacksc}>Hack</span>
+					<span className={styles.sc}>
+						<b>SC </b>
+					</span>
+					<span className={styles.hacksc}>Hack</span>
+					<span className={styles.sc}>
+						<b>SC </b>
+					</span>
+					<span className={styles.hacksc}>Hack</span>
+					<span className={styles.sc}>
+						<b>SC </b>
+					</span>
+					<span className={styles.hacksc}>Hack</span>
+					<span className={styles.sc}>
+						<b>SC </b>
+					</span>
+					<span className={styles.hacksc}>Hack</span>
+					<span className={styles.sc}>
+						<b>SC </b>
+					</span>
+					<span className={styles.hacksc}>Hack</span>
+					<span className={styles.sc}>
+						<b>SC </b>
+					</span>
+					<span className={styles.hacksc}>Hack</span>
+					<span className={styles.sc}>
+						<b>SC </b>
 					</span>
 				</div>
 				{/* <span

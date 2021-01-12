@@ -73,11 +73,10 @@
 }
 
 .hacksc {
-	position: absolute;
+	position: relative;
 	width: 100vw;
 	height: 100%;
 	color: var(--bg);
-	font-weight: 800;
 	font-size: 80px;
 	line-height: 94px;
 	letter-spacing: 1px;
@@ -86,6 +85,22 @@
 	white-space: nowrap;
 	user-select: none;
 	z-index: 2;
+}
+
+.sc {
+	position: relative;
+	width: 100vw;
+	height: 100%;
+	color: var(--bg);
+	font-size: 80px;
+	line-height: 94px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	overflow: hidden;
+	white-space: nowrap;
+	user-select: none;
+	z-index: 2;
+	
 }
 
 .groupImageContainer {
