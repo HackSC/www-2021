@@ -141,10 +141,15 @@ const First = () => {
 						styles.hackscBackground
 					)}
 				>
+					{/* <span className={styles.hacksc}>{({ toString: () => 'HackSC ', repeat: String.prototype.repeat }).repeat(7) }
+						</span> */}
+
 					<span className={styles.hacksc}>
-						HackSC HackSC HackSC HackSC HackSC HackSC HackSC
+						Hack<b>SC </b>Hack<b>SC </b>Hack<b>SC </b>Hack<b>SC </b>
+						Hack<b>SC </b>Hack<b>SC </b>Hack<b>SC </b>
 					</span>
 				</div>
+
 				{/* <span
 					className={cn(appearStyles.appear, appearStyles['appear-second'])}
 				>
