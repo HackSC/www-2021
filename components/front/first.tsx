@@ -141,35 +141,15 @@ const First = () => {
 						styles.hackscBackground
 					)}
 				>
-					<span className={styles.hacksc}>Hack</span>
-					<span className={styles.sc}>
-						<b>SC </b>
-					</span>
-					<span className={styles.hacksc}>Hack</span>
-					<span className={styles.sc}>
-						<b>SC </b>
-					</span>
-					<span className={styles.hacksc}>Hack</span>
-					<span className={styles.sc}>
-						<b>SC </b>
-					</span>
-					<span className={styles.hacksc}>Hack</span>
-					<span className={styles.sc}>
-						<b>SC </b>
-					</span>
-					<span className={styles.hacksc}>Hack</span>
-					<span className={styles.sc}>
-						<b>SC </b>
-					</span>
-					<span className={styles.hacksc}>Hack</span>
-					<span className={styles.sc}>
-						<b>SC </b>
-					</span>
-					<span className={styles.hacksc}>Hack</span>
-					<span className={styles.sc}>
-						<b>SC </b>
+					{/* <span className={styles.hacksc}>{({ toString: () => 'HackSC ', repeat: String.prototype.repeat }).repeat(7) }
+						</span> */}
+
+					<span className={styles.hacksc}>
+						Hack<b>SC </b>Hack<b>SC </b>Hack<b>SC </b>Hack<b>SC </b>
+						Hack<b>SC </b>Hack<b>SC </b>Hack<b>SC </b>
 					</span>
 				</div>
+
 				{/* <span
 					className={cn(appearStyles.appear, appearStyles['appear-second'])}
 				>
