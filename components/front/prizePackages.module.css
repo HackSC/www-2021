@@ -64,4 +64,13 @@
 	.row {
 	  flex-direction: column;
 	}
+
+	.prizes .card {
+		width: 320px;
+	}
+	
+	.prizes .card img {
+		height: 320px;
+	}
+
   }

@@ -7,24 +7,24 @@ interface Prize {
 
 const PrizeInfo: Prize[] = [
 	{
+		name: 'outdoors',
+		color: '#A4D5B2',
+	},
+	{
 		name: 'lazyOutdoors',
 		color: '#7968AE',
 	},
 	{
-		name: 'beach',
-		color: '#FFD84C',
+		name: 'tunes',
+		color: '#D70E65',
 	},
 	{
 		name: 'netflix',
 		color: '#AA2208',
 	},
 	{
-		name: 'outdoors',
-		color: '#A4D5B2',
-	},
-	{
-		name: 'tunes',
-		color: '#D70E65',
+		name: 'beach',
+		color: '#FFD84C',
 	},
 ];
 const Packages = () => {

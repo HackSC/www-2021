@@ -1,11 +1,3 @@
-.nodes {
-	left: 0;
-	top: 170vh;
-	z-index: -1;
-	position: absolute;
-	height: 600px;
-	width: 250px;
-}
 
 .prizesHeading {
 	font-size: 60px;
@@ -81,8 +73,3 @@
 	}
 }
 
-@media only screen and (max-width: 960px) {
-	.nodes {
-		display: none;
-	}
-}
