@@ -27,7 +27,7 @@
     display: block;
 	margin-left: 20px;
 	margin-right: 20px;
-    height: 100px;
+    height: 90px;
 	transition: transform 0.5s ease-out;
 	perspective: 1000px;
 }
