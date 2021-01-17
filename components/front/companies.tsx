@@ -55,6 +55,10 @@ const InKindInfo: Company[] = [
 		name: 'DO',
 		url: 'https://www.digitalocean.com/',
 	},
+	{
+		name: 'gcp',
+		url: 'https://www.digitalocean.com/',
+	},
 ];
 
 const GoldCompanies = () => {
