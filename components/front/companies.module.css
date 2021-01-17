@@ -1,0 +1,99 @@
+.company {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.row {
+	margin-left: auto;
+	margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.column {
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	flex: 25%;
+	padding: 20px;
+}
+
+
+.gold img {
+    display: block;
+	margin-left: 20px;
+	margin-right: 20px;
+    height: 100px;
+	transition: transform 0.5s ease-out;
+	perspective: 1000px;
+}
+
+.silver img {
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+	height: 100px;
+	transition: transform 0.5s ease-out;
+	perspective: 1000px;
+}
+
+.bronze img {
+	display: block;
+	margin-left: 20px;
+	margin-right: 20px;
+	height: 100px;
+	transition: transform 0.5s ease-out;
+	perspective: 1000px;
+}
+
+.inkind img {
+	display: block;
+	margin-left: 20px;
+	margin-right: 20px;
+	height: 30px;
+	transition: transform 0.5s ease-out;
+	perspective: 1000px;
+}
+
+
+
+
+.company .card h3 {
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 30px;
+	text-align: center;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.company .card p {
+	font-size: 20px;
+	line-height: 24px;
+	text-align: center;
+	margin-left: 10px;
+	margin-right: 10px;
+	color: #757575;
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 1700px) {
+	.column {
+	  flex: 50%;
+	}
+	.row {
+		width: 70%;
+	}
+  }
+
+  
+  /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+	.row {
+	  flex-direction: column;
+	}
+  }

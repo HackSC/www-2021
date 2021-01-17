@@ -7,6 +7,7 @@ import Footer from '@/components/front/footer';
 import { NextPage } from 'next';
 import { Details as DetailsSection } from '@/components/front/details';
 import { Connectivity as ConnectivitySection } from '@/components/front/connectivity';
+import { Sponsors } from '@/components/front/sponsors';
 
 const Home: NextPage = () => {
 	return (
@@ -51,6 +52,7 @@ const Home: NextPage = () => {
 				<FirstSection />
 				<DetailsSection />
 				<ConnectivitySection />
+				<Sponsors />
 				<Footer />
 				<style jsx global>
 					{`
