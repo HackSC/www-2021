@@ -6,10 +6,10 @@ interface Company {
 }
 
 const GoldCompanyInfo: Company[] = [
-	{
-		name: 'rippleX',
-		url: 'https://ripplex.io/',
-	},
+	// {
+	// 	name: 'rippleX',
+	// 	url: 'https://ripplex.io/',
+	// },
 	{
 		name: 'intersystems',
 		url: 'https://www.intersystems.com/',
@@ -55,10 +55,10 @@ const InKindInfo: Company[] = [
 		name: 'DO',
 		url: 'https://www.digitalocean.com/',
 	},
-	{
-		name: 'gcp',
-		url: 'https://www.digitalocean.com/',
-	},
+	// {
+	// 	name: 'gcp',
+	// 	url: 'https://www.digitalocean.com/',
+	// },
 ];
 
 const GoldCompanies = () => {
