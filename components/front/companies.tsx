@@ -8,7 +8,7 @@ interface Company {
 const GoldCompanyInfo: Company[] = [
 	{
 		name: 'rippleX',
-		url: 'https://www.digitalocean.com/',
+		url: 'https://ripplex.io/',
 	},
 	{
 		name: 'intersystems',
@@ -16,18 +16,18 @@ const GoldCompanyInfo: Company[] = [
 	},
 	{
 		name: 'appsmith',
-		url: 'https://www.intersystems.com/',
+		url: 'https://www.appsmith.com/',
 	},
 ];
 
 const SilverCompanyInfo: Company[] = [
 	{
 		name: 'usc',
-		url: 'https://www.digitalocean.com/',
+		url: 'https://carc.usc.edu/',
 	},
 	{
 		name: 'northropgrumman',
-		url: 'https://www.digitalocean.com/',
+		url: 'https://www.northropgrumman.com/',
 	},
 ];
 
@@ -45,11 +45,11 @@ const BronzeCompanyInfo: Company[] = [
 const InKindInfo: Company[] = [
 	{
 		name: 'stickermule',
-		url: 'https://www.digitalocean.com/',
+		url: 'https://www.stickermule.com/',
 	},
 	{
 		name: 'vercel',
-		url: 'https://www.digitalocean.com/',
+		url: 'https://vercel.com/',
 	},
 	{
 		name: 'DO',
@@ -65,7 +65,6 @@ const GoldCompanies = () => {
 					{GoldCompanyInfo.map(({ name, url }) => {
 						return (
 							<div className={styles.gold} key={name}>
-								&nbsp;
 								<a href={`${url}`} target="_blank" rel="noreferrer">
 									<img alt="" src={`/images/companies/${name}.png`} />
 								</a>
@@ -86,7 +85,6 @@ const SilverCompanies = () => {
 					{SilverCompanyInfo.map(({ name, url }) => {
 						return (
 							<div className={styles.silver} key={name}>
-								&nbsp;
 								<a href={`${url}`} target="_blank" rel="noreferrer">
 									<img alt="" src={`/images/companies/${name}.png`} />
 								</a>
@@ -107,7 +105,6 @@ const BronzeCompanies = () => {
 					{BronzeCompanyInfo.map(({ name, url }) => {
 						return (
 							<div className={styles.bronze} key={name}>
-								&nbsp;
 								<a href={`${url}`} target="_blank" rel="noreferrer">
 									<img alt="" src={`/images/companies/${name}.svg`} />
 								</a>
@@ -128,7 +125,6 @@ const InKind = () => {
 					{InKindInfo.map(({ name, url }) => {
 						return (
 							<div className={styles.inkind} key={name}>
-								&nbsp;
 								<a href={`${url}`} target="_blank" rel="noreferrer">
 									<img alt="" src={`/images/companies/${name}.png`} />
 								</a>

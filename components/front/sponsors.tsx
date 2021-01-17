@@ -20,7 +20,7 @@ const Sponsors = () => (
 			</div>
 		</div>
 
-		<div>
+		<div className={styles.tiers}>
 			<GoldCompanies />
 			<SilverCompanies />
 			{/* <BronzeCompanies /> */}
