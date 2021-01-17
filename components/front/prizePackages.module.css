@@ -48,10 +48,9 @@
 
 
 
-/* On screens that are 992px wide or less, go from four columns to two columns */
-@media screen and (max-width: 1700px) {
+@media screen and (min-width: 1700px) {
 	.column {
-	  flex: 10%;
+	  flex: 30%;
 	}
 	.row {
 		width: 100%;
