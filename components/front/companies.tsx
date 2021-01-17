@@ -11,7 +11,7 @@ const GoldCompanyInfo: Company[] = [
 	// 	url: 'https://ripplex.io/',
 	// },
 	{
-		name: 'intersystems',
+		name: 'InterSystems',
 		url: 'https://www.intersystems.com/',
 	},
 	{
@@ -52,7 +52,7 @@ const InKindInfo: Company[] = [
 		url: 'https://vercel.com/',
 	},
 	{
-		name: 'DO',
+		name: 'DigitalOcean',
 		url: 'https://www.digitalocean.com/',
 	},
 	// {
@@ -70,7 +70,7 @@ const GoldCompanies = () => {
 						return (
 							<div className={styles.gold} key={name}>
 								<a href={`${url}`} target="_blank" rel="noreferrer">
-									<img alt="" src={`/images/companies/${name}.png`} />
+									<img alt={name} src={`/images/companies/${name}.png`} />
 								</a>
 							</div>
 						);
@@ -90,7 +90,7 @@ const SilverCompanies = () => {
 						return (
 							<div className={styles.silver} key={name}>
 								<a href={`${url}`} target="_blank" rel="noreferrer">
-									<img alt="" src={`/images/companies/${name}.png`} />
+									<img alt={name} src={`/images/companies/${name}.png`} />
 								</a>
 							</div>
 						);
@@ -110,7 +110,7 @@ const BronzeCompanies = () => {
 						return (
 							<div className={styles.bronze} key={name}>
 								<a href={`${url}`} target="_blank" rel="noreferrer">
-									<img alt="" src={`/images/companies/${name}.svg`} />
+									<img alt={name} src={`/images/companies/${name}.svg`} />
 								</a>
 							</div>
 						);
@@ -130,7 +130,7 @@ const InKind = () => {
 						return (
 							<div className={styles.inkind} key={name}>
 								<a href={`${url}`} target="_blank" rel="noreferrer">
-									<img alt="" src={`/images/companies/${name}.png`} />
+									<img alt={name} src={`/images/companies/${name}.png`} />
 								</a>
 							</div>
 						);
