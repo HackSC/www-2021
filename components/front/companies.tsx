@@ -11,7 +11,7 @@ const GoldCompanyInfo: Company[] = [
 	// 	url: 'https://ripplex.io/',
 	// },
 	{
-		name: 'InterSystems',
+		name: 'intersystems',
 		url: 'https://www.intersystems.com/',
 	},
 	{

@@ -20,11 +20,10 @@
 }
 
 .tiers {
-    justify-content: center;
+	justify-content: center;
 }
 
 .sponsorsWrapper {
-	padding-top: 45px;
 	vertical-align: top;
 }
 
