@@ -17,6 +17,10 @@ const Sponsors = () => (
 					build something they&rsquo;re proud of. Interested in sponsoring?
 					E-mail us at sponsorship@hacksc.com
 				</p>
+				Interested in sponsoring? E-mail us at{' '}
+				<a href="mailto:sponsorship@hacksc.com" className={styles.email}>
+					sponsorship@hacksc.com
+				</a>
 			</div>
 		</div>
 
