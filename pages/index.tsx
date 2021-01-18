@@ -8,6 +8,7 @@ import { NextPage } from 'next';
 import { Details as DetailsSection } from '@/components/front/details';
 import { Connectivity as ConnectivitySection } from '@/components/front/connectivity';
 import { Sponsors } from '@/components/front/sponsors';
+import { Prizes as PrizesSection } from '@/components/front/prizes';
 
 const Home: NextPage = () => {
 	return (
@@ -53,6 +54,7 @@ const Home: NextPage = () => {
 				<DetailsSection />
 				<ConnectivitySection />
 				<Sponsors />
+				<PrizesSection />
 				<Footer />
 				<style jsx global>
 					{`
