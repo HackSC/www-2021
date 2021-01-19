@@ -22,7 +22,7 @@ const GoldCompanyInfo: Company[] = [
 
 const SilverCompanyInfo: Company[] = [
 	{
-		name: 'usc',
+		name: 'uscCarc',
 		url: 'https://carc.usc.edu/',
 	},
 	{
@@ -33,12 +33,12 @@ const SilverCompanyInfo: Company[] = [
 
 const BronzeCompanyInfo: Company[] = [
 	{
-		name: 'northropgrumman',
-		url: 'https://www.digitalocean.com/',
+		name: 'uscCarc',
+		url: 'https://carc.usc.edu/',
 	},
 	{
 		name: 'northropgrumman',
-		url: 'https://www.digitalocean.com/',
+		url: 'https://www.northropgrumman.com/',
 	},
 ];
 
@@ -88,7 +88,7 @@ const SilverCompanies = () => {
 				<Fade>
 					{SilverCompanyInfo.map(({ name, url }) => {
 						return (
-							<div className={styles.silver} key={name}>
+							<div className={styles.bronze} key={name}>
 								<a href={`${url}`} target="_blank" rel="noreferrer">
 									<img alt={name} src={`/images/companies/${name}.png`} />
 								</a>

@@ -26,7 +26,7 @@ const Sponsors = () => (
 
 		<div className={styles.tiers}>
 			<GoldCompanies />
-			{/* <SilverCompanies /> */}
+			<SilverCompanies />
 			{/* <BronzeCompanies /> */}
 			<InKind />
 		</div>
