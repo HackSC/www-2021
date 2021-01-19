@@ -1,0 +1,47 @@
+.sponsorsHeading {
+	font-size: 60px;
+	text-transform: uppercase;
+	font-weight: bold;
+	line-height: 20px;
+	margin-top: 200px;
+}
+.sponsorsWrapper {
+	display: center;
+	width: 55%;
+}
+
+.tiers {
+	margin-top: 50px;
+	justify-content: center;
+}
+
+.email {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+.sponsorsWrapper {
+	vertical-align: top;
+}
+
+.sponsors {
+	margin: 10vw 10vw;
+	height: max-content;
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+
+	.sponsorsWrapper {
+		display: flex;
+		width: 100%;
+		margin-top: 10px;
+		padding: 0;
+	}
+
+	.sponsors {
+		margin-top: 100px;
+	}
+}
+
