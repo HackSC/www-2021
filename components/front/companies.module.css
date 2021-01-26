@@ -25,9 +25,10 @@
 
 .gold img {
     display: block;
-	margin-left: 20px;
-	margin-right: 20px;
-    height: 90px;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: 30px;
+    height: 80px;
 	transition: transform 0.5s ease-out;
 	perspective: 1000px;
 }
@@ -47,8 +48,7 @@
 	margin-right: 20px;
 	margin-top:15px;
 	margin-bottom:15px;
-
-	height: 45px;
+	height: 65px;
 	transition: transform 0.5s ease-out;
 	perspective: 1000px;
 }
@@ -57,7 +57,7 @@
 	display: block;
 	margin-left: 20px;
     margin-right: 20px;
-    margin-top: 10px;
+    margin-top: 20px;
 	height: 30px;
 	transition: transform 0.5s ease-out;
 	perspective: 1000px;
@@ -69,10 +69,19 @@
 		margin: 0px;
 	}
 	.gold img {
-		height: 85px;
+		height: 55px;
 
 	}
 	.bronze img {
 		height: 35px;
+	}
+	.inkind img {
+		height: 25px;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.gold img {
+		height: 50px;
 	}
 }
