@@ -6,13 +6,13 @@ interface Company {
 }
 
 const GoldCompanyInfo: Company[] = [
-	// {
-	// 	name: 'rippleX',
-	// 	url: 'https://ripplex.io/',
-	// },
 	{
 		name: 'intersystems',
 		url: 'https://www.intersystems.com/',
+	},
+	{
+		name: 'rippleX',
+		url: 'https://ripplex.io/',
 	},
 	{
 		name: 'appsmith',
@@ -44,8 +44,8 @@ const BronzeCompanyInfo: Company[] = [
 
 const InKindInfo: Company[] = [
 	{
-		name: 'stickermule',
-		url: 'http://hackp.ac/mlh-stickermule-hackathons',
+		name: 'GoogleCloud',
+		url: 'https://cloud.google.com/',
 	},
 	{
 		name: 'vercel',
@@ -55,10 +55,10 @@ const InKindInfo: Company[] = [
 		name: 'DigitalOcean',
 		url: 'https://www.digitalocean.com/',
 	},
-	// {
-	// 	name: 'gcp',
-	// 	url: 'https://www.digitalocean.com/',
-	// },
+	{
+		name: 'stickermule',
+		url: 'http://hackp.ac/mlh-stickermule-hackathons',
+	},
 ];
 
 const GoldCompanies = () => {
