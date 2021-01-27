@@ -57,7 +57,7 @@ const InKindInfo: Company[] = [
 	},
 	{
 		name: 'stickermule',
-		url: 'https://www.stickermule.com/',
+		url: 'http://hackp.ac/mlh-stickermule-hackathons',
 	},
 ];
 

@@ -33,9 +33,9 @@ const header: FunctionComponent = () => (
 					<Link href="/sponsor">
 						<a className={styles.link}>Sponsor Us</a>
 					</Link>
-					{/* <a href="https://dashboard.hacksc.com" className={styles.link}>
+					<a href="https://dashboard.hacksc.com" className={styles.link}>
 						<button className={styles.apply}>Apply Now</button>
-					</a> */}
+					</a>
 				</div>
 			</div>
 		</nav>
