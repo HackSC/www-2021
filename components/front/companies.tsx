@@ -8,7 +8,7 @@ interface Company {
 const GoldCompanyInfo: Company[] = [
 	{
 		name: 'intersystems',
-		url: 'https://www.intersystems.com/',
+		url: 'https://www.intersystems.com/products/intersystems-iris/',
 	},
 	{
 		name: 'rippleX',
