@@ -222,10 +222,10 @@ const First = () => {
 								)}
 								style={{ textAlign: 'center' }}
 							>
-								{/* <Email subscribed={subscribed} setSubscribed={setSubscribed} /> */}
-								<a href="https://dashboard.hacksc.com" className={styles.link}>
+								<Email subscribed={subscribed} setSubscribed={setSubscribed} />
+								{/* <a href="https://dashboard.hacksc.com" className={styles.link}>
 									<button className={styles.apply}>Apply Now</button>
-								</a>
+								</a> */}
 							</div>
 							<div
 								className={cn(
