@@ -12,7 +12,7 @@
   "dependencies": {
     "csvtojson": "^2.0.10",
     "email-validator": "^2.0.4",
-    "next": "^9.5.3-canary.23",
+    "next": "^11.1.0",
     "next-compose-plugins": "^2.2.0",
     "next-optimized-images": "^2.6.2",
     "next-seo": "^4.7.3",
