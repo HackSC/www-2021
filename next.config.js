@@ -26,6 +26,11 @@ module.exports = withPlugins(
 					destination: 'https://hacksc.typeform.com/organizerapp',
 					permanent: false,
 				},
+				{
+					source: '/interest',
+					destination: 'https://hacksc.typeform.com/interest',
+					permanent: false,
+				},
 			];
 		},
 	}
