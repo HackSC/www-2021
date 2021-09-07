@@ -14,20 +14,19 @@ const Home: NextPage = () => {
 	return (
 		<>
 			<NextSeo
-				title="HackSC 2021 - Connect the World"
+				title="HackSC 2022"
 				description="Free and online from February 19-21. Apps open to college students in November."
 				canonical="https://hacksc.com"
 				openGraph={{
 					url: 'https://hacksc.com',
-					title: 'HackSC 2021',
-					description:
-						'Connect the world at HackSC. Free and online from February 19-21.',
+					title: 'HackSC 2022',
+					description: 'More info on HackSC 2022 is coming soon.',
 					images: [
 						{
 							url: 'https://hacksc.com/images/og.png',
 							width: 800,
 							height: 600,
-							alt: 'We hope to see you at HackSC 2021!',
+							alt: 'We hope to see you at HackSC 2022!',
 						},
 					],
 					site_name: 'HackSC',
