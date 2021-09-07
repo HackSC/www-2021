@@ -203,17 +203,22 @@ const First = () => {
 									styles.connect
 								)}
 							>
-								Connect the world
+								Join the HackSC Team
 							</h1>
-							<div
+							{/* <div
 								className={`${appearStyles.appear} ${appearStyles['appear-third']} ${styles.rainbow} ${styles.largest} `}
 							>
-								at USC&apos;s Largest Hackathon
-							</div>
+								Apply to become an organizer!
+							</div> */}
 							<div
 								className={`${appearStyles.appear} ${appearStyles['appear-fourth']} ${styles.details}`}
+								style={{ textAlign: 'center' }}
 							>
-								02.19.21 &mdash; 02.21.21 || online
+								Wednesday September 8, 8:30 pm: In-Person Info Session (ROOM
+								TBD, check social media for updates) <br />
+								Sunday September 12 11:59pm: APPLICATION DUE <br />
+								Wednesday September 15 - Friday September 17: Interviews <br />
+								Week of Monday September 20: Decisions released <br />
 							</div>
 							<div
 								className={cn(
@@ -222,10 +227,10 @@ const First = () => {
 								)}
 								style={{ textAlign: 'center' }}
 							>
-								<Email subscribed={subscribed} setSubscribed={setSubscribed} />
-								{/* <a href="https://dashboard.hacksc.com" className={styles.link}>
+								{/* <Email subscribed={subscribed} setSubscribed={setSubscribed} /> */}
+								<a href="https://dashboard.hacksc.com" className={styles.link}>
 									<button className={styles.apply}>Apply Now</button>
-								</a> */}
+								</a>
 							</div>
 							<div
 								className={cn(

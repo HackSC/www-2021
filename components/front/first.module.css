@@ -38,7 +38,7 @@
 }
 
 .connect {
-	font-size: calc(20px + 3vw);
+	font-size: calc(20px + 2vw);
 	text-align: right;
 	text-transform: uppercase;
 	margin: 0;

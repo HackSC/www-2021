@@ -51,10 +51,10 @@ const Home: NextPage = () => {
 			<div className={styles.wrapper}>
 				<Header />
 				<FirstSection />
-				<DetailsSection />
+				{/* <DetailsSection />
 				<ConnectivitySection />
 				<PrizesSection />
-				<Sponsors />
+				<Sponsors /> */}
 				<Footer />
 				<style jsx global>
 					{`
