@@ -214,8 +214,8 @@ const First = () => {
 								className={`${appearStyles.appear} ${appearStyles['appear-fourth']} ${styles.details}`}
 								style={{ textAlign: 'center' }}
 							>
-								Wednesday September 8, 8:30 pm: In-Person Info Session (ROOM
-								TBD, check social media for updates) <br />
+								Wednesday September 8, 8:30 pm: In-Person Info Session (Room SOS
+								B44) <br />
 								Sunday September 12 11:59pm: APPLICATION DUE <br />
 								Wednesday September 15 - Friday September 17: Interviews <br />
 								Week of Monday September 20: Decisions released <br />
@@ -228,7 +228,7 @@ const First = () => {
 								style={{ textAlign: 'center' }}
 							>
 								{/* <Email subscribed={subscribed} setSubscribed={setSubscribed} /> */}
-								<a href="https://dashboard.hacksc.com" className={styles.link}>
+								<a href="/apply" className={styles.link}>
 									<button className={styles.apply}>Apply Now</button>
 								</a>
 							</div>
