@@ -64,7 +64,7 @@ const EmailSubscribeForm = ({ subscribed, setSubscribed }) => {
 				</button>
 			</form>
 			<p className={styles.disclaimer}>
-				Subscribe to be notified of HackSC 2021 events, including when our
+				Subscribe to be notified of HackSC 2022 events, including when our
 				application opens.
 			</p>
 

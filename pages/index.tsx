@@ -53,7 +53,8 @@ const Home: NextPage = () => {
 				{/* <DetailsSection />
 				<ConnectivitySection />
 				<PrizesSection />
-				<Sponsors /> */}
+				*/}
+				<Sponsors />
 				<Footer />
 				<style jsx global>
 					{`

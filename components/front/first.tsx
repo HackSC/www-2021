@@ -203,7 +203,7 @@ const First = () => {
 									styles.connect
 								)}
 							>
-								Join the HackSC Team
+								Thanks for joining us at HackSC!
 							</h1>
 							{/* <div
 								className={`${appearStyles.appear} ${appearStyles['appear-third']} ${styles.rainbow} ${styles.largest} `}
@@ -214,11 +214,7 @@ const First = () => {
 								className={`${appearStyles.appear} ${appearStyles['appear-fourth']} ${styles.details}`}
 								style={{ textAlign: 'center' }}
 							>
-								Wednesday September 8, 8:30 pm: In-Person Info Session (Room SOS
-								B44) <br />
-								Sunday September 12 11:59pm: APPLICATION DUE <br />
-								Wednesday September 15 - Friday September 17: Interviews <br />
-								Week of Monday September 20: Decisions released <br />
+								We look forward to seeing you at HackSC 2022!
 							</div>
 							<div
 								className={cn(
@@ -227,10 +223,7 @@ const First = () => {
 								)}
 								style={{ textAlign: 'center' }}
 							>
-								{/* <Email subscribed={subscribed} setSubscribed={setSubscribed} /> */}
-								<a href="/apply" className={styles.link}>
-									<button className={styles.apply}>Apply Now</button>
-								</a>
+								<Email subscribed={subscribed} setSubscribed={setSubscribed} />
 							</div>
 							<div
 								className={cn(
